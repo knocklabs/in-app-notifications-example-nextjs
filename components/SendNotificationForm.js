@@ -2,8 +2,8 @@ import {
   Button,
   Checkbox,
   FormControl,
-  FormHelperText,
   FormLabel,
+  Heading,
   Textarea,
 } from "@chakra-ui/react";
 import { useState } from "react";
@@ -25,6 +25,10 @@ const SendNotificationForm = ({ userId }) => {
 
   return (
     <form onSubmit={onSubmit}>
+      <Heading size="sm" mb={3}>
+        Send an in-app notification
+      </Heading>
+
       <FormControl mb={3}>
         <FormLabel htmlFor="message" fontSize={14}>
           Message
@@ -32,12 +36,10 @@ const SendNotificationForm = ({ userId }) => {
         <Textarea
           id="message"
           name="message"
+          placeholder="Message to be shown in the notification"
           size="sm"
           onChange={(e) => setMessage(e.target.value)}
         />
-        <FormHelperText>
-          The message to embed in the notification.
-        </FormHelperText>
       </FormControl>
       <FormControl mb={4}>
         <FormLabel fontSize={14} display="flex" alignItems="center">

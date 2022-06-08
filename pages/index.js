@@ -54,8 +54,8 @@ export default function Home() {
                 fontWeight="semibold"
               >
                 powered by Knock
-              </Link>{" "}
-              in a NextJS app.
+              </Link>
+              .
             </Text>
           </Box>
 
@@ -69,7 +69,7 @@ export default function Home() {
 
         <Flex mt={6} borderTopWidth={1} borderTopColor="gray.100" py={2}>
           <Link
-            href="https://github.com/knocklabs/"
+            href="https://github.com/knocklabs/in-app-notifications-example-nextjs"
             fontSize={14}
             color="gray.600"
             mr={3}
@@ -78,13 +78,17 @@ export default function Home() {
             Github repo
           </Link>
 
-          <Link href="https://docs.knock.app" fontSize={14} color="gray.600">
+          <Link
+            href="https://docs.knock.app/in-app-ui/react/overview"
+            fontSize={14}
+            color="gray.600"
+          >
             <Icon as={IoDocument} mr={1} />
             Documentation
           </Link>
 
           <Link
-            href="https://github.com/knocklabs/"
+            href="https://knock.app"
             fontSize={14}
             color="gray.600"
             ml="auto"

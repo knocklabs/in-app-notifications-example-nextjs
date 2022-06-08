@@ -11,7 +11,7 @@ function MyApp({ Component, pageProps }) {
         openGraph={{
           title: "React in-app notifications example | Powered by Knock",
           description: "In-app notification feed and toasts, powered by Knock",
-          url: "https://knock-in-app-notifications.vercel.app",
+          url: "https://knock-in-app-notifications-react.vercel.app",
         }}
         twitter={{
           handle: "@knocklabs",
