@@ -55,6 +55,14 @@ const Toast = ({ title, description, status = "success", onClose }) => {
             color="gray.600"
             mt={1}
             dangerouslySetInnerHTML={{ __html: description }}
+            __css={{
+              blockquote: {
+                borderLeftWidth: "3px",
+                borderLeftColor: "gray.300",
+                marginTop: 2,
+                paddingLeft: 3,
+              },
+            }}
           />
         )}
       </Flex>
