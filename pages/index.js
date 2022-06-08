@@ -1,40 +1,98 @@
-import { Box, Button, Flex, Spinner, Text } from "@chakra-ui/react";
-import { useCallback } from "react";
+import {
+  Box,
+  Flex,
+  Heading,
+  Icon,
+  Link,
+  Spinner,
+  Text,
+} from "@chakra-ui/react";
+import { KnockFeedProvider } from "@knocklabs/react-notification-feed";
+import { IoDocument, IoLogoGithub } from "react-icons/io5";
 
 import useIdentify from "../hooks/useIdentify";
-import { notify } from "../lib/api";
-
 import NotificationFeed from "../components/NotificationFeed";
+import SendNotificationForm from "../components/SendNotificationForm";
+import NotificationToasts from "../components/NotificationToasts";
 
 import "@knocklabs/react-notification-feed/dist/index.css";
 
 export default function Home() {
   const { userId, isLoading } = useIdentify();
 
-  const sendNotification = useCallback(
-    async (inputs) => {
-      return await notify({
-        message: "Some new message",
-        type: "feed",
-        userId,
-      });
-    },
-    [userId]
-  );
-
   if (isLoading) {
-    return <Spinner />;
+    return (
+      <Flex
+        alignItems="center"
+        justifyContent="center"
+        width="100vw"
+        height="100vh"
+      >
+        <Spinner />
+      </Flex>
+    );
   }
 
   return (
-    <Flex>
-      <Box>
-        <Text>User ID: {userId}</Text>
+    <KnockFeedProvider
+      userId={userId}
+      apiKey={process.env.NEXT_PUBLIC_KNOCK_PUBLIC_API_KEY}
+      feedId={process.env.NEXT_PUBLIC_KNOCK_FEED_CHANNEL_ID}
+    >
+      <Box maxW="520px" mx="auto" py={12}>
+        <Flex mb={6}>
+          <Box>
+            <Heading size="md" mb={2}>
+              React in-app notifications example
+            </Heading>
 
-        <Button onClick={sendNotification}>Send notification</Button>
+            <Text>
+              This is an example application to show in-app notifications{" "}
+              <Link
+                href="https://knock.app"
+                color="blue.600"
+                fontWeight="semibold"
+              >
+                powered by Knock
+              </Link>{" "}
+              in a NextJS app.
+            </Text>
+          </Box>
 
-        <NotificationFeed userId={userId} />
+          <Box ml="auto">
+            <NotificationFeed />
+          </Box>
+        </Flex>
+
+        <SendNotificationForm userId={userId} />
+        <NotificationToasts />
+
+        <Flex mt={6} borderTopWidth={1} borderTopColor="gray.100" py={2}>
+          <Link
+            href="https://github.com/knocklabs/"
+            fontSize={14}
+            color="gray.600"
+            mr={3}
+          >
+            <Icon as={IoLogoGithub} mr={1} />
+            Github repo
+          </Link>
+
+          <Link href="https://docs.knock.app" fontSize={14} color="gray.600">
+            <Icon as={IoDocument} mr={1} />
+            Documentation
+          </Link>
+
+          <Link
+            href="https://github.com/knocklabs/"
+            fontSize={14}
+            color="gray.600"
+            ml="auto"
+          >
+            Powered by Knock
+          </Link>
+        </Flex>
       </Box>
-    </Flex>
+    </KnockFeedProvider>
   );
 }

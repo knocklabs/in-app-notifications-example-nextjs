@@ -793,10 +793,10 @@
   dependencies:
     axios "^0.21.1"
 
-"@knocklabs/react-notification-feed@0.5.8":
-  version "0.5.8"
-  resolved "https://registry.yarnpkg.com/@knocklabs/react-notification-feed/-/react-notification-feed-0.5.8.tgz#54ebc1c819adc212b900f10ba15173743a52691a"
-  integrity sha512-YXSpA0DlJkCMfUoGNylX2bM5PyC2b8URzAQIhOy7S9CqwK84vpxolGDb3/XcYYlvKHqK6epY0MXlL84gydKlqg==
+"@knocklabs/react-notification-feed@^0.5.9":
+  version "0.5.9"
+  resolved "https://registry.yarnpkg.com/@knocklabs/react-notification-feed/-/react-notification-feed-0.5.9.tgz#c08c9bb709e2747abc931e01139fc42a33e262e9"
+  integrity sha512-px7+jVEtwVv+r7TigRwE5wJWv9uWi4NQAF90uEc2+GJ19U5s8N8Dd95Tw0Le8RC0Vnfr1Mrf7J9bnotWUTtKUQ==
   dependencies:
     "@knocklabs/client" "^0.5.9"
     "@popperjs/core" "^2.9.2"
@@ -2250,6 +2250,11 @@ natural-compare@^1.4.0:
   resolved "https://registry.yarnpkg.com/natural-compare/-/natural-compare-1.4.0.tgz#4abebfeed7541f2c27acfb29bdbbd15c8d5ba4f7"
   integrity sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==
 
+next-seo@^5.4.0:
+  version "5.4.0"
+  resolved "https://registry.yarnpkg.com/next-seo/-/next-seo-5.4.0.tgz#37a7784b30b3f70cec3fa0d77f9dde5990822d24"
+  integrity sha512-R9DhajPwJnR/lsF2hZ8cN8uqr5CVITsRrCG1AF5+ufcaybKYOvnH8sH9MaH4/hpkps3PQ9H71S7J7SPYixAYzQ==
+
 next@12.1.6:
   version "12.1.6"
   resolved "https://registry.yarnpkg.com/next/-/next-12.1.6.tgz#eb205e64af1998651f96f9df44556d47d8bbc533"
@@ -2507,6 +2512,11 @@ react-focus-lock@^2.9.1:
     react-clientside-effect "^1.2.6"
     use-callback-ref "^1.3.0"
     use-sidecar "^1.1.2"
+
+react-icons@^4.4.0:
+  version "4.4.0"
+  resolved "https://registry.yarnpkg.com/react-icons/-/react-icons-4.4.0.tgz#a13a8a20c254854e1ec9aecef28a95cdf24ef703"
+  integrity sha512-fSbvHeVYo/B5/L4VhB7sBA1i2tS8MkT0Hb9t2H1AVPkwGfVHLJCqyr2Py9dKMxsyM63Eng1GkdZfbWj+Fmv8Rg==
 
 react-is@^16.13.1, react-is@^16.7.0:
   version "16.13.1"
