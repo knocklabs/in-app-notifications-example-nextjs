@@ -13,7 +13,7 @@
     "@emotion/styled": "^11",
     "@faker-js/faker": "^7.1.0",
     "@knocklabs/node": "^0.4.6",
-    "@knocklabs/react-notification-feed": "^0.5.9",
+    "@knocklabs/react-notification-feed": "^0.6.1-rc.1",
     "framer-motion": "^6",
     "next": "12.1.6",
     "next-seo": "^5.4.0",
@@ -26,5 +26,8 @@
   "devDependencies": {
     "eslint": "7.32.0",
     "eslint-config-next": "12.1.6"
+  },
+  "resolutions": {
+    "react": "18.1.0"
   }
 }

@@ -1,6 +1,7 @@
 import { ChakraProvider } from "@chakra-ui/react";
-import Head from "next/head";
 import { NextSeo } from "next-seo";
+
+import "@knocklabs/react-notification-feed/dist/index.css";
 
 function MyApp({ Component, pageProps }) {
   return (

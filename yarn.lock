@@ -775,10 +775,10 @@
   resolved "https://registry.yarnpkg.com/@humanwhocodes/object-schema/-/object-schema-1.2.1.tgz#b520529ec21d8e5945a1851dfd1c32e94e39ff45"
   integrity sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==
 
-"@knocklabs/client@^0.5.9":
-  version "0.5.10"
-  resolved "https://registry.yarnpkg.com/@knocklabs/client/-/client-0.5.10.tgz#bfa315da98ba50bf0cea4496316e9d90799af45e"
-  integrity sha512-ksLS5yo2iFtXPYLxGPBDaw/NDnycbmoRnMFwz+t+YFeXZSX4m7+X7jbr5a94Empdh/PCDySXneY/OexJv/1W3A==
+"@knocklabs/client@^0.6.0-rc.1":
+  version "0.6.0-rc.1"
+  resolved "https://registry.yarnpkg.com/@knocklabs/client/-/client-0.6.0-rc.1.tgz#251435de53c09421495980d5e768d8d4d8ce97cd"
+  integrity sha512-EabDAP/ld3+z9fUB7+YMnMTXWGojfIsDrvX2ielcuVisAVwO58E/ahza+CkfkV3MwGJn41W2N5+Bd9fLG/vroQ==
   dependencies:
     axios "^0.21.4"
     axios-retry "^3.1.9"
@@ -793,12 +793,12 @@
   dependencies:
     axios "^0.21.1"
 
-"@knocklabs/react-notification-feed@^0.5.9":
-  version "0.5.9"
-  resolved "https://registry.yarnpkg.com/@knocklabs/react-notification-feed/-/react-notification-feed-0.5.9.tgz#c08c9bb709e2747abc931e01139fc42a33e262e9"
-  integrity sha512-px7+jVEtwVv+r7TigRwE5wJWv9uWi4NQAF90uEc2+GJ19U5s8N8Dd95Tw0Le8RC0Vnfr1Mrf7J9bnotWUTtKUQ==
+"@knocklabs/react-notification-feed@^0.6.1-rc.1":
+  version "0.6.1-rc.1"
+  resolved "https://registry.yarnpkg.com/@knocklabs/react-notification-feed/-/react-notification-feed-0.6.1-rc.1.tgz#7405095f361025523a8c4d03b07034991df8444a"
+  integrity sha512-KpJZ0PSwY9PpD0seIwtm9STUQhqFP9esO8P+9yHshN8vyXefwGyJB4r3xKsZ+PIvc1T6Z4bFuxrCE58eseDUwQ==
   dependencies:
-    "@knocklabs/client" "^0.5.9"
+    "@knocklabs/client" "^0.6.0-rc.1"
     "@popperjs/core" "^2.9.2"
     date-fns "^2.24.0"
     lodash.debounce "^4.0.8"

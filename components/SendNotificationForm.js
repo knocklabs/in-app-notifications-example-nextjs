@@ -9,7 +9,7 @@ import {
 import { useState } from "react";
 import { notify } from "../lib/api";
 
-const SendNotificationForm = ({ userId }) => {
+const SendNotificationForm = ({ userId, tenant }) => {
   const [message, setMessage] = useState("");
   const [showToast, setShowToast] = useState(true);
   const [isLoading, setIsLoading] = useState(false);
@@ -17,7 +17,7 @@ const SendNotificationForm = ({ userId }) => {
   const onSubmit = async (e) => {
     e.preventDefault();
     setIsLoading(true);
-    await notify({ message, showToast, userId });
+    await notify({ message, showToast, userId, tenant });
     setIsLoading(false);
 
     e.target.reset();
@@ -25,10 +25,6 @@ const SendNotificationForm = ({ userId }) => {
 
   return (
     <form onSubmit={onSubmit}>
-      <Heading size="sm" mb={3}>
-        Send an in-app notification
-      </Heading>
-
       <FormControl mb={3}>
         <FormLabel htmlFor="message" fontSize={14}>
           Message
