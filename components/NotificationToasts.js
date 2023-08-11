@@ -1,5 +1,5 @@
 import { useToast } from "@chakra-ui/react";
-import { useKnockFeed } from "@knocklabs/react-notification-feed";
+import { useKnockFeed } from "@knocklabs/react";
 import { useCallback, useEffect } from "react";
 import Toast from "./Toast";
 
