@@ -51,7 +51,7 @@ export default function Home() {
     >
       <KnockFeedProvider
         feedId={process.env.NEXT_PUBLIC_KNOCK_FEED_CHANNEL_ID}
-        defaultFeedOptionsFeedClientOptions={tenant}
+        defaultFeedOptions={tenant}
       >
         <Box maxW="520px" mx="auto" py={12}>
           <Flex mb={8}>
