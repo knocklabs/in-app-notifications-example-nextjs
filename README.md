@@ -36,12 +36,12 @@ Given that a notification feed is stateful, when a new session is opened we auto
 
 You can see how we identify users and send notify calls to Knock in the `pages/api/identify.js` file. These functions are executed on the server-side by Next and use `faker.js` to create a fictional user in your account:
 
-```
+```javascript
 import { Knock } from "@knocklabs/node";
 const knockClient = new Knock(process.env.KNOCK_SECRET_API_KEY);
 
 const knockUser = await knockClient.users.identify(userId, {
-    name: name || faker.name.findName(),
+  name: name || faker.name.findName(),
 });
 ```
 
@@ -51,19 +51,19 @@ const knockUser = await knockClient.users.identify(userId, {
 
 When you submit the form in the example app, it runs the code in `/page/api/notify.js` to trigger your `in-app` workflow. That function looks like this:
 
-```
+```javascript
 import { Knock } from "@knocklabs/node";
 const knockClient = new Knock(process.env.KNOCK_SECRET_API_KEY);
 
 await knockClient.workflows.trigger(KNOCK_WORKFLOW, {
-      recipients: [userId],
-      actor: userId,
-      tenant: tenant,
-      data: {
-        message,
-        showToast,
-      },
-    });
+  recipients: [userId],
+  actor: userId,
+  tenant: tenant,
+  data: {
+    message,
+    showToast,
+  },
+});
 ```
 
 The `workflows.trigger` function takes several pieces of data. The `recipients` property is an array of user identifiers. If a user already exists, Knock uses that data for the workflow. If it doesn't exist, Knock creates it like we discussed above with inline identification.
