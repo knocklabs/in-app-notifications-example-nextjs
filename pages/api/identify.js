@@ -18,6 +18,7 @@ export default async function handler(req, res) {
   try {
     const knockUser = await knockClient.users.identify(userId, {
       name: name || faker.name.findName(),
+      avatar: "https://xsgames.co/randomusers/assets/avatars/male/2.jpg",
     });
 
     return res.status(200).json({ error: null, user: knockUser });
