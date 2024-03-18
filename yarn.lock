@@ -877,10 +877,10 @@
   dependencies:
     "@swc/helpers" "^0.5.0"
 
-"@knocklabs/client@^0.9.1":
-  version "0.9.1"
-  resolved "https://registry.yarnpkg.com/@knocklabs/client/-/client-0.9.1.tgz#1943198a2ad8b3392d6920c1788993f1c03ec986"
-  integrity sha512-+jp9rNaOl47UtZ1S4JHDA9Gs5A70TCoElQjcy5Z9vGBlN8ZxU8LbCHpOOBWmpqJ1CWuc/d3UfTld6bjdCixPzw==
+"@knocklabs/client@^0.9.2":
+  version "0.9.2"
+  resolved "https://registry.yarnpkg.com/@knocklabs/client/-/client-0.9.2.tgz#d281b85fa6e6c78e0f200e558034916a622155d0"
+  integrity sha512-b1txKxReECP5QQkTD1zQuWhw1Px63HDUWMKCmsqZft+llAtiAKcSHsO2idut110ZMEJqC/uwW5mtqTITeZynPw==
   dependencies:
     "@babel/runtime" "^7.23.9"
     axios "^1.6.0"
@@ -897,23 +897,23 @@
   dependencies:
     jose "^5.2.0"
 
-"@knocklabs/react-core@^0.2.1":
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/@knocklabs/react-core/-/react-core-0.2.1.tgz#bbe05209c6498d0896285f39c25320d574806f8f"
-  integrity sha512-TzGYLxNcNl8jlj9lLzYMkfN1nusHp3sHLrjVMjF6rrPWPBnn61+FlDzt086rkWlNb4LiKG1Wm+//EI4W0Ky7UA==
+"@knocklabs/react-core@^0.2.3":
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/@knocklabs/react-core/-/react-core-0.2.3.tgz#d57323a1f5873a808d5467e6b3e6dac7a8ba5530"
+  integrity sha512-IDbug3XmuZ+dn+OzAp5ryutLAomtqIYGuhhRDEznsKDwl2Zuf2C8ggfeucmxfCVT2WR5R4j32aMI4kK351LO8w==
   dependencies:
-    "@knocklabs/client" "^0.9.1"
+    "@knocklabs/client" "^0.9.2"
     "@tanstack/react-query" "^5.18.1"
     date-fns "^3.3.1"
     zustand "^3.7.2"
 
-"@knocklabs/react@^0.2.1":
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/@knocklabs/react/-/react-0.2.1.tgz#376d78ca6bf20bb1d262f0625beb9f256311b4b7"
-  integrity sha512-7PvFMDb3keGlX+5lTPc3gzlTpwtOYaEgIKDuvF86O/o3/Jc6tN8XFxg+xFVr81cyeqlQd3HnphUq3IcK3HW7lQ==
+"@knocklabs/react@^0.2.3":
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/@knocklabs/react/-/react-0.2.3.tgz#1b2a780c7c91fe5c6e6ce74be175cc1fd7757ab0"
+  integrity sha512-tqz1yTPQmfQm623+aZeJw/4PcjsX4xZo41OCjVoeFTaKXMjofM4lYWbtEiMT420yAKAEFxLfqIAbqJlKOBsBBQ==
   dependencies:
-    "@knocklabs/client" "^0.9.1"
-    "@knocklabs/react-core" "^0.2.1"
+    "@knocklabs/client" "^0.9.2"
+    "@knocklabs/react-core" "^0.2.3"
     "@popperjs/core" "^2.11.8"
     "@radix-ui/react-popover" "^1.0.7"
     "@radix-ui/react-visually-hidden" "^1.0.3"

@@ -12,7 +12,7 @@ export default async function handler(req, res) {
       .json({ error: `${req.method} method is not accepted.` });
   }
 
-  const { message, showToast, userId, tenant } = req.body;
+  const { message, showToast, userId, tenant, templateType } = req.body;
 
   try {
     await knockClient.workflows.trigger(KNOCK_WORKFLOW, {
@@ -22,6 +22,7 @@ export default async function handler(req, res) {
       data: {
         message,
         showToast,
+        templateType,
       },
     });
 
