@@ -2,8 +2,11 @@ import { ChakraProvider } from "@chakra-ui/react";
 import { NextSeo } from "next-seo";
 
 import "@knocklabs/react/dist/index.css";
+import "../globals.css";
 
 function MyApp({ Component, pageProps }) {
+  const getLayout = Component.getLayout ?? ((page) => page);
+
   return (
     <ChakraProvider>
       <NextSeo
@@ -20,7 +23,7 @@ function MyApp({ Component, pageProps }) {
           cardType: "summary_large_image",
         }}
       />
-      <Component {...pageProps} />
+      {getLayout(<Component {...pageProps} />)}
     </ChakraProvider>
   );
 }

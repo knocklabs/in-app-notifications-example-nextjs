@@ -2238,6 +2238,11 @@
   resolved "https://registry.yarnpkg.com/@rushstack/eslint-patch/-/eslint-patch-1.1.3.tgz#6801033be7ff87a6b7cadaf5b337c9f366a3c4b0"
   integrity sha512-WiBSI6JBIhC6LRIsB2Kwh8DsGTlbBU+mLRxJmAe3LjHTdkDpwIbEOZgoXBbZilk/vlfjK8i6nKRAvIRn1XaIMw==
 
+"@stencil/core@^4.0.3":
+  version "4.13.0"
+  resolved "https://registry.yarnpkg.com/@stencil/core/-/core-4.13.0.tgz#31654b9c601ce8b74194903fe28ed4bcb66b576e"
+  integrity sha512-gg+gtBWekQ08mDja8GVAUHNu+rrFhQaKZDvfhnS3l/5JbYiJddTimuDPPhuc0sR0JZL1iRdJTJSa+JbvmnQ1cQ==
+
 "@swc/helpers@^0.4.14":
   version "0.4.36"
   resolved "https://registry.yarnpkg.com/@swc/helpers/-/helpers-0.4.36.tgz#fcfff76ed52c214f357e8e9d3f37b568908072d9"
@@ -2264,6 +2269,55 @@
   integrity sha512-nF4E4rFMQdh30gECGkTfyzgjgfSr4MLVgYoIsf7KqVkjUjEQHPpi9jyx10kO3Yq/OQMKOLMHAzD31st/lxDPbQ==
   dependencies:
     "@tanstack/query-core" "5.28.0"
+
+"@telegraph/button@^0.0.10":
+  version "0.0.10"
+  resolved "https://registry.yarnpkg.com/@telegraph/button/-/button-0.0.10.tgz#0a3c8b112be6ebd97b1038ea47e08466b1eb052e"
+  integrity sha512-wFTCY5ASPsFOJRIny2fOHkXl6Eyfz3UgP7YLcu1UhSxqY9DcSTmCXTD6Jb4WuDcGOSU7oPh3QrCBGhBJSpcijw==
+  dependencies:
+    "@telegraph/helpers" "^0.0.1"
+    "@telegraph/icon" "^0.0.7"
+    "@telegraph/typography" "^0.0.9"
+    clsx "^2.1.0"
+
+"@telegraph/compose-refs@^0.0.1":
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/@telegraph/compose-refs/-/compose-refs-0.0.1.tgz#97e2fc5dffa168d15adeb3e675ba5280bfc9d429"
+  integrity sha512-X2aeLoUH7NONvFUGuWrNYZwSkWxJCCJ+su3lp/JpVKt5nNT9WzOdxj+1Ldym/yXdFHPxtFNsAWPQHMTuQ9JXsg==
+
+"@telegraph/helpers@^0.0.1":
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/@telegraph/helpers/-/helpers-0.0.1.tgz#1ecd8c557326ce5701bc40298f359f68e0f7891c"
+  integrity sha512-H4M8aeCpgactOMT03YjSEJdammLEsmJXa/XXlEs6gaHsDxhKqMNkb45x2GGrLkNF3FvyrFOenX8wVXVc+JTbGw==
+
+"@telegraph/icon@^0.0.7":
+  version "0.0.7"
+  resolved "https://registry.yarnpkg.com/@telegraph/icon/-/icon-0.0.7.tgz#ab36dda8fcb6cafe808ec5096567d5785637de73"
+  integrity sha512-6gTegx2YVP4iR4qTPLCcieWtAYN/Vu4ncaxorROFi4IQipbtrXvYSJ/a2pf8U7f09o5dwhSJuKTMKncQS8+ExA==
+  dependencies:
+    clsx "^2.1.0"
+    ionicons "^7.2.2"
+
+"@telegraph/layout@^0.0.5":
+  version "0.0.5"
+  resolved "https://registry.yarnpkg.com/@telegraph/layout/-/layout-0.0.5.tgz#a196e2f3672be328a33b3679f2c50ec17e9b5d41"
+  integrity sha512-/4tMey8LlUmPcB58wZbKunSyMbv1LrwYcIZ4QwukrvIrWdOfI+9mQ9tKNL3ZnfbzjTJSjSOoHn1vXpPy87/aGQ==
+  dependencies:
+    "@telegraph/compose-refs" "^0.0.1"
+    "@telegraph/tokens" "^0.0.7"
+    clsx "^2.1.0"
+
+"@telegraph/tokens@^0.0.7":
+  version "0.0.7"
+  resolved "https://registry.yarnpkg.com/@telegraph/tokens/-/tokens-0.0.7.tgz#5d4ffbb400e659d8b0a44177967094a60cd5893b"
+  integrity sha512-RtEzB6qVQ/Jw3oUevbulAEv/YjN87fwiNrZTVrchxZyHWb5e03YzYqYzRe6o+SKQyxDtQ3NjLA6ICdadNP1kSQ==
+
+"@telegraph/typography@^0.0.9":
+  version "0.0.9"
+  resolved "https://registry.yarnpkg.com/@telegraph/typography/-/typography-0.0.9.tgz#496ebf89662123fd757557d76feb52498e13a49d"
+  integrity sha512-keMgzPcT/B7m2Xi1XKtkaweh6VlcY4jIPf5jufcb2AxOqZBNqx7Zkb99XktVpxxFKEYHWhMEJB+VyzyGvVp+Gw==
+  dependencies:
+    clsx "^2.1.0"
 
 "@types/json5@^0.0.29":
   version "0.0.29"
@@ -2549,7 +2603,7 @@ chalk@^4.0.0:
     ansi-styles "^4.1.0"
     supports-color "^7.1.0"
 
-clsx@^2.0.0:
+clsx@^2.0.0, clsx@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/clsx/-/clsx-2.1.0.tgz#e851283bcb5c80ee7608db18487433f7b23f77cb"
   integrity sha512-m3iNNWpd9rl3jvvcBnu70ylMdrXt8Vlq4HYadnU5fwcOtvkSQWPmj7amUcDT2qYI7risszBjI5AUIUox9D16pg==
@@ -3364,6 +3418,13 @@ invariant@^2.2.4:
   integrity sha512-phJfQVBuaJM5raOpJjSfkiD6BpbCE4Ns//LaXl6wGYtUBY83nWS6Rf9tXm2e8VaK60JEjYldbPif/A2B1C2gNA==
   dependencies:
     loose-envify "^1.0.0"
+
+ionicons@^7.2.2:
+  version "7.2.3"
+  resolved "https://registry.yarnpkg.com/ionicons/-/ionicons-7.2.3.tgz#df1f2677d8a28cad12108860250b08c37425b389"
+  integrity sha512-DtO85dgNAYFjshAiETdXQbw84Ztgy5Rb5HCWFAYpJWQ72OUNHJ7hSBlZAOaxNK4HoGljMMyT/jbMaCd3bpSLLw==
+  dependencies:
+    "@stencil/core" "^4.0.3"
 
 is-arrayish@^0.2.1:
   version "0.2.1"
