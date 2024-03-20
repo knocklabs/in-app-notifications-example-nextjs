@@ -14,6 +14,7 @@ const KnockNotificationFeed = () => {
         <NotificationIconButton
           ref={notifButtonRef}
           onClick={(e) => setIsVisible(!isVisible)}
+          badgeCountType="unread"
         />
       </Box>
       <Box
