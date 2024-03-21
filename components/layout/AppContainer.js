@@ -1,4 +1,4 @@
-import { Flex, Icon, Link, Spinner } from "@chakra-ui/react";
+import { Flex, Icon, Link, Select, Spinner } from "@chakra-ui/react";
 
 import { Text } from "@telegraph/typography";
 
@@ -6,9 +6,11 @@ import KnockLogo from "../KnockLogo";
 import { IoDocument, IoLogoGithub } from "react-icons/io5";
 import useIdentify from "../../hooks/useIdentify";
 import { KnockProvider } from "@knocklabs/react";
+import { useRouter } from "next/router";
 
 const AppContainer = ({ children }) => {
   const { userId, isLoading } = useIdentify();
+  const router = useRouter();
 
   return (
     <Flex width="100vw" height="100vh" flexDir="column">
@@ -16,6 +18,17 @@ const AppContainer = ({ children }) => {
         <Link href="https://knock.app">
           <KnockLogo />
         </Link>
+
+        <Select
+          size="sm"
+          width="160px"
+          ml={4}
+          onChange={(e) => router.push(e.target.value)}
+          value={router.asPath}
+        >
+          <option value="/">In-app feed</option>
+          <option value="/preferences">Preferences</option>
+        </Select>
 
         <Flex gap={4} ml="auto" alignItems="center">
           <Text
