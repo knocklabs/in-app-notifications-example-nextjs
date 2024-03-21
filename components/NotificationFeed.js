@@ -29,6 +29,9 @@ const KnockNotificationFeed = () => {
           buttonRef={notifButtonRef}
           isVisible={isVisible}
           onClose={() => setIsVisible(false)}
+          onNotificationButtonClick={(item, action) => {
+            window.alert(`Notification button clicked: ${action.label}`);
+          }}
         />
       </Box>
     </Stack>
