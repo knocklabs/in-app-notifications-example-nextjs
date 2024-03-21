@@ -12,6 +12,7 @@ import { useCallback, useEffect, useState } from "react";
 import { TenantLabels, Tenants } from "../lib/constants";
 
 const DEFAULT_PREFERENCE_SET = {
+  __typename: "PreferenceSet",
   categories: {
     collaboration: {
       channel_types: { email: true, in_app_feed: true },
@@ -20,6 +21,7 @@ const DEFAULT_PREFERENCE_SET = {
       channel_types: { email: false, in_app_feed: true },
     },
   },
+  channel_types: null,
   workflows: {
     "invoice-issued": {
       channel_types: { email: true },
@@ -44,10 +46,10 @@ const Preferences = () => {
       .then((maybePrefSet) => {
         if (maybePrefSet.categories === null) {
           setPreferenceSet({
-            __typename: "PreferenceSet",
-            id: preferenceSetId,
+            ...maybePrefSet,
             ...DEFAULT_PREFERENCE_SET,
           });
+
           return;
         }
 
