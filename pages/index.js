@@ -9,16 +9,7 @@ import NotificationFeed from "../components/NotificationFeed";
 import SendNotificationForm from "../components/SendNotificationForm";
 import NotificationToasts from "../components/NotificationToasts";
 import AppContainer from "../components/layout/AppContainer";
-
-const Tenants = {
-  TeamA: "team-a",
-  TeamB: "team-b",
-};
-
-const TenantLabels = {
-  [Tenants.TeamA]: "Team A",
-  [Tenants.TeamB]: "Team B",
-};
+import { TenantLabels, Tenants } from "../lib/constants";
 
 const Home = () => {
   const { userId } = useIdentify();

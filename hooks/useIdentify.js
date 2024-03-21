@@ -13,7 +13,7 @@ const useIdentify = () => {
   );
 
   useEffect(() => {
-    if (!userId && data?.user && userId != data?.user.id) {
+    if (!userId && data?.user && userId !== data?.user.id) {
       setUserId(data?.user?.id);
     }
   }, [userId, data, setUserId]);
