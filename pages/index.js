@@ -65,7 +65,7 @@ const Home = () => {
               onChange={(e) => setFeedType(e.target.value)}
             >
               <option value="default">Default feed</option>
-              <option value="tabbed">Tabbed feed</option>
+              <option value="tabbed">With tabs</option>
             </Select>
           </Flex>
 
