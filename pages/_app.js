@@ -3,6 +3,7 @@ import { NextSeo } from "next-seo";
 
 import "@knocklabs/react/dist/index.css";
 import "../globals.css";
+import "../components/TabbedNotificationFeed/styles.css";
 
 function MyApp({ Component, pageProps }) {
   const getLayout = Component.getLayout ?? ((page) => page);

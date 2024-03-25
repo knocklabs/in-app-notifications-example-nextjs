@@ -10,16 +10,20 @@ import SendNotificationForm from "../components/SendNotificationForm";
 import NotificationToasts from "../components/NotificationToasts";
 import AppContainer from "../components/layout/AppContainer";
 import { TenantLabels, Tenants } from "../lib/constants";
+import TabbedNotificationFeed from "../components/TabbedNotificationFeed/TabbedNotificationFeed";
+
+const FeedType = {
+  Default: "default",
+  Tabbed: "tabbed",
+};
 
 const Home = () => {
   const { userId } = useIdentify();
+  const [feedType, setFeedType] = useState(FeedType.Default);
   const [tenant, setTenant] = useState(Tenants.TeamA);
 
   return (
-    <KnockFeedProvider
-      feedId={process.env.NEXT_PUBLIC_KNOCK_FEED_CHANNEL_ID}
-      defaultFeedOptions={{ tenant }}
-    >
+    <>
       <Flex
         bgColor="white"
         width="420px"
@@ -53,29 +57,46 @@ const Home = () => {
         </Flex>
       </Flex>
       <Flex flex={1} flexDir="column">
-        <Flex ml="auto" p={2} alignItems="center">
-          <Text as="span" style={{ marginRight: "10px" }}>
-            Tenant{" "}
-          </Text>
-          <Select
-            size="sm"
-            value={tenant}
-            onChange={(e) => setTenant(e.target.value)}
-          >
-            {Object.values(Tenants).map((tenant) => (
-              <option key={tenant} value={tenant}>
-                {TenantLabels[tenant]}
-              </option>
-            ))}
-          </Select>
-        </Flex>
-        <Flex alignItems="center" justifyContent="center" flex={1}>
-          <NotificationFeed />
-        </Flex>
+        <Flex>
+          <Flex p={2} alignItems="center">
+            <Select
+              size="sm"
+              value={feedType}
+              onChange={(e) => setFeedType(e.target.value)}
+            >
+              <option value="default">Default feed</option>
+              <option value="tabbed">Tabbed feed</option>
+            </Select>
+          </Flex>
 
-        <NotificationToasts />
+          <Flex ml="auto" p={2} alignItems="center">
+            <Text as="span" weight="medium" style={{ marginRight: "10px" }}>
+              Tenant{" "}
+            </Text>
+            <Select
+              size="sm"
+              value={tenant}
+              onChange={(e) => setTenant(e.target.value)}
+            >
+              {Object.values(Tenants).map((tenant) => (
+                <option key={tenant} value={tenant}>
+                  {TenantLabels[tenant]}
+                </option>
+              ))}
+            </Select>
+          </Flex>
+        </Flex>
+        <Flex alignItems="center" justifyContent="center" flex={1} mt="-160px">
+          {feedType === FeedType.Default && (
+            <NotificationFeed tenant={tenant} />
+          )}
+
+          {feedType === FeedType.Tabbed && (
+            <TabbedNotificationFeed tenant={tenant} />
+          )}
+        </Flex>
       </Flex>
-    </KnockFeedProvider>
+    </>
   );
 };
 

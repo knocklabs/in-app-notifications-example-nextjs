@@ -1,0 +1,45 @@
+.rnf-tabbed-notification-feed {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.rnf-tabbed-notification-feed__header {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid var(--tgph-gray-4);
+  padding: 12px 16px 0;
+}
+
+.rnf-tabbed-notification-feed__header-type {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.rnf-tabbed-notification-feed__header-top {
+  display: flex;
+  margin-bottom: 4px;
+}
+
+.rnf-tabbed-notification-feed__header-tabs {
+  display: flex;
+}
+
+.rnf-tabbed-notification-feed__header-tab {
+  font-size: 14px;
+  padding: 4px;
+  margin-right: 8px;
+  font-weight: 400;
+  border-bottom: 2px solid transparent;
+  transition: border-color .2s ease-in-out;
+}
+
+.rnf-tabbed-notification-feed__header-tab--selected {
+  border-bottom-color: var(--tgph-accent-9)!important;
+}
+
+.rnf-tabbed-notification-feed__header-tab:hover {
+  border-bottom-color: var(--tgph-gray-8);
+}

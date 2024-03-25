@@ -2277,14 +2277,14 @@
   dependencies:
     "@tanstack/query-core" "5.28.0"
 
-"@telegraph/button@^0.0.10":
-  version "0.0.10"
-  resolved "https://registry.yarnpkg.com/@telegraph/button/-/button-0.0.10.tgz#0a3c8b112be6ebd97b1038ea47e08466b1eb052e"
-  integrity sha512-wFTCY5ASPsFOJRIny2fOHkXl6Eyfz3UgP7YLcu1UhSxqY9DcSTmCXTD6Jb4WuDcGOSU7oPh3QrCBGhBJSpcijw==
+"@telegraph/button@^0.0.13":
+  version "0.0.13"
+  resolved "https://registry.yarnpkg.com/@telegraph/button/-/button-0.0.13.tgz#74da383da8d5b79216c4fa287f75f3aa03cee1cc"
+  integrity sha512-wxaR49cOrsuhIqsjQbhyWo2mG9xZ5ayghynqq9S/1zdvSyUwgUvGmFPAUWEvhcG0LV9L885RMJEx8riBuNiNqA==
   dependencies:
     "@telegraph/helpers" "^0.0.1"
     "@telegraph/icon" "^0.0.7"
-    "@telegraph/typography" "^0.0.9"
+    "@telegraph/typography" "^0.0.10"
     clsx "^2.1.0"
 
 "@telegraph/compose-refs@^0.0.1":
@@ -2297,7 +2297,7 @@
   resolved "https://registry.yarnpkg.com/@telegraph/helpers/-/helpers-0.0.1.tgz#1ecd8c557326ce5701bc40298f359f68e0f7891c"
   integrity sha512-H4M8aeCpgactOMT03YjSEJdammLEsmJXa/XXlEs6gaHsDxhKqMNkb45x2GGrLkNF3FvyrFOenX8wVXVc+JTbGw==
 
-"@telegraph/icon@^0.0.7":
+"@telegraph/icon@^0.0.7", "@telegraph/icon@^0.0.8":
   version "0.0.7"
   resolved "https://registry.yarnpkg.com/@telegraph/icon/-/icon-0.0.7.tgz#ab36dda8fcb6cafe808ec5096567d5785637de73"
   integrity sha512-6gTegx2YVP4iR4qTPLCcieWtAYN/Vu4ncaxorROFi4IQipbtrXvYSJ/a2pf8U7f09o5dwhSJuKTMKncQS8+ExA==
@@ -2305,24 +2305,24 @@
     clsx "^2.1.0"
     ionicons "^7.2.2"
 
-"@telegraph/layout@^0.0.5":
-  version "0.0.5"
-  resolved "https://registry.yarnpkg.com/@telegraph/layout/-/layout-0.0.5.tgz#a196e2f3672be328a33b3679f2c50ec17e9b5d41"
-  integrity sha512-/4tMey8LlUmPcB58wZbKunSyMbv1LrwYcIZ4QwukrvIrWdOfI+9mQ9tKNL3ZnfbzjTJSjSOoHn1vXpPy87/aGQ==
+"@telegraph/layout@^0.0.6":
+  version "0.0.6"
+  resolved "https://registry.yarnpkg.com/@telegraph/layout/-/layout-0.0.6.tgz#a2aba1e2096f29fc1f05bcde087a2d06be4e71de"
+  integrity sha512-Hr3x3ocJxa105i281GHkyed4aRalXOWljI+Z3bH7wfar6ES/9BVW89fPzUXyZHtnxPSJu0uW0/geJ2e6LOtHMA==
   dependencies:
     "@telegraph/compose-refs" "^0.0.1"
-    "@telegraph/tokens" "^0.0.7"
+    "@telegraph/tokens" "^0.0.8"
     clsx "^2.1.0"
 
-"@telegraph/tokens@^0.0.7":
-  version "0.0.7"
-  resolved "https://registry.yarnpkg.com/@telegraph/tokens/-/tokens-0.0.7.tgz#5d4ffbb400e659d8b0a44177967094a60cd5893b"
-  integrity sha512-RtEzB6qVQ/Jw3oUevbulAEv/YjN87fwiNrZTVrchxZyHWb5e03YzYqYzRe6o+SKQyxDtQ3NjLA6ICdadNP1kSQ==
+"@telegraph/tokens@^0.0.8":
+  version "0.0.8"
+  resolved "https://registry.yarnpkg.com/@telegraph/tokens/-/tokens-0.0.8.tgz#8aa9c8f2457389866d4bdb378e15781a9d0ddebe"
+  integrity sha512-FG70e6UTFUpvz3JnJ4OhVKogUCcuOoVzqdIk1a4/TTxORD9XvmOlfhSO5H0ypT0CQxl+8QIgbTYNo/3NgD9RZA==
 
-"@telegraph/typography@^0.0.9":
-  version "0.0.9"
-  resolved "https://registry.yarnpkg.com/@telegraph/typography/-/typography-0.0.9.tgz#496ebf89662123fd757557d76feb52498e13a49d"
-  integrity sha512-keMgzPcT/B7m2Xi1XKtkaweh6VlcY4jIPf5jufcb2AxOqZBNqx7Zkb99XktVpxxFKEYHWhMEJB+VyzyGvVp+Gw==
+"@telegraph/typography@^0.0.10":
+  version "0.0.10"
+  resolved "https://registry.yarnpkg.com/@telegraph/typography/-/typography-0.0.10.tgz#c1e8de1a720f891bd1fa608b42d6c4e3f9921cf1"
+  integrity sha512-N5WbgKV4fb5d0byMWE7mzII4K9wob1pDgO87fiLRGm1zpnBNDAO21+zNmkDqN0AqEAFBucWRyLPGxUXJfQN5Wg==
   dependencies:
     clsx "^2.1.0"
 
