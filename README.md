@@ -2,7 +2,7 @@
 
 This is an example app, written in Next.js, to show an in-app notification experience, powered by [Knock](https://knock.app).
 
-- [Try this example live](https://knock-in-app-notifications-react.vercel.app)
+- [Try this example live](https://in-app-demo.knock.app/)
 - [Read documentation on in-app UI in Knock](https://docs.knock.app/in-app-ui/overview)
 - [Get started with Knock](https://docs.knock.app/getting-started/quick-start)
 
