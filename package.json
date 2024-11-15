@@ -13,7 +13,7 @@
     "@emotion/styled": "^11",
     "@faker-js/faker": "^7.1.0",
     "@knocklabs/node": "^0.6.6",
-    "@knocklabs/react": "0.3.0.rc-1",
+    "@knocklabs/react": "0.3.0-rc-1.0",
     "@telegraph/button": "^0.0.13",
     "@telegraph/icon": "^0.0.7",
     "@telegraph/layout": "^0.0.6",

@@ -859,7 +859,7 @@
     swr "^2.2.5"
     zustand "^3.7.2"
 
-"@knocklabs/react@^0.3.0.rc-1":
+"@knocklabs/react@0.3.0-rc-1.0":
   version "0.3.0-rc-1.0"
   resolved "https://registry.yarnpkg.com/@knocklabs/react/-/react-0.3.0-rc-1.0.tgz#b76f7324a4abfb212d9683c05ebd519e5a5a8969"
   integrity sha512-ZUG83pBkskbcarH+K3bYoF2pjo2tmB1vEs6XHplRsL/MuB5qoLMskCPi9vG68IlBRMH/tn+RyUJMfHvYVG/XJQ==
