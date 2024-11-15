@@ -1,10 +1,17 @@
-import { Flex, FormControl, Select, Switch, Textarea } from "@chakra-ui/react";
+import {
+  Flex,
+  FormControl,
+  Input,
+  Select,
+  Switch,
+  Textarea,
+} from "@chakra-ui/react";
 
 import { Button } from "@telegraph/button";
 import { Text } from "@telegraph/typography";
 import { useState } from "react";
 
-import { notify } from "../lib/api";
+import { notifyInApp } from "../lib/api";
 
 const TemplateType = {
   Standard: "standard",
@@ -12,21 +19,29 @@ const TemplateType = {
   MultiAction: "multi-action",
 };
 
-const SendNotificationForm = ({ userId, tenant }) => {
-  const [message, setMessage] = useState("");
-  const [showToast, setShowToast] = useState(false);
+const ComponentType = {
+  Modal: "modal",
+  Banner: "banner",
+  Card: "card",
+};
+
+const SendInAppMessageForm = ({ userId, tenant }) => {
+  const [title, setTitle] = useState("");
+  const [body, setBody] = useState("");
   const [templateType, setTemplateType] = useState(TemplateType.Standard);
+  const [componentType, setComponentType] = useState(ComponentType.Modal);
   const [isLoading, setIsLoading] = useState(false);
 
   const onSubmit = async (e) => {
     e.preventDefault();
     setIsLoading(true);
-    await notify({
-      message,
-      showToast,
+    await notifyInApp({
+      title,
       userId,
       tenant,
       templateType,
+      componentType,
+      body,
     });
     setIsLoading(false);
 
@@ -36,6 +51,21 @@ const SendNotificationForm = ({ userId, tenant }) => {
   return (
     <Flex as="form" onSubmit={onSubmit} flexDir="column" width="100%">
       <Flex flexDir="column">
+        <FormControl mb={4}>
+          <Text as="label" weight="medium">
+            Component type
+          </Text>
+          <Select
+            mr={3}
+            size="sm"
+            value={componentType}
+            onChange={(e) => setComponentType(e.target.value)}
+          >
+            <option value={ComponentType.Modal}>Modal</option>
+            <option value={ComponentType.Banner}>Banner</option>
+            <option value={ComponentType.Card}>Card</option>
+          </Select>
+        </FormControl>
         <FormControl mb={4}>
           <Text as="label" weight="medium">
             Template type
@@ -53,31 +83,27 @@ const SendNotificationForm = ({ userId, tenant }) => {
         </FormControl>
         <FormControl mb={3}>
           <Text as="label" weight="medium">
-            Message
+            Title
           </Text>
-          <Textarea
-            id="message"
-            name="message"
-            placeholder="Message to be shown in the notification"
+          <Input
+            id="title"
+            name="title"
+            placeholder="Title text to be shown in the notification"
             size="sm"
-            onChange={(e) => setMessage(e.target.value)}
+            onChange={(e) => setTitle(e.target.value)}
           />
         </FormControl>
-        <FormControl mb={4}>
-          <Text
-            as="label"
-            weight="medium"
-            style={{ display: "flex", alignItems: "center" }}
-          >
-            Show a toast
-            <Switch
-              ml="auto"
-              size="sm"
-              isChecked={showToast}
-              onChange={(e) => setShowToast(e.target.checked)}
-              name="showToast"
-            />
+        <FormControl mb={3}>
+          <Text as="label" weight="medium">
+            Body
           </Text>
+          <Textarea
+            id="body"
+            name="body"
+            placeholder="Body text to be shown in the notification"
+            size="sm"
+            onChange={(e) => setBody(e.target.value)}
+          />
         </FormControl>
       </Flex>
 
@@ -91,7 +117,7 @@ const SendNotificationForm = ({ userId, tenant }) => {
           type="submit"
           color="accent"
           variant="solid"
-          disabled={message === ""}
+          disabled={body === ""}
           style={{ marginLeft: "auto" }}
         >
           Send notification
@@ -101,4 +127,4 @@ const SendNotificationForm = ({ userId, tenant }) => {
   );
 };
 
-export default SendNotificationForm;
+export default SendInAppMessageForm;
