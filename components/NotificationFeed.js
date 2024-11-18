@@ -2,6 +2,8 @@ import {
   KnockFeedProvider,
   NotificationFeed,
   NotificationIconButton,
+  NotificationCell,
+  Avatar,
 } from "@knocklabs/react";
 
 import { Box, Stack } from "@telegraph/layout";
@@ -25,6 +27,7 @@ const KnockNotificationFeed = ({ tenant }) => {
             badgeCountType="unread"
           />
         </Box>
+
         <Box
           mt="2"
           style={{
@@ -34,6 +37,9 @@ const KnockNotificationFeed = ({ tenant }) => {
           }}
         >
           <NotificationFeed
+            renderItem={({ item, ...props }) => (
+              <NotificationCell {...props} item={item}></NotificationCell>
+            )}
             onNotificationButtonClick={(item, action) => {
               window.alert(`Notification button clicked: ${action.label}`);
             }}

@@ -39,7 +39,14 @@ const TabbedNotificationFeed = ({ tenant }) => {
   const regularFeed = useNotifications(
     knockClient,
     process.env.NEXT_PUBLIC_KNOCK_FEED_CHANNEL_ID,
-    { status: pageTypeToStatus(currentPageType), archived: "exclude", tenant }
+    {
+      status: pageTypeToStatus(currentPageType),
+      archived: "exclude",
+      tenant,
+      trigger_data: JSON.stringify({
+        message: "Here is a test for the fourth. This should show the toast",
+      }),
+    }
   );
 
   useEffect(() => {
