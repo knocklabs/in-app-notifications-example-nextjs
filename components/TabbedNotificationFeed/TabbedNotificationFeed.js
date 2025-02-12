@@ -43,9 +43,6 @@ const TabbedNotificationFeed = ({ tenant }) => {
       status: pageTypeToStatus(currentPageType),
       archived: "exclude",
       tenant,
-      trigger_data: JSON.stringify({
-        message: "Here is a test for the fourth. This should show the toast",
-      }),
     }
   );
 
