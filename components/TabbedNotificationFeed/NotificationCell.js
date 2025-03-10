@@ -1,9 +1,9 @@
-import { Avatar } from "@knocklabs/react";
 import {
+  Avatar,
   formatTimestamp,
   renderNodeOrFallback,
   useTranslations,
-} from "@knocklabs/react-core";
+} from "@knocklabs/react";
 import { Button } from "@telegraph/button";
 import { Stack } from "@telegraph/layout";
 import React, { useMemo } from "react";
