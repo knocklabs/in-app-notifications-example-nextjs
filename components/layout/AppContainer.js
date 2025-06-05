@@ -27,7 +27,6 @@ const AppContainer = ({ children }) => {
           value={router.asPath}
         >
           <option value="/">In-app feed</option>
-          <option value="/in-app-messaging">In-app messages</option>
           <option value="/preferences">Preferences</option>
         </Select>
 
