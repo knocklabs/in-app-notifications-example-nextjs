@@ -7,6 +7,7 @@ import {
 import { Button } from "@telegraph/button";
 import { Stack } from "@telegraph/layout";
 import React, { useMemo } from "react";
+
 import { ArchiveButton } from "./ArchiveButton";
 
 function maybeNavigateToUrlWithDelay(url) {
@@ -53,7 +54,7 @@ export const NotificationCell = ({
 
       return maybeNavigateToUrlWithDelay(button.action);
     },
-    [onButtonClick, feedClient, item]
+    [onButtonClick, feedClient, item],
   );
 
   const onKeyDown = React.useCallback(
@@ -68,7 +69,7 @@ export const NotificationCell = ({
           break;
       }
     },
-    [onContainerClickHandler]
+    [onContainerClickHandler],
   );
 
   const actor = item.actors[0];
@@ -89,7 +90,7 @@ export const NotificationCell = ({
           avatar,
           actor && "name" in actor && actor.name && (
             <Avatar name={actor.name} src={actor.avatar} />
-          )
+          ),
         )}
 
         <div className="rnf-notification-cell__content-outer">

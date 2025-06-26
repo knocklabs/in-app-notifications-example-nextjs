@@ -4,12 +4,12 @@ import {
   useKnockClient,
   useNotifications,
 } from "@knocklabs/react";
-import { useEffect, useRef, useState } from "react";
 import { Box, Stack } from "@telegraph/layout";
+import { useEffect, useRef, useState } from "react";
 import create from "zustand";
 
-import { PageType } from "./constants";
 import Feed from "./Feed";
+import { PageType } from "./constants";
 
 function pageTypeToStatus(pageType) {
   switch (pageType) {
@@ -33,7 +33,7 @@ const TabbedNotificationFeed = ({ tenant }) => {
   const archivedFeed = useNotifications(
     knockClient,
     process.env.NEXT_PUBLIC_KNOCK_FEED_CHANNEL_ID,
-    { status: "all", archived: "only", tenant }
+    { status: "all", archived: "only", tenant },
   );
 
   const regularFeed = useNotifications(
@@ -43,7 +43,7 @@ const TabbedNotificationFeed = ({ tenant }) => {
       status: pageTypeToStatus(currentPageType),
       archived: "exclude",
       tenant,
-    }
+    },
   );
 
   useEffect(() => {

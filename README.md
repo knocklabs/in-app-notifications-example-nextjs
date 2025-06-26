@@ -38,10 +38,11 @@ You can see how we identify users and send notify calls to Knock in the `pages/a
 
 ```javascript
 import { Knock } from "@knocklabs/node";
-const knockClient = new Knock(process.env.KNOCK_SECRET_API_KEY);
+
+const knockClient = new Knock({ apiKey: process.env.KNOCK_SECRET_API_KEY });
 
 const knockUser = await knockClient.users.identify(userId, {
-  name: name || faker.name.findName(),
+  name: name || faker.person.fullName(),
 });
 ```
 
@@ -53,7 +54,8 @@ When you submit the form in the example app, it runs the code in `/page/api/noti
 
 ```javascript
 import { Knock } from "@knocklabs/node";
-const knockClient = new Knock(process.env.KNOCK_SECRET_API_KEY);
+
+const knockClient = new Knock({ apiKey: process.env.KNOCK_SECRET_API_KEY });
 
 await knockClient.workflows.trigger(KNOCK_WORKFLOW, {
   recipients: [userId],
@@ -89,8 +91,7 @@ import {
   NotificationFeedPopover,
   NotificationIconButton,
 } from "@knocklabs/react";
-
-import { useState, useRef } from "react";
+import { useRef, useState } from "react";
 
 const NotificationFeed = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -124,6 +125,7 @@ For our in-app toasts, we listen to all real-time messages coming in that have t
 import { useToast } from "@chakra-ui/react";
 import { useKnockFeed } from "@knocklabs/react";
 import { useCallback, useEffect } from "react";
+
 import Toast from "./Toast";
 
 const NotificationToasts = () => {
@@ -155,7 +157,7 @@ const NotificationToasts = () => {
         });
       });
     },
-    [feedClient, toast]
+    [feedClient, toast],
   );
 
   useEffect(() => {

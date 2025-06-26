@@ -1,6 +1,7 @@
-import { Flex, FormControl, Select, Switch, Textarea } from "@chakra-ui/react";
-
 import { Button } from "@telegraph/button";
+import { Stack } from "@telegraph/layout";
+import { Select } from "@telegraph/select";
+import { TextArea } from "@telegraph/textarea";
 import { Text } from "@telegraph/typography";
 import { useState } from "react";
 
@@ -30,74 +31,68 @@ const SendNotificationForm = ({ userId, tenant }) => {
     });
     setIsLoading(false);
 
-    e.target.reset();
+    setTemplateType(TemplateType.Standard);
+    setMessage("");
+    setShowToast(false);
   };
 
   return (
-    <Flex as="form" onSubmit={onSubmit} flexDir="column" width="100%">
-      <Flex flexDir="column">
-        <FormControl mb={4}>
+    <Stack as="form" onSubmit={onSubmit} direction="column" w="full">
+      <Stack direction="column" gap="4" mb="4">
+        <Stack gap="2" direction="column">
           <Text as="label" weight="medium">
             Template type
           </Text>
-          <Select
-            mr={3}
-            size="sm"
+          <Select.Root
             value={templateType}
-            onChange={(e) => setTemplateType(e.target.value)}
+            onValueChange={(value) => setTemplateType(value)}
+            size="2"
           >
-            <option value={TemplateType.Standard}>Standard</option>
-            <option value={TemplateType.SingleAction}>Single-action</option>
-            <option value={TemplateType.MultiAction}>Multi-action</option>
-          </Select>
-        </FormControl>
-        <FormControl mb={3}>
-          <Text as="label" weight="medium">
+            <Select.Option value={TemplateType.Standard}>
+              Standard
+            </Select.Option>
+            <Select.Option value={TemplateType.SingleAction}>
+              Single-action
+            </Select.Option>
+            <Select.Option value={TemplateType.MultiAction}>
+              Multi-action
+            </Select.Option>
+          </Select.Root>
+        </Stack>
+        <Stack gap="2" direction="column">
+          <Text as="label" weight="medium" htmlFor="message">
             Message
           </Text>
-          <Textarea
+          <TextArea
             id="message"
             name="message"
             placeholder="Message to be shown in the notification"
-            size="sm"
-            onChange={(e) => setMessage(e.target.value)}
+            value={message}
+            onChange={(event) => setMessage(event.target.value)}
           />
-        </FormControl>
-        <FormControl mb={4}>
-          <Text
-            as="label"
-            weight="medium"
-            style={{ display: "flex", alignItems: "center" }}
-          >
-            Show a toast
-            <Switch
-              ml="auto"
-              size="sm"
-              isChecked={showToast}
-              onChange={(e) => setShowToast(e.target.checked)}
-              name="showToast"
-            />
-          </Text>
-        </FormControl>
-      </Flex>
-
-      <Flex
-        mt="auto"
-        borderTopWidth={1}
-        borderTopColor="var(--tgph-gray-4)"
-        pt={5}
-      >
+        </Stack>
+        <Stack as="label" direction="row" w="full" justify="space-between">
+          <Text as="span">Show a toast</Text>
+          <input
+            type="checkbox"
+            value={showToast}
+            onChange={(e) => setShowToast(e.target.checked)}
+            name="showToast"
+          />
+        </Stack>
+      </Stack>
+      <Stack borderTop="px" pt="4">
         <Button
           type="submit"
           color="accent"
           variant="solid"
+          state={isLoading ? "loading" : "default"}
           disabled={message === ""}
-          style={{ marginLeft: "auto" }}
         >
           Send notification
         </Button>
-      </Flex>
-    </Flex>
+      </Stack>
+    </Stack>
   );
 };
 
