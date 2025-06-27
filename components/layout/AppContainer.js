@@ -1,59 +1,71 @@
-import { Flex, Icon, Link, Select, Spinner } from "@chakra-ui/react";
-
-import { Text } from "@telegraph/typography";
-
-import KnockLogo from "../KnockLogo";
-import { IoDocument, IoLogoGithub } from "react-icons/io5";
-import useIdentify from "../../hooks/useIdentify";
 import { KnockProvider } from "@knocklabs/react";
+import { Button } from "@telegraph/button";
+import { Icon, Lucide } from "@telegraph/icon";
+import { Stack } from "@telegraph/layout";
+import { Select } from "@telegraph/select";
+import Link from "next/link";
 import { useRouter } from "next/router";
+
+import useIdentify from "../../hooks/useIdentify";
+import KnockLogo from "../KnockLogo";
 
 const AppContainer = ({ children }) => {
   const { userId, isLoading } = useIdentify();
   const router = useRouter();
 
   return (
-    <Flex width="100vw" height="100vh" flexDir="column">
-      <Flex borderColor="var(--tgph-gray-4)" borderWidth={1} p={5}>
+    <Stack
+      direction="column"
+      style={{
+        height: "100vh",
+      }}
+    >
+      <Stack
+        border="px"
+        p="4"
+        gap="4"
+        align="center"
+        postion="relative"
+        zIndex="sticky"
+      >
         <Link href="https://knock.app">
           <KnockLogo />
         </Link>
+        <Stack maxW="40" w="full">
+          <Select.Root
+            value={router.asPath}
+            onValueChange={(value) => router.push(value)}
+            size="2"
+          >
+            <Select.Option value="/">In-app feed</Select.Option>
+            <Select.Option value="/preferences">Preferences</Select.Option>
+          </Select.Root>
+        </Stack>
 
-        <Select
-          size="sm"
-          width="160px"
-          ml={4}
-          onChange={(e) => router.push(e.target.value)}
-          value={router.asPath}
-        >
-          <option value="/">In-app feed</option>
-          <option value="/preferences">Preferences</option>
-        </Select>
-
-        <Flex gap={4} ml="auto" alignItems="center">
-          <Text
-            as="a"
+        <Stack gap="4" ml="auto" align="center">
+          <Button
+            as={Link}
             href="https://github.com/knocklabs/in-app-notifications-example-nextjs"
-            style={{ display: "flex", alignItems: "center" }}
+            variant="ghost"
+            icon={{ icon: Lucide.Github, "aria-hidden": true }}
           >
-            <Icon as={IoLogoGithub} mr={1} />
             Github repo
-          </Text>
-          <Text
-            as="a"
+          </Button>
+          <Button
+            as={Link}
+            variant="ghost"
+            icon={{ icon: Lucide.Book, "aria-hidden": true }}
             href="https://docs.knock.app/in-app-ui/react/overview"
-            style={{ display: "flex", alignItems: "center" }}
           >
-            <Icon as={IoDocument} mr={1} />
             Documentation
-          </Text>
-        </Flex>
-      </Flex>
-      <Flex bgColor="var(--tgph-gray-2)" width="100vw" height="100vh">
+          </Button>
+        </Stack>
+      </Stack>
+      <Stack bg="surface-2" w="full" h="full">
         {isLoading ? (
-          <Flex flex={1} alignItems="center" justifyContent="center">
-            <Spinner color="var(--tgph-accent-9)" />
-          </Flex>
+          <Stack align="center" justify="center">
+            <Icon icon={Lucide.Loader2} alt="Loading" />
+          </Stack>
         ) : (
           <KnockProvider
             userId={userId}
@@ -62,8 +74,8 @@ const AppContainer = ({ children }) => {
             {children}
           </KnockProvider>
         )}
-      </Flex>
-    </Flex>
+      </Stack>
+    </Stack>
   );
 };
 

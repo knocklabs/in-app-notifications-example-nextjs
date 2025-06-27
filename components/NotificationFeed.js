@@ -1,15 +1,12 @@
 import {
   KnockFeedProvider,
+  NotificationCell,
   NotificationFeed,
   NotificationIconButton,
-  NotificationCell,
-  Avatar,
 } from "@knocklabs/react";
-
 import { Box, Stack } from "@telegraph/layout";
+import { useRef } from "react";
 
-import { useState, useRef } from "react";
-import TabbedNotificationFeed from "./TabbedNotificationFeed/TabbedNotificationFeed";
 import NotificationToasts from "./NotificationToasts";
 
 const KnockNotificationFeed = ({ tenant }) => {
@@ -27,13 +24,11 @@ const KnockNotificationFeed = ({ tenant }) => {
             badgeCountType="unread"
           />
         </Box>
-
         <Box
           mt="2"
+          border="px"
           style={{
             height: "450px",
-            borderColor: "var(--tgph-gray-4)",
-            borderWidth: 1,
           }}
         >
           <NotificationFeed
@@ -45,7 +40,6 @@ const KnockNotificationFeed = ({ tenant }) => {
             }}
           />
         </Box>
-
         <NotificationToasts />
       </Stack>
     </KnockFeedProvider>

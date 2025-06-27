@@ -1,4 +1,5 @@
 import { CheckmarkCircle } from "@knocklabs/react";
+
 import { PageType, PageTypeLabel } from "./constants";
 
 const Header = ({

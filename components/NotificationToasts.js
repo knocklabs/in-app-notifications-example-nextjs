@@ -1,38 +1,38 @@
-import { useToast } from "@chakra-ui/react";
 import { useKnockFeed } from "@knocklabs/react";
 import { useCallback, useEffect } from "react";
+import { toast } from "sonner";
+
 import Toast from "./Toast";
 
 const NotificationToasts = () => {
   const { feedClient } = useKnockFeed();
-  const toast = useToast();
 
   const onNotificationsReceived = useCallback(
     ({ items }) => {
       // Whenever we receive a new notification from our real-time stream, show a toast
       // (note here that we can receive > 1 items in a batch)
       items.forEach((notification) => {
-        console.log(notification);
-
         if (notification.data.showToast === false) return;
 
-        toast({
-          render: (props) => (
+        toast("New notification received", {
+          jsx: (
             <Toast
-              {...props}
-              title={"New notification received"}
+              title="New notification received"
               description={notification.blocks[0].rendered}
-              onClose={() => {
-                feedClient.markAsSeen(notification);
-                props.onClose();
-              }}
+              status="success"
             />
           ),
+          onAutoClose: () => {
+            feedClient.markAsSeen(notification);
+          },
+          onDismiss: () => {
+            feedClient.markAsSeen(notification);
+          },
           position: "bottom-right",
         });
       });
     },
-    [feedClient, toast]
+    [feedClient, toast],
   );
 
   useEffect(() => {

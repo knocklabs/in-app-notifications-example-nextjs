@@ -1,88 +1,44 @@
-import { Box, Flex, Icon, IconButton, Text } from "@chakra-ui/react";
-import { IoAlert, IoCheckmark, IoClose, IoInformation } from "react-icons/io5";
+import { Icon, Lucide } from "@telegraph/icon";
+import { Stack } from "@telegraph/layout";
+import { Text } from "@telegraph/typography";
 
 const IconType = {
-  info: IoInformation,
-  warning: IoAlert,
-  success: IoCheckmark,
-  error: IoAlert,
+  info: Lucide.Info,
+  warning: Lucide.AlertCircle,
+  success: Lucide.CheckCircle,
+  error: Lucide.XCircle,
 };
 
 const IconColors = {
-  info: ["gray.100", "gray.900"],
-  warning: ["yellow.100", "yellow.900"],
-  success: ["green.100", "green.900"],
-  error: ["red.100", "red.900"],
+  info: "gray",
+  warning: "yellow",
+  success: "green",
+  error: "red",
 };
 
-const Toast = ({ title, description, status = "success", onClose }) => {
-  const [bgColor, fgColor] = IconColors[status];
-  const alignment = description ? "top" : "center";
-
+const Toast = ({ title, description, status = "success" }) => {
   return (
-    <Flex
-      bgColor="white"
-      p={3}
-      borderColor="gray.100"
-      borderWidth={1}
-      width="354px"
-      borderRadius="md"
-      alignItems={alignment === "top" ? "flex-start" : "center"}
-      filter="drop-shadow(0px 2px 16px rgba(102, 102, 102, 0.08))"
-    >
+    <Stack p="2" border="px" direction="row" shadow="3" align="center" gap="4">
       <Icon
-        as={IconType[status]}
-        backgroundColor={bgColor}
-        color={fgColor}
-        borderRadius="full"
-        p={1}
-        boxSize="20px"
+        icon={IconType[status]}
+        color={IconColors[status]}
+        size="3"
+        ml="2"
+        aria-hidden="true"
       />
-      <Flex ml={3} flexDir="column" textAlign="left" mr={1}>
-        <Text
-          fontSize={14}
-          mt={alignment === "top" ? -0.5 : 0}
-          fontWeight="medium"
-          color="gray.900"
-        >
+      <Stack direction="column">
+        <Text as="span" weight="medium" size="3">
           {title}
         </Text>
-        {description && (
-          <Box
-            display="block"
-            fontSize={14}
-            fontWeight="medium"
-            color="gray.600"
-            mt={1}
-            dangerouslySetInnerHTML={{ __html: description }}
-            __css={{
-              blockquote: {
-                borderLeftWidth: "3px",
-                borderLeftColor: "gray.300",
-                marginTop: 2,
-                paddingLeft: 3,
-              },
-            }}
-          />
-        )}
-      </Flex>
-      <IconButton
-        display="flex"
-        icon={<Icon as={IoClose} boxSize="12px" />}
-        color="gray.600"
-        aria-label="Close button"
-        variant="unstyled"
-        ml="auto"
-        size="xs"
-        width="16px"
-        minW="auto"
-        height="16px"
-        p={0}
-        paddingInline={0}
-        mt={alignment === "top" ? -0.5 : 0}
-        onClick={onClose}
-      />
-    </Flex>
+        <Text
+          as="span"
+          size="2"
+          dangerouslySetInnerHTML={{
+            __html: description,
+          }}
+        />
+      </Stack>
+    </Stack>
   );
 };
 

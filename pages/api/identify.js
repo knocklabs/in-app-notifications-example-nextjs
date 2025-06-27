@@ -1,8 +1,7 @@
 import { Knock } from "@knocklabs/node";
 import { v4 as uuidv4 } from "uuid";
-import { faker } from "@faker-js/faker";
 
-const knockClient = new Knock(process.env.KNOCK_SECRET_API_KEY);
+const knockClient = new Knock({ apiKey: process.env.KNOCK_SECRET_API_KEY });
 
 export default async function handler(req, res) {
   if (req.method !== "POST") {
@@ -12,15 +11,11 @@ export default async function handler(req, res) {
       .json({ error: `${req.method} method is not accepted.` });
   }
 
-  const { name, id } = req.body;
+  const { id } = req.body;
   const userId = id || uuidv4();
 
   try {
-    const knockUser = await knockClient.users.identify(userId, {
-      name: name || faker.name.findName(),
-      avatar: "https://xsgames.co/randomusers/assets/avatars/male/2.jpg",
-    });
-
+    const knockUser = await knockClient.users.get(userId);
     return res.status(200).json({ error: null, user: knockUser });
   } catch (error) {
     return res

@@ -1,6 +1,7 @@
-import { Box, Checkbox, Flex } from "@chakra-ui/react";
+import { Box, Stack } from "@telegraph/layout";
 import { Heading, Text } from "@telegraph/typography";
 import { useEffect, useState } from "react";
+
 import { TenantLabels } from "../lib/constants";
 
 const ChannelTypes = {
@@ -29,26 +30,17 @@ const PreferenceSettingRow = ({
   channelTypeSettings,
   onChange,
 }) => (
-  <Flex
-    borderBottomColor="var(--tgph-gray-4)"
-    borderBottomWidth={1}
-    alignItems="center"
-    p={4}
-  >
+  <Stack borderBottom="px" align="center" p="4">
     <Box>
       <Heading as="h3">{RowSettings[name].title}</Heading>
       <Text as="span">{RowSettings[name].subline}</Text>
     </Box>
-    <Flex ml="auto" gap={3}>
+    <Stack ml="auto" gap="4" direction="row">
       {Object.keys(ChannelTypes).map((channelType) => {
         return (
-          <Flex
-            key={channelType}
-            width="50px"
-            justifyContent="center"
-            alignItems="center"
-          >
-            <Checkbox
+          <Stack key={channelType} width="16" justify="center" align="center">
+            <input
+              type="checkbox"
               disabled={typeof channelTypeSettings[channelType] === "undefined"}
               isChecked={channelTypeSettings[channelType]}
               onChange={(e) => {
@@ -62,11 +54,11 @@ const PreferenceSettingRow = ({
                 });
               }}
             />
-          </Flex>
+          </Stack>
         );
       })}
-    </Flex>
-  </Flex>
+    </Stack>
+  </Stack>
 );
 
 const Preferences = ({ tenant, preferenceSet, updatePreferences }) => {
@@ -95,8 +87,8 @@ const Preferences = ({ tenant, preferenceSet, updatePreferences }) => {
   };
 
   return (
-    <Flex flexDirection="column">
-      <Box borderBottomWidth={1} borderBottomColor="var(--tgph-gray-4)" py={5}>
+    <Stack direction="column" w="full" h="full">
+      <Box borderBottom="px" py="5">
         <Heading as="h1" size="4">
           Notification settings
         </Heading>
@@ -108,57 +100,55 @@ const Preferences = ({ tenant, preferenceSet, updatePreferences }) => {
           .
         </Text>
       </Box>
-      <Flex py={3}>
+      <Stack py="4">
         <Box>
           <Text as="span">Notification type</Text>
         </Box>
-        <Flex gap={3} ml="auto" mr={3}>
+        <Stack gap="4" ml="auto" mr="4" direction="row">
           {Object.keys(ChannelTypes).map((channelType) => (
-            <Flex
-              key={channelType}
-              width="50px"
-              justifyContent="center"
-              alignItems="center"
-            >
+            <Stack key={channelType} width="16" justify="center" align="center">
               <Text size="1" as="span">
                 {ChannelTypes[channelType]}
               </Text>
-            </Flex>
+            </Stack>
           ))}
-        </Flex>
-      </Flex>
-
-      <Flex
-        flexDir="column"
-        bgColor="white"
-        width="550px"
-        borderColor="var(--tgph-gray-4)"
-        borderWidth={1}
-        borderBottomColor="transparent"
+        </Stack>
+      </Stack>
+      <Stack
+        direction="column"
+        borderTop="px"
+        borderLeft="px"
+        borderRight="px"
+        bg="surface-1"
+        w="full"
       >
-        {Object.keys(localPrefSet.categories).map((category) => (
-          <PreferenceSettingRow
-            key={category}
-            type="category"
-            name={category}
-            channelTypeSettings={
-              localPrefSet.categories[category].channel_types
-            }
-            onChange={onSettingsChange}
-          />
-        ))}
+        {localPrefSet.categories &&
+          Object.keys(localPrefSet.categories).map((category) => (
+            <PreferenceSettingRow
+              key={category}
+              type="category"
+              name={category}
+              channelTypeSettings={
+                localPrefSet.categories[category].channel_types
+              }
+              onChange={onSettingsChange}
+            />
+          ))}
 
-        {Object.keys(localPrefSet.workflows).map((workflow) => (
-          <PreferenceSettingRow
-            key={workflow}
-            type="workflow"
-            name={workflow}
-            channelTypeSettings={localPrefSet.workflows[workflow].channel_types}
-            onChange={onSettingsChange}
-          />
-        ))}
-      </Flex>
-    </Flex>
+        {localPrefSet.workflows &&
+          Object.keys(localPrefSet.workflows).map((workflow) => (
+            <PreferenceSettingRow
+              key={workflow}
+              type="workflow"
+              name={workflow}
+              channelTypeSettings={
+                localPrefSet.workflows[workflow].channel_types
+              }
+              onChange={onSettingsChange}
+            />
+          ))}
+      </Stack>
+    </Stack>
   );
 };
 

@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from "react";
+import { useCallback, useEffect, useState } from "react";
 
 export function useLocalStorage(key, initialValue) {
   const initialize = (key) => {
@@ -32,7 +32,7 @@ export function useLocalStorage(key, initialValue) {
         console.log(error);
       }
     },
-    [key, setState]
+    [key, setState],
   );
 
   const remove = useCallback(() => {

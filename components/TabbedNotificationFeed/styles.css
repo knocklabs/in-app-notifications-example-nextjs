@@ -33,11 +33,11 @@
   margin-right: 8px;
   font-weight: 400;
   border-bottom: 2px solid transparent;
-  transition: border-color .2s ease-in-out;
+  transition: border-color 0.2s ease-in-out;
 }
 
 .rnf-tabbed-notification-feed__header-tab--selected {
-  border-bottom-color: var(--tgph-accent-9)!important;
+  border-bottom-color: var(--tgph-accent-9) !important;
 }
 
 .rnf-tabbed-notification-feed__header-tab:hover {
