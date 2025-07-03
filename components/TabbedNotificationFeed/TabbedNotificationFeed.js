@@ -4,9 +4,9 @@ import {
   useKnockClient,
   useNotifications,
 } from "@knocklabs/react";
+import { useStore } from "@tanstack/react-store";
 import { Box, Stack } from "@telegraph/layout";
 import { useEffect, useRef, useState } from "react";
-import create from "zustand";
 
 import Feed from "./Feed";
 import { PageType } from "./constants";
@@ -54,7 +54,7 @@ const TabbedNotificationFeed = ({ tenant }) => {
     }
   }, [currentPageType, regularFeed, archivedFeed, tenant]);
 
-  const { metadata } = create(regularFeed.store)();
+  const { metadata } = useStore(regularFeed.store);
 
   return (
     <Stack display="flex" direction="column" style={{ width: "420px" }}>

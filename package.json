@@ -11,7 +11,8 @@
   "dependencies": {
     "@faker-js/faker": "^9.8.0",
     "@knocklabs/node": "^1.10.3",
-    "@knocklabs/react": "^0.7.15",
+    "@knocklabs/react": "^0.7.17",
+    "@tanstack/react-store": "^0.7.1",
     "@telegraph/button": "^0.0.80",
     "@telegraph/icon": "^0.0.53",
     "@telegraph/input": "^0.0.45",
