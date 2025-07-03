@@ -1,6 +1,6 @@
 import { NetworkStatus, isRequestInFlight } from "@knocklabs/client";
 import { Spinner } from "@knocklabs/react";
-import create from "zustand";
+import { useStore } from "@tanstack/react-store";
 
 import Header from "./Header";
 import { NotificationCell } from "./NotificationCell";
@@ -55,7 +55,7 @@ const Feed = ({
   onNotificationButtonClick,
   onNotificationClick,
 }) => {
-  const useNotificationStore = create(feedClient.store);
+  const useNotificationStore = useStore(feedClient.store);
   const { items, metadata, networkStatus } = useNotificationStore();
 
   const itemsToRender =
