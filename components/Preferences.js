@@ -42,7 +42,7 @@ const PreferenceSettingRow = ({
             <input
               type="checkbox"
               disabled={typeof channelTypeSettings[channelType] === "undefined"}
-              isChecked={channelTypeSettings[channelType]}
+              checked={channelTypeSettings[channelType]}
               onChange={(e) => {
                 onChange({
                   type,

@@ -38,6 +38,13 @@ const Header = ({
               ? "rnf-tabbed-notification-feed__header-tab--selected"
               : ""
           }`}
+          style={{
+            appearance: "none",
+            background: "none",
+            borderTop: "none",
+            borderLeft: "none",
+            borderRight: "none",
+          }}
         >
           {PageTypeLabel[pageType]}
         </button>
