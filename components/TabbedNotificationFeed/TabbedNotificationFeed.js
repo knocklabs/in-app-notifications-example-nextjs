@@ -54,7 +54,11 @@ const TabbedNotificationFeed = ({ tenant }) => {
     }
   }, [currentPageType, regularFeed, archivedFeed, tenant]);
 
-  const { metadata } = useStore(regularFeed.store);
+  console.log(regularFeed);
+
+  const metadata = {
+    unread_count: 0,
+  };
 
   return (
     <Stack display="flex" direction="column" style={{ width: "420px" }}>
