@@ -1256,17 +1256,7 @@
     "@telegraph/typography" "^0.1.21"
     clsx "^2.1.1"
 
-"@telegraph/layout@^0.1.18":
-  version "0.1.18"
-  resolved "https://registry.yarnpkg.com/@telegraph/layout/-/layout-0.1.18.tgz#dc77fea5537b69862a3b4acf5a16f0983e6b2a64"
-  integrity sha512-Kxku9f0AwAiBgnJF9eMGgFa92fgmSf+ub58BNIIeEPO2e5w+/th10hhNKVWuwZcXt8s0jCWDCkSZvDEaWuNBhA==
-  dependencies:
-    "@telegraph/compose-refs" "^0.0.6"
-    "@telegraph/helpers" "^0.0.12"
-    "@telegraph/style-engine" "^0.1.11"
-    clsx "^2.1.1"
-
-"@telegraph/layout@^0.1.21":
+"@telegraph/layout@^0.1.18", "@telegraph/layout@^0.1.21":
   version "0.1.21"
   resolved "https://registry.yarnpkg.com/@telegraph/layout/-/layout-0.1.21.tgz#1f3c93c06848cdb50e2646335436b65474c26d07"
   integrity sha512-C/Oehj+KCw7ZedBb8RAvZYAt8GCPebcqypU2vk/1ZLZ8olN+R0bhsYo8UL63dNZEq5kZZdYavtVmFfc5FGGrLw==

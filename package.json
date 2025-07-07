@@ -15,7 +15,7 @@
     "@tanstack/react-store": "^0.7.1",
     "@telegraph/button": "^0.0.80",
     "@telegraph/icon": "^0.0.53",
-    "@telegraph/input": "^0.0.45",
+    "@telegraph/input": "^0.0.48",
     "@telegraph/layout": "^0.1.18",
     "@telegraph/select": "^0.0.51",
     "@telegraph/style-engine": "^0.1.11",
