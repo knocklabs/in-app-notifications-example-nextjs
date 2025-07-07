@@ -55,8 +55,7 @@ const Feed = ({
   onNotificationButtonClick,
   onNotificationClick,
 }) => {
-  const useNotificationStore = useStore(feedClient.store);
-  const { items, metadata, networkStatus } = useNotificationStore();
+  const { items, metadata, networkStatus } = useStore(feedClient.store.store);
 
   const itemsToRender =
     currentPageType === PageType.New
