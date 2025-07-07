@@ -19,7 +19,7 @@
     "@telegraph/layout": "^0.1.18",
     "@telegraph/select": "^0.0.48",
     "@telegraph/style-engine": "^0.1.11",
-    "@telegraph/textarea": "^0.0.21",
+    "@telegraph/textarea": "^0.0.24",
     "@telegraph/tokens": "^0.0.21",
     "@telegraph/typography": "^0.1.18",
     "next": "^15.3.4",
