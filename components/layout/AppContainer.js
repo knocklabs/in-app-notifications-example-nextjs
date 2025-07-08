@@ -1,8 +1,9 @@
 import { KnockProvider } from "@knocklabs/react";
 import { Button } from "@telegraph/button";
-import { Icon, Lucide } from "@telegraph/icon";
+import { Icon } from "@telegraph/icon";
 import { Stack } from "@telegraph/layout";
 import { Select } from "@telegraph/select";
+import { Book, Github, Loader2 } from "lucide-react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
@@ -47,14 +48,14 @@ const AppContainer = ({ children }) => {
             as={Link}
             href="https://github.com/knocklabs/in-app-notifications-example-nextjs"
             variant="ghost"
-            icon={{ icon: Lucide.Github, "aria-hidden": true }}
+            icon={{ icon: Github, "aria-hidden": true }}
           >
             Github repo
           </Button>
           <Button
             as={Link}
             variant="ghost"
-            icon={{ icon: Lucide.Book, "aria-hidden": true }}
+            icon={{ icon: Book, "aria-hidden": true }}
             href="https://docs.knock.app/in-app-ui/react/overview"
           >
             Documentation
@@ -64,7 +65,7 @@ const AppContainer = ({ children }) => {
       <Stack bg="surface-2" w="full" h="full">
         {isLoading ? (
           <Stack align="center" justify="center">
-            <Icon icon={Lucide.Loader2} alt="Loading" />
+            <Icon icon={Loader2} alt="Loading" />
           </Stack>
         ) : (
           <KnockProvider

@@ -1,12 +1,13 @@
-import { Icon, Lucide } from "@telegraph/icon";
+import { Icon } from "@telegraph/icon";
 import { Stack } from "@telegraph/layout";
 import { Text } from "@telegraph/typography";
+import { AlertCircle, CheckCircle, Info, XCircle } from "lucide-react";
 
 const IconType = {
-  info: Lucide.Info,
-  warning: Lucide.AlertCircle,
-  success: Lucide.CheckCircle,
-  error: Lucide.XCircle,
+  info: Info,
+  warning: AlertCircle,
+  success: CheckCircle,
+  error: XCircle,
 };
 
 const IconColors = {
