@@ -9,3 +9,7 @@ updates:
       include: "scope"
     versioning-strategy: increase
     open-pull-requests-limit: 5
+    groups:
+      telegraph-packages:
+        patterns:
+          - "@telegraph/*"
