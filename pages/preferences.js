@@ -1,8 +1,9 @@
 import { useKnockClient } from "@knocklabs/react";
-import { Icon, Lucide } from "@telegraph/icon";
+import { Icon } from "@telegraph/icon";
 import { Box, Stack } from "@telegraph/layout";
 import { Select } from "@telegraph/select";
 import { Heading, Text } from "@telegraph/typography";
+import { Loader2 } from "lucide-react";
 import { useCallback, useEffect, useState } from "react";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import syntaxStyles from "react-syntax-highlighter/dist/cjs/styles/hljs/stackoverflow-light";
@@ -72,7 +73,7 @@ const Preferences = () => {
   if (!preferenceSet)
     return (
       <Stack align="center" justify="center">
-        <Icon icon={Lucide.Loader2} alt="Loading" />
+        <Icon icon={Loader2} alt="Loading" />
       </Stack>
     );
 
