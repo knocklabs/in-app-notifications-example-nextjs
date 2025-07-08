@@ -888,18 +888,6 @@
   dependencies:
     "@radix-ui/react-slot" "^1.2.3"
 
-"@telegraph/button@^0.0.80":
-  version "0.0.80"
-  resolved "https://registry.yarnpkg.com/@telegraph/button/-/button-0.0.80.tgz#5e4ee122aa9d3bc16c6dad5f0902dfdfde76ee89"
-  integrity sha512-HpdD3891MI9OL1inHAZY55mQYORpDQnCUpkOel0Euh/HZ5o9Ehom1WNqDiL8t9Hve0q+FmNI6NBjleNUpYPgkw==
-  dependencies:
-    "@telegraph/helpers" "^0.0.12"
-    "@telegraph/icon" "^0.0.53"
-    "@telegraph/layout" "^0.1.18"
-    "@telegraph/style-engine" "^0.1.11"
-    "@telegraph/typography" "^0.1.18"
-    clsx "^2.1.1"
-
 "@telegraph/button@^0.0.83":
   version "0.0.83"
   resolved "https://registry.yarnpkg.com/@telegraph/button/-/button-0.0.83.tgz#43e40a32c518007558f9a4a94a6cedb883390396"
@@ -937,11 +925,6 @@
     lucide-react "^0.525.0"
     motion "^12.23.0"
 
-"@telegraph/compose-refs@^0.0.6":
-  version "0.0.6"
-  resolved "https://registry.npmjs.org/@telegraph/compose-refs/-/compose-refs-0.0.6.tgz"
-  integrity sha512-ngxLPNb70NAxI7E2/7dBC9JIHV8RSdAPbpRPEEzrQxmZZLLYTGBsloM++nFm8CFptb78ZZ+Y7ZZ9BUrKokpmsQ==
-
 "@telegraph/compose-refs@^0.0.7":
   version "0.0.7"
   resolved "https://registry.yarnpkg.com/@telegraph/compose-refs/-/compose-refs-0.0.7.tgz#98d43394367c7503fde60be9de400b0697113992"
@@ -952,21 +935,6 @@
   resolved "https://registry.yarnpkg.com/@telegraph/helpers/-/helpers-0.0.13.tgz#235bd2acc74334a2970d8e1334fb2dd745af9c1e"
   integrity sha512-mDb6r7v8IMT7NpaD7xn2Nn/QJNsbBgTaQfR1CFW6WHS02sNiCopWpeUpUGzj9u57LrYaJF5CaxNbxJA2hu/34Q==
 
-"@telegraph/helpers@^0.0.12":
-  version "0.0.12"
-  resolved "https://registry.yarnpkg.com/@telegraph/helpers/-/helpers-0.0.12.tgz#c59623076ce26cc411017febf6341cad1802d67a"
-  integrity sha512-RroWLQY4tqaLUTqb8snkYPWjMCMeN0xFz51jLG9cV08xj6dHVEhVum7O+KnKTjEnFl56Y9EqDJALT3yOjWjRuQ==
-
-"@telegraph/icon@^0.0.53":
-  version "0.0.53"
-  resolved "https://registry.yarnpkg.com/@telegraph/icon/-/icon-0.0.53.tgz#0d44a7830eb88ff9fd4b91868e7b1272958aa13d"
-  integrity sha512-77NUjZ+DBAgQjFrFWdzojLix51DllPNaFuXu4WecMSrGQy9x3QDCacKlFcPcuEQZUmyY2R/MDMSkQJax7bvL4A==
-  dependencies:
-    "@telegraph/helpers" "^0.0.12"
-    "@telegraph/typography" "^0.1.18"
-    clsx "^2.1.1"
-    lucide-react "^0.511.0"
-
 "@telegraph/icon@^0.1.0":
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/@telegraph/icon/-/icon-0.1.0.tgz#25f3e9766c3f2a58b79e335950ddf1550efe2848"
@@ -976,18 +944,6 @@
     "@telegraph/typography" "^0.1.21"
     clsx "^2.1.1"
     lucide-react "^0.525.0"
-
-"@telegraph/input@^0.0.45":
-  version "0.0.45"
-  resolved "https://registry.yarnpkg.com/@telegraph/input/-/input-0.0.45.tgz#c16fa31a2af851e68b34d5d241de6c4582977ed2"
-  integrity sha512-d0MOnfYuokg1Hj/d5f6UZ2IhwZyATucd5pFoOoX1GZ3XltGD7qlMsHvvtjsvQ97RbNIanm5AU6EeT2zpfyDS3A==
-  dependencies:
-    "@radix-ui/react-slot" "^1.2.3"
-    "@telegraph/compose-refs" "^0.0.6"
-    "@telegraph/helpers" "^0.0.12"
-    "@telegraph/layout" "^0.1.18"
-    "@telegraph/typography" "^0.1.18"
-    clsx "^2.1.1"
 
 "@telegraph/input@^0.0.48":
   version "0.0.48"
@@ -1064,11 +1020,6 @@
   dependencies:
     "@telegraph/helpers" "^0.0.13"
     "@telegraph/typography" "^0.1.21"
-
-"@telegraph/tokens@^0.0.21":
-  version "0.0.21"
-  resolved "https://registry.yarnpkg.com/@telegraph/tokens/-/tokens-0.0.21.tgz#a860d6275767ceb34995ca7ac99d3a8b323d5033"
-  integrity sha512-mzXKBDl6S7tEUZf1vOnPnDSCHaIkdEHWYV0Mb82h/T++phD1knVaEO8+JcQmHsICLVHZVu/f5DUvifu2EAW7EQ==
 
 "@telegraph/tokens@^0.0.22":
   version "0.0.22"
@@ -2932,11 +2883,6 @@ lowlight@^1.17.0:
     fault "^1.0.0"
     highlight.js "~10.7.0"
 
-lucide-react@^0.511.0:
-  version "0.511.0"
-  resolved "https://registry.yarnpkg.com/lucide-react/-/lucide-react-0.511.0.tgz#1dfef3065c725ac83f5fe0a6f02d1e0b0c36e641"
-  integrity sha512-VK5a2ydJ7xm8GvBeKLS9mu1pVK6ucef9780JVUjw6bAjJL/QXnd4Y0p7SPeOUMC27YhzNCZvm5d/QX0Tp3rc0w==
-
 lucide-react@^0.525.0:
   version "0.525.0"
   resolved "https://registry.yarnpkg.com/lucide-react/-/lucide-react-0.525.0.tgz#5f7bcecd65e4f9b2b5b6b5d295e3376df032d5e3"
@@ -3740,10 +3686,10 @@ supports-preserve-symlinks-flag@^1.0.0:
   resolved "https://registry.npmjs.org/supports-preserve-symlinks-flag/-/supports-preserve-symlinks-flag-1.0.0.tgz"
   integrity sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==
 
-swr@^2.3.3:
-  version "2.3.3"
-  resolved "https://registry.yarnpkg.com/swr/-/swr-2.3.3.tgz#9d6a703355f15f9099f45114db3ef75764444788"
-  integrity sha512-dshNvs3ExOqtZ6kJBaAsabhPdHyeY4P2cKwRCniDVifBMoG/SVI7tfLWqPXriVspf2Rg4tPzXJTnwaihIeFw2A==
+swr@^2.3.3, swr@^2.3.4:
+  version "2.3.4"
+  resolved "https://registry.yarnpkg.com/swr/-/swr-2.3.4.tgz#60bcb5b97cae157a6ef69eff0ed2beb9010eba69"
+  integrity sha512-bYd2lrhc+VarcpkgWclcUi92wYCpOgMws9Sd1hG1ntAu0NEy+14CbotuFjshBU2kt9rYj9TSmDcybpxpeTU1fg==
   dependencies:
     dequal "^2.0.3"
     use-sync-external-store "^1.4.0"
@@ -3904,12 +3850,7 @@ use-sidecar@^1.1.3:
     detect-node-es "^1.1.0"
     tslib "^2.0.0"
 
-use-sync-external-store@^1.4.0:
-  version "1.4.0"
-  resolved "https://registry.npmjs.org/use-sync-external-store/-/use-sync-external-store-1.4.0.tgz"
-  integrity sha512-9WXSPC5fMv61vaupRkCKCxsPxBocVnwakBEkMIHHpkTTg6icbJtg6jzgtLDm4bl3cSHAca52rYWih0k4K3PfHw==
-
-use-sync-external-store@^1.5.0:
+use-sync-external-store@^1.4.0, use-sync-external-store@^1.5.0:
   version "1.5.0"
   resolved "https://registry.yarnpkg.com/use-sync-external-store/-/use-sync-external-store-1.5.0.tgz#55122e2a3edd2a6c106174c27485e0fd59bcfca0"
   integrity sha512-Rb46I4cGGVBmjamjphe8L/UnvJD+uPPtTkNvX5mZgqdbavhI4EbgIWJiIHXJ8bc/i9EQGPRh4DwEURJ552Do0A==
