@@ -440,10 +440,10 @@
     "@jridgewell/resolve-uri" "^3.1.0"
     "@jridgewell/sourcemap-codec" "^1.4.14"
 
-"@knocklabs/client@^0.14.11":
-  version "0.14.11"
-  resolved "https://registry.yarnpkg.com/@knocklabs/client/-/client-0.14.11.tgz#011962145339a11355702d7cfc0c5451607f14ad"
-  integrity sha512-S+wArEP3CGW1KvON9r/uDddQAqWJkdeWuunwwZUxoTPKv1HKAq4avwcmJqAnwSck7yPY6e9svTqyGk2UHRlbXw==
+"@knocklabs/client@^0.15.0":
+  version "0.15.0"
+  resolved "https://registry.yarnpkg.com/@knocklabs/client/-/client-0.15.0.tgz#09483bea7013ed858b940ab5f6c3bd0eb84972f9"
+  integrity sha512-KhHcmiufH/n5F4xIldZO3kXrQIcX8jzZdSgFi8nxyY+zML7xnqEm3Zy+j1h+H6/U9bjQvJ86mnfJhawnY3M/2g==
   dependencies:
     "@babel/runtime" "^7.27.1"
     "@knocklabs/types" "^0.1.5"
@@ -470,24 +470,24 @@
     "@trivago/prettier-plugin-sort-imports" "^4.3.0"
     prettier "^3.1.0"
 
-"@knocklabs/react-core@^0.6.15":
-  version "0.6.15"
-  resolved "https://registry.yarnpkg.com/@knocklabs/react-core/-/react-core-0.6.15.tgz#05fabf2237b389550a969ecf696395cd6630aaa2"
-  integrity sha512-ph6ys5+NObTNludwwhUA+o5ts14rTSJKWWRrQ86MUXMYyvUxCwt1z+SaTw42dYJz0FqHXet4emjjjITICz7FXQ==
+"@knocklabs/react-core@^0.7.0":
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/@knocklabs/react-core/-/react-core-0.7.0.tgz#bb592ab6cf89f0cd0a928db21a77f68c01db8ec0"
+  integrity sha512-LX0veESP1Versyj4w6Uyp+zcSO7FiUOd6W6thhaGuoGmA9kjsmTjjArRUnn0nx5r4ANYXHQZ0LIPWgxVggFoqg==
   dependencies:
-    "@knocklabs/client" "^0.14.11"
+    "@knocklabs/client" "^0.15.0"
     "@tanstack/react-store" "^0.7.1"
     date-fns "^4.0.0"
     fast-deep-equal "^3.1.3"
     swr "^2.3.3"
 
-"@knocklabs/react@^0.7.19":
-  version "0.7.19"
-  resolved "https://registry.yarnpkg.com/@knocklabs/react/-/react-0.7.19.tgz#2b19f85ba6d56d8d60419d1c5e3ff23f5b3a697e"
-  integrity sha512-zM0aRMTS0rj80WUvhy2uBEIdyiTaMBDf9Q91mkCDAOM41CU9qY0XdiFkQG2kXjLzLMTz1giMeT7n+FbXryt7RA==
+"@knocklabs/react@^0.7.21":
+  version "0.7.21"
+  resolved "https://registry.yarnpkg.com/@knocklabs/react/-/react-0.7.21.tgz#f76a46388559b12a0b274d9f04c640730a2d796d"
+  integrity sha512-FDEn2cC8RA9vwXDZXwoOf7+rkUhJNJwM1tHW8uAOuK+d38SMGPGJY9NVCXkK4rs/ssgPkvrPsJLRbotFZkIN0A==
   dependencies:
-    "@knocklabs/client" "^0.14.11"
-    "@knocklabs/react-core" "^0.6.15"
+    "@knocklabs/client" "^0.15.0"
+    "@knocklabs/react-core" "^0.7.0"
     "@popperjs/core" "^2.11.8"
     "@radix-ui/react-dialog" "^1.1.14"
     "@telegraph/combobox" "^0.0.89"
