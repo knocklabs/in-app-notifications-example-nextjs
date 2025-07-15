@@ -457,10 +457,10 @@
     phoenix "1.7.19"
     urlpattern-polyfill "^10.0.0"
 
-"@knocklabs/node@^1.10.3":
-  version "1.10.3"
-  resolved "https://registry.yarnpkg.com/@knocklabs/node/-/node-1.10.3.tgz#fa335da90faca05601f3d6af0f3fdc6d2596d1c3"
-  integrity sha512-F6ubaSVhnKAwi//0RbKLoEpb/ZelcJvfxx1MLC617WnbiSlpm/Kr/ZYlPjNYOYJbsbckKJ96zxe0gQATuMOqAg==
+"@knocklabs/node@^1.11.0":
+  version "1.11.0"
+  resolved "https://registry.yarnpkg.com/@knocklabs/node/-/node-1.11.0.tgz#aa48b6e79a762524fca0fc73e4c4c313702bffcf"
+  integrity sha512-Eysb1AwjkdV4ktnavNN+df9MC7/EMbmoHiI2yLDR5LZ9OYm1MqHqXRecIRn+9xS90q3X/ijH+si/GXAAsURJeA==
 
 "@knocklabs/prettier-config@^0.0.1":
   version "0.0.1"
