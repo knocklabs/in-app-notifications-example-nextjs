@@ -901,7 +901,31 @@
     clsx "^2.1.1"
     lucide-react "^0.525.0"
 
-"@telegraph/combobox@0.0.89", "@telegraph/combobox@^0.0.89":
+"@telegraph/combobox@0.0.90":
+  version "0.0.90"
+  resolved "https://registry.yarnpkg.com/@telegraph/combobox/-/combobox-0.0.90.tgz#9f96d99f6e99f4486cdb32a8c737e36397011407"
+  integrity sha512-cLvt3mw7Gwdb9g4LIzZ5V8maEgxIh7ZyBL+ucA+hgT8G6+7sNqyimUKpV5/WirdSvxG5fLhzBOaT7aGDpDAkKw==
+  dependencies:
+    "@radix-ui/react-dismissable-layer" "^1.1.10"
+    "@radix-ui/react-menu" "^2.1.15"
+    "@radix-ui/react-portal" "^1.1.9"
+    "@radix-ui/react-use-controllable-state" "^1.2.2"
+    "@radix-ui/react-visually-hidden" "^1.2.3"
+    "@telegraph/button" "^0.0.83"
+    "@telegraph/compose-refs" "^0.0.7"
+    "@telegraph/helpers" "^0.0.13"
+    "@telegraph/icon" "^0.1.0"
+    "@telegraph/input" "^0.0.48"
+    "@telegraph/layout" "^0.1.21"
+    "@telegraph/menu" "^0.0.71"
+    "@telegraph/tag" "^0.0.91"
+    "@telegraph/tooltip" "^0.0.52"
+    "@telegraph/truncate" "^0.0.7"
+    "@telegraph/typography" "^0.1.21"
+    lucide-react "^0.525.0"
+    motion "^12.23.0"
+
+"@telegraph/combobox@^0.0.89":
   version "0.0.89"
   resolved "https://registry.yarnpkg.com/@telegraph/combobox/-/combobox-0.0.89.tgz#e87ecde66caf65d1cb32f1dc53e7b368903b339f"
   integrity sha512-fLkK2hLH5iiobptEvRSWm12simqwwJljUl2MUw1ONxdjDLXCLBKzCxppvqRCvWMa/HmDdw1jcmBAR+FQx7VYvA==
@@ -981,12 +1005,12 @@
     lucide-react "^0.525.0"
     motion "^12.23.0"
 
-"@telegraph/select@^0.0.51":
-  version "0.0.51"
-  resolved "https://registry.yarnpkg.com/@telegraph/select/-/select-0.0.51.tgz#79a75a971861d3ac61900fcfa737565b4a66afa9"
-  integrity sha512-Pgkuvm0F7xnMqIN8t/TQw3KoXZocQ2pWKRFxwEjKJq2kBkXYv9z1mgnEZYUbzqkmjJEQKb08DZtoPEIgfNh1Jg==
+"@telegraph/select@^0.0.52":
+  version "0.0.52"
+  resolved "https://registry.yarnpkg.com/@telegraph/select/-/select-0.0.52.tgz#c014e1c88bb65e00ab8c9a3daf2b2e12857d7c44"
+  integrity sha512-stdUqJ9lf1KVl+3fM/lEtEJ5cwdy4e4XNFN5u9Oci83cIGVv+Q7/T9400cPWB/+ErN827V2XJgVpdPGBi5p8Vw==
   dependencies:
-    "@telegraph/combobox" "0.0.89"
+    "@telegraph/combobox" "0.0.90"
     "@telegraph/helpers" "0.0.13"
 
 "@telegraph/style-engine@^0.1.11", "@telegraph/style-engine@^0.1.13":
