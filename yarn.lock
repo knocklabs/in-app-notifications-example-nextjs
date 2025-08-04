@@ -450,10 +450,12 @@
     phoenix "1.7.19"
     urlpattern-polyfill "^10.0.0"
 
-"@knocklabs/node@^1.10.3":
-  version "1.10.3"
-  resolved "https://registry.yarnpkg.com/@knocklabs/node/-/node-1.10.3.tgz#fa335da90faca05601f3d6af0f3fdc6d2596d1c3"
-  integrity sha512-F6ubaSVhnKAwi//0RbKLoEpb/ZelcJvfxx1MLC617WnbiSlpm/Kr/ZYlPjNYOYJbsbckKJ96zxe0gQATuMOqAg==
+"@knocklabs/node@^1.11.2":
+  version "1.11.2"
+  resolved "https://registry.yarnpkg.com/@knocklabs/node/-/node-1.11.2.tgz#74b7758be4507af44801055de214a573764fe366"
+  integrity sha512-0/xTvyJ6n6nzb3ygNQ5DXVwQkJcPrty4qLqE5GaxbYhpkEgl66CAvd6oNTtMnhKbhgh7UqO6n3bq1hzb05tZ6g==
+  dependencies:
+    jose "^6.0.11"
 
 "@knocklabs/prettier-config@^0.0.1":
   version "0.0.1"
@@ -2887,6 +2889,11 @@ javascript-natural-sort@0.7.1:
   version "0.7.1"
   resolved "https://registry.yarnpkg.com/javascript-natural-sort/-/javascript-natural-sort-0.7.1.tgz#f9e2303d4507f6d74355a73664d1440fb5a0ef59"
   integrity sha512-nO6jcEfZWQXDhOiBtG2KvKyEptz7RVbpGP4vTD2hLBdmNQSsCiicO2Ioinv6UI4y9ukqnBpy+XZ9H6uLNgJTlw==
+
+jose@^6.0.11:
+  version "6.0.12"
+  resolved "https://registry.yarnpkg.com/jose/-/jose-6.0.12.tgz#56253d94d46bd784addc4bde3691c323552fe7e4"
+  integrity sha512-T8xypXs8CpmiIi78k0E+Lk7T2zlK4zDyg+o1CZ4AkOHgDg98ogdP2BeZ61lTFKFyoEwJ9RgAgN+SdM3iPgNonQ==
 
 "js-tokens@^3.0.0 || ^4.0.0", js-tokens@^4.0.0:
   version "4.0.0"
