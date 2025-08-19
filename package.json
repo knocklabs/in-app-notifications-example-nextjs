@@ -22,7 +22,7 @@
     "@telegraph/textarea": "^0.1.1",
     "@telegraph/tokens": "^0.1.1",
     "@telegraph/typography": "^0.1.18",
-    "lucide-react": "^0.536.0",
+    "lucide-react": "^0.540.0",
     "next": "^15.4.6",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
