@@ -444,10 +444,10 @@
     phoenix "1.7.21"
     urlpattern-polyfill "^10.0.0"
 
-"@knocklabs/node@^1.11.2":
-  version "1.11.2"
-  resolved "https://registry.yarnpkg.com/@knocklabs/node/-/node-1.11.2.tgz#74b7758be4507af44801055de214a573764fe366"
-  integrity sha512-0/xTvyJ6n6nzb3ygNQ5DXVwQkJcPrty4qLqE5GaxbYhpkEgl66CAvd6oNTtMnhKbhgh7UqO6n3bq1hzb05tZ6g==
+"@knocklabs/node@^1.11.8":
+  version "1.11.8"
+  resolved "https://registry.yarnpkg.com/@knocklabs/node/-/node-1.11.8.tgz#a44acf84a7c9b17e4965a19a0b77d6ab6893562d"
+  integrity sha512-FiUMny/guni4htGFbZ+Rz6mFSaI9JCWEtXo/ca/mGe3NS4CR1bsmuFhGUtWQtjSlQpOdRgVG0imF6xnDE0y98g==
   dependencies:
     jose "^6.0.11"
 
@@ -2870,15 +2870,15 @@ lucide-react@^0.525.0:
   resolved "https://registry.yarnpkg.com/lucide-react/-/lucide-react-0.525.0.tgz#5f7bcecd65e4f9b2b5b6b5d295e3376df032d5e3"
   integrity sha512-Tm1txJ2OkymCGkvwoHt33Y2JpN5xucVq1slHcgE6Lk0WjDfjgKWor5CdVER8U6DvcfMwh4M8XxmpTiyzfmfDYQ==
 
-lucide-react@^0.540.0:
-  version "0.540.0"
-  resolved "https://registry.yarnpkg.com/lucide-react/-/lucide-react-0.540.0.tgz#c681f67c245c619de67c26dbe83a88412b5e7ff8"
-  integrity sha512-armkCAqQvO62EIX4Hq7hqX/q11WSZu0Jd23cnnqx0/49yIxGXyL/zyZfBxNN9YDx0ensPTb4L+DjTh3yQXUxtQ==
-
 lucide-react@^0.539.0:
   version "0.539.0"
   resolved "https://registry.yarnpkg.com/lucide-react/-/lucide-react-0.539.0.tgz#0d0fcd53ed7042c603d201035d9315171ed7654c"
   integrity sha512-VVISr+VF2krO91FeuCrm1rSOLACQUYVy7NQkzrOty52Y8TlTPcXcMdQFj9bYzBgXbWCiywlwSZ3Z8u6a+6bMlg==
+
+lucide-react@^0.540.0:
+  version "0.540.0"
+  resolved "https://registry.yarnpkg.com/lucide-react/-/lucide-react-0.540.0.tgz#c681f67c245c619de67c26dbe83a88412b5e7ff8"
+  integrity sha512-armkCAqQvO62EIX4Hq7hqX/q11WSZu0Jd23cnnqx0/49yIxGXyL/zyZfBxNN9YDx0ensPTb4L+DjTh3yQXUxtQ==
 
 math-intrinsics@^1.1.0:
   version "1.1.0"
