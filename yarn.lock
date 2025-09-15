@@ -852,18 +852,18 @@
   dependencies:
     tslib "^2.8.0"
 
-"@tanstack/react-store@^0.7.1", "@tanstack/react-store@^0.7.3":
-  version "0.7.3"
-  resolved "https://registry.yarnpkg.com/@tanstack/react-store/-/react-store-0.7.3.tgz#567d3983e654b7e5cc83fbc8a20088a319305ce0"
-  integrity sha512-3Dnqtbw9P2P0gw8uUM8WP2fFfg8XMDSZCTsywRPZe/XqqYW8PGkXKZTvP0AHkE4mpqP9Y43GpOg9vwO44azu6Q==
+"@tanstack/react-store@^0.7.3", "@tanstack/react-store@^0.7.5":
+  version "0.7.5"
+  resolved "https://registry.yarnpkg.com/@tanstack/react-store/-/react-store-0.7.5.tgz#a8cb11a5687bd322ab0ae20b651503c28b9ac6b1"
+  integrity sha512-A+WZtEnHZpvbKXm8qR+xndNKywBLez2KKKKEQc7w0Qs45GvY1LpRI3BTZNmELwEVim8+Apf99iEDH2J+MUIzlQ==
   dependencies:
-    "@tanstack/store" "0.7.2"
+    "@tanstack/store" "0.7.5"
     use-sync-external-store "^1.5.0"
 
-"@tanstack/store@0.7.2", "@tanstack/store@^0.7.2":
-  version "0.7.2"
-  resolved "https://registry.yarnpkg.com/@tanstack/store/-/store-0.7.2.tgz#2e04dac17f7d904539eeb797d8ba0058cee4edf7"
-  integrity sha512-RP80Z30BYiPX2Pyo0Nyw4s1SJFH2jyM6f9i3HfX4pA+gm5jsnYryscdq2aIQLnL4TaGuQMO+zXmN9nh1Qck+Pg==
+"@tanstack/store@0.7.5", "@tanstack/store@^0.7.2":
+  version "0.7.5"
+  resolved "https://registry.yarnpkg.com/@tanstack/store/-/store-0.7.5.tgz#91c3ffa94a06add47aab917819e8032420fef628"
+  integrity sha512-qd/OjkjaFRKqKU4Yjipaen/EOB9MyEg6Wr9fW103RBPACf1ZcKhbhcu2S5mj5IgdPib6xFIgCUti/mKVkl+fRw==
 
 "@telegraph/appearance@^0.0.11":
   version "0.0.11"
