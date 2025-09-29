@@ -590,6 +590,11 @@
   resolved "https://registry.yarnpkg.com/@radix-ui/primitive/-/primitive-1.1.2.tgz#83f415c4425f21e3d27914c12b3272a32e3dae65"
   integrity sha512-XnbHrrprsNqZKQhStrSwgRUQzoCI1glLzdw79xiZPoofhGICeZRSQ3dIxAKH1gb3OHfNf4d6f+vAv3kil2eggA==
 
+"@radix-ui/primitive@1.1.3":
+  version "1.1.3"
+  resolved "https://registry.yarnpkg.com/@radix-ui/primitive/-/primitive-1.1.3.tgz#e2dbc13bdc5e4168f4334f75832d7bdd3e2de5ba"
+  integrity sha512-JTF99U/6XIjCBo0wqkU5sK10glYe27MRRsfwoiq5zzOEZLHU3A3KCMa5X/azekYRCJ0HlwI0crAXS/5dEHTzDg==
+
 "@radix-ui/react-arrow@1.1.7":
   version "1.1.7"
   resolved "https://registry.yarnpkg.com/@radix-ui/react-arrow/-/react-arrow-1.1.7.tgz#e14a2657c81d961598c5e72b73dd6098acc04f09"
@@ -653,10 +658,26 @@
     "@radix-ui/react-use-callback-ref" "1.1.1"
     "@radix-ui/react-use-escape-keydown" "1.1.1"
 
+"@radix-ui/react-dismissable-layer@1.1.11":
+  version "1.1.11"
+  resolved "https://registry.yarnpkg.com/@radix-ui/react-dismissable-layer/-/react-dismissable-layer-1.1.11.tgz#e33ab6f6bdaa00f8f7327c408d9f631376b88b37"
+  integrity sha512-Nqcp+t5cTB8BinFkZgXiMJniQH0PsUt2k51FUhbdfeKvc4ACcG2uQniY/8+h1Yv6Kza4Q7lD7PQV0z0oicE0Mg==
+  dependencies:
+    "@radix-ui/primitive" "1.1.3"
+    "@radix-ui/react-compose-refs" "1.1.2"
+    "@radix-ui/react-primitive" "2.1.3"
+    "@radix-ui/react-use-callback-ref" "1.1.1"
+    "@radix-ui/react-use-escape-keydown" "1.1.1"
+
 "@radix-ui/react-focus-guards@1.1.2":
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/@radix-ui/react-focus-guards/-/react-focus-guards-1.1.2.tgz#4ec9a7e50925f7fb661394460045b46212a33bed"
   integrity sha512-fyjAACV62oPV925xFCrH8DR5xWhg9KYtJT4s3u54jxp+L/hbpTY2kIeEFFbFe+a/HCE94zGQMZLIpVTPVZDhaA==
+
+"@radix-ui/react-focus-guards@1.1.3":
+  version "1.1.3"
+  resolved "https://registry.yarnpkg.com/@radix-ui/react-focus-guards/-/react-focus-guards-1.1.3.tgz#2a5669e464ad5fde9f86d22f7fdc17781a4dfa7f"
+  integrity sha512-0rFg/Rj2Q62NCm62jZw0QX7a3sz6QCQU0LpZdNrJX8byRGaGVTqbrW9jAoIAHyMQqsNpeZ81YgSizOt5WXq0Pw==
 
 "@radix-ui/react-focus-scope@1.1.7":
   version "1.1.7"
@@ -674,25 +695,25 @@
   dependencies:
     "@radix-ui/react-use-layout-effect" "1.1.1"
 
-"@radix-ui/react-menu@^2.1.15":
-  version "2.1.15"
-  resolved "https://registry.yarnpkg.com/@radix-ui/react-menu/-/react-menu-2.1.15.tgz#a1a8f06cab3c309f9998cdbd2b3ad279e42ed483"
-  integrity sha512-tVlmA3Vb9n8SZSd+YSbuFR66l87Wiy4du+YE+0hzKQEANA+7cWKH1WgqcEX4pXqxUFQKrWQGHdvEfw00TjFiew==
+"@radix-ui/react-menu@^2.1.16":
+  version "2.1.16"
+  resolved "https://registry.yarnpkg.com/@radix-ui/react-menu/-/react-menu-2.1.16.tgz#528a5a973c3a7413d3d49eb9ccd229aa52402911"
+  integrity sha512-72F2T+PLlphrqLcAotYPp0uJMr5SjP5SL01wfEspJbru5Zs5vQaSHb4VB3ZMJPimgHHCHG7gMOeOB9H3Hdmtxg==
   dependencies:
-    "@radix-ui/primitive" "1.1.2"
+    "@radix-ui/primitive" "1.1.3"
     "@radix-ui/react-collection" "1.1.7"
     "@radix-ui/react-compose-refs" "1.1.2"
     "@radix-ui/react-context" "1.1.2"
     "@radix-ui/react-direction" "1.1.1"
-    "@radix-ui/react-dismissable-layer" "1.1.10"
-    "@radix-ui/react-focus-guards" "1.1.2"
+    "@radix-ui/react-dismissable-layer" "1.1.11"
+    "@radix-ui/react-focus-guards" "1.1.3"
     "@radix-ui/react-focus-scope" "1.1.7"
     "@radix-ui/react-id" "1.1.1"
-    "@radix-ui/react-popper" "1.2.7"
+    "@radix-ui/react-popper" "1.2.8"
     "@radix-ui/react-portal" "1.1.9"
-    "@radix-ui/react-presence" "1.1.4"
+    "@radix-ui/react-presence" "1.1.5"
     "@radix-ui/react-primitive" "2.1.3"
-    "@radix-ui/react-roving-focus" "1.1.10"
+    "@radix-ui/react-roving-focus" "1.1.11"
     "@radix-ui/react-slot" "1.2.3"
     "@radix-ui/react-use-callback-ref" "1.1.1"
     aria-hidden "^1.2.4"
@@ -702,6 +723,22 @@
   version "1.2.7"
   resolved "https://registry.yarnpkg.com/@radix-ui/react-popper/-/react-popper-1.2.7.tgz#531cf2eebb3d3270d58f7d8136e4517646429978"
   integrity sha512-IUFAccz1JyKcf/RjB552PlWwxjeCJB8/4KxT7EhBHOJM+mN7LdW+B3kacJXILm32xawcMMjb2i0cIZpo+f9kiQ==
+  dependencies:
+    "@floating-ui/react-dom" "^2.0.0"
+    "@radix-ui/react-arrow" "1.1.7"
+    "@radix-ui/react-compose-refs" "1.1.2"
+    "@radix-ui/react-context" "1.1.2"
+    "@radix-ui/react-primitive" "2.1.3"
+    "@radix-ui/react-use-callback-ref" "1.1.1"
+    "@radix-ui/react-use-layout-effect" "1.1.1"
+    "@radix-ui/react-use-rect" "1.1.1"
+    "@radix-ui/react-use-size" "1.1.1"
+    "@radix-ui/rect" "1.1.1"
+
+"@radix-ui/react-popper@1.2.8":
+  version "1.2.8"
+  resolved "https://registry.yarnpkg.com/@radix-ui/react-popper/-/react-popper-1.2.8.tgz#a79f39cdd2b09ab9fb50bf95250918422c4d9602"
+  integrity sha512-0NJQ4LFFUuWkE7Oxf0htBKS6zLkkjBH+hM1uk7Ng705ReR8m/uelduy1DBo0PyBXPKVnBA6YBlU94MBGXrSBCw==
   dependencies:
     "@floating-ui/react-dom" "^2.0.0"
     "@radix-ui/react-arrow" "1.1.7"
@@ -730,6 +767,14 @@
     "@radix-ui/react-compose-refs" "1.1.2"
     "@radix-ui/react-use-layout-effect" "1.1.1"
 
+"@radix-ui/react-presence@1.1.5":
+  version "1.1.5"
+  resolved "https://registry.yarnpkg.com/@radix-ui/react-presence/-/react-presence-1.1.5.tgz#5d8f28ac316c32f078afce2996839250c10693db"
+  integrity sha512-/jfEwNDdQVBCNvjkGit4h6pMOzq8bHkopq458dPt2lMjx+eBQUohZNG9A7DtO/O5ukSbxuaNGXMjHicgwy6rQQ==
+  dependencies:
+    "@radix-ui/react-compose-refs" "1.1.2"
+    "@radix-ui/react-use-layout-effect" "1.1.1"
+
 "@radix-ui/react-primitive@2.1.3":
   version "2.1.3"
   resolved "https://registry.yarnpkg.com/@radix-ui/react-primitive/-/react-primitive-2.1.3.tgz#db9b8bcff49e01be510ad79893fb0e4cda50f1bc"
@@ -737,12 +782,12 @@
   dependencies:
     "@radix-ui/react-slot" "1.2.3"
 
-"@radix-ui/react-roving-focus@1.1.10":
-  version "1.1.10"
-  resolved "https://registry.yarnpkg.com/@radix-ui/react-roving-focus/-/react-roving-focus-1.1.10.tgz#46030496d2a490c4979d29a7e1252465e51e4b0b"
-  integrity sha512-dT9aOXUen9JSsxnMPv/0VqySQf5eDQ6LCk5Sw28kamz8wSOW2bJdlX2Bg5VUIIcV+6XlHpWTIuTPCf/UNIyq8Q==
+"@radix-ui/react-roving-focus@1.1.11":
+  version "1.1.11"
+  resolved "https://registry.yarnpkg.com/@radix-ui/react-roving-focus/-/react-roving-focus-1.1.11.tgz#ef54384b7361afc6480dcf9907ef2fedb5080fd9"
+  integrity sha512-7A6S9jSgm/S+7MdtNDSb+IU859vQqJ/QAtcYQcfFC6W8RS4IxIZDldLR0xqCFZ6DCyrQLjLPsxtTNch5jVA4lA==
   dependencies:
-    "@radix-ui/primitive" "1.1.2"
+    "@radix-ui/primitive" "1.1.3"
     "@radix-ui/react-collection" "1.1.7"
     "@radix-ui/react-compose-refs" "1.1.2"
     "@radix-ui/react-context" "1.1.2"
@@ -872,78 +917,41 @@
   dependencies:
     "@radix-ui/react-slot" "^1.2.3"
 
-"@telegraph/button@^0.1.1":
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/@telegraph/button/-/button-0.1.1.tgz#162a44b908350d24d0b5887d7b9ea841e706f01c"
-  integrity sha512-2w3jnMT5yaWLbriDdnrd29bJI+yN6BfJA5zLe1TNZJ5mHZIN61iO5Nm64oH9onk43HeCuF/KTwHezT9YdAb5IQ==
+"@telegraph/button@^0.2.1":
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/@telegraph/button/-/button-0.2.1.tgz#f7718f9fd0b0e944463277850be9a272bb635064"
+  integrity sha512-wG+2DgGP/7UG/elZNUaWV1T7F++CGHnhfCwsmkf/bxFA5Iesdjv76Re6Vh+eTtwyZvOmFZ/BlQxFOUulPC0wpA==
   dependencies:
     "@telegraph/helpers" "^0.0.13"
-    "@telegraph/icon" "^0.2.1"
+    "@telegraph/icon" "^0.2.4"
     "@telegraph/layout" "^0.2.1"
     "@telegraph/style-engine" "^0.1.15"
     "@telegraph/typography" "^0.1.23"
     clsx "^2.1.1"
-    lucide-react "^0.525.0"
+    lucide-react "^0.542.0"
 
-"@telegraph/button@^0.1.2":
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/@telegraph/button/-/button-0.1.2.tgz#b3a9934269095ccde720c7dfd5c4ea28feefbba9"
-  integrity sha512-IyLPz1fHMqvbH2y3z/V1va6pHjyNXbDMIIsIXlbO8fl2xC6LOMvulyndFDewQMMcugZZ9/RSzqsdkDoOqOzbbQ==
-  dependencies:
-    "@telegraph/helpers" "^0.0.13"
-    "@telegraph/icon" "^0.2.2"
-    "@telegraph/layout" "^0.2.1"
-    "@telegraph/style-engine" "^0.1.15"
-    "@telegraph/typography" "^0.1.23"
-    clsx "^2.1.1"
-    lucide-react "^0.539.0"
-
-"@telegraph/combobox@0.1.2":
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/@telegraph/combobox/-/combobox-0.1.2.tgz#138c2560da649b6f45721f605671d9c17765392e"
-  integrity sha512-b/zanoPv0CnT6Xg822e8g9lMKUw3TBwKCfrY2ZEETu5Phmui+NkyVtuQ+WBhnv2UAoTJjOtlm8nULEGFBM8OPg==
+"@telegraph/combobox@0.1.8", "@telegraph/combobox@^0.1.3":
+  version "0.1.8"
+  resolved "https://registry.yarnpkg.com/@telegraph/combobox/-/combobox-0.1.8.tgz#ff36404c35befc751bbca913dcd159d6d7537e7e"
+  integrity sha512-sWBfFhNj8YNr5Rb+Xv1Q7fG0LX70kXoMrbrMU51ukGJcOPyVDVSFWUJFqZnYv5ERJHKEDuje+ho+TIYXM8OP3A==
   dependencies:
     "@radix-ui/react-dismissable-layer" "^1.1.10"
-    "@radix-ui/react-menu" "^2.1.15"
+    "@radix-ui/react-menu" "^2.1.16"
     "@radix-ui/react-portal" "^1.1.9"
     "@radix-ui/react-use-controllable-state" "^1.2.2"
     "@radix-ui/react-visually-hidden" "^1.2.3"
-    "@telegraph/button" "^0.1.1"
+    "@telegraph/button" "^0.2.1"
     "@telegraph/compose-refs" "^0.0.7"
     "@telegraph/helpers" "^0.0.13"
-    "@telegraph/icon" "^0.2.1"
+    "@telegraph/icon" "^0.2.4"
     "@telegraph/input" "^0.1.1"
     "@telegraph/layout" "^0.2.1"
-    "@telegraph/menu" "^0.1.2"
-    "@telegraph/tag" "^0.0.95"
+    "@telegraph/menu" "^0.1.7"
+    "@telegraph/tag" "^0.0.100"
     "@telegraph/tooltip" "^0.0.55"
     "@telegraph/truncate" "^0.0.10"
     "@telegraph/typography" "^0.1.23"
-    lucide-react "^0.525.0"
-    motion "^12.23.12"
-
-"@telegraph/combobox@^0.1.3":
-  version "0.1.3"
-  resolved "https://registry.yarnpkg.com/@telegraph/combobox/-/combobox-0.1.3.tgz#b4286ab11af131a43f0412c028647abeff97955a"
-  integrity sha512-KZty7dEvXJ59rNILWNkAxrh1zXcLH58l2as+1BTMbjUx/xk4rZzKMr3FGMHqQmc98pg3VyIRQFU4+VzIx13a0A==
-  dependencies:
-    "@radix-ui/react-dismissable-layer" "^1.1.10"
-    "@radix-ui/react-menu" "^2.1.15"
-    "@radix-ui/react-portal" "^1.1.9"
-    "@radix-ui/react-use-controllable-state" "^1.2.2"
-    "@radix-ui/react-visually-hidden" "^1.2.3"
-    "@telegraph/button" "^0.1.2"
-    "@telegraph/compose-refs" "^0.0.7"
-    "@telegraph/helpers" "^0.0.13"
-    "@telegraph/icon" "^0.2.2"
-    "@telegraph/input" "^0.1.1"
-    "@telegraph/layout" "^0.2.1"
-    "@telegraph/menu" "^0.1.3"
-    "@telegraph/tag" "^0.0.96"
-    "@telegraph/tooltip" "^0.0.55"
-    "@telegraph/truncate" "^0.0.10"
-    "@telegraph/typography" "^0.1.23"
-    lucide-react "^0.539.0"
+    lucide-react "^0.542.0"
     motion "^12.23.12"
 
 "@telegraph/compose-refs@^0.0.7":
@@ -956,15 +964,15 @@
   resolved "https://registry.yarnpkg.com/@telegraph/helpers/-/helpers-0.0.13.tgz#235bd2acc74334a2970d8e1334fb2dd745af9c1e"
   integrity sha512-mDb6r7v8IMT7NpaD7xn2Nn/QJNsbBgTaQfR1CFW6WHS02sNiCopWpeUpUGzj9u57LrYaJF5CaxNbxJA2hu/34Q==
 
-"@telegraph/icon@^0.2.1", "@telegraph/icon@^0.2.2":
-  version "0.2.2"
-  resolved "https://registry.yarnpkg.com/@telegraph/icon/-/icon-0.2.2.tgz#958c4c3ce9aa99618b6c88d5545220e321b7fc8d"
-  integrity sha512-HD2vA/1gEZwhQEdV32jx1/W3+1DSWYPNNFt5yEvSD0b+l/DhsKjazqztX6Hr9cWSmKNar2QFQ3GGuuh6h267iQ==
+"@telegraph/icon@^0.2.1", "@telegraph/icon@^0.2.2", "@telegraph/icon@^0.2.4":
+  version "0.2.4"
+  resolved "https://registry.yarnpkg.com/@telegraph/icon/-/icon-0.2.4.tgz#5b08e5904758c76c62be203afc51db7e52570422"
+  integrity sha512-gO/xvVms+PncOI7xRWknf4qJSwyNksZ+ZA9Xqi3cmsUS46LB4hvyQW73RvygPsTiQVwXvhmXmoMhvGVUNQvWEw==
   dependencies:
     "@telegraph/helpers" "^0.0.13"
     "@telegraph/typography" "^0.1.23"
     clsx "^2.1.1"
-    lucide-react "^0.539.0"
+    lucide-react "^0.542.0"
 
 "@telegraph/input@^0.1.1":
   version "0.1.1"
@@ -988,40 +996,26 @@
     "@telegraph/style-engine" "^0.1.15"
     clsx "^2.1.1"
 
-"@telegraph/menu@^0.1.2":
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/@telegraph/menu/-/menu-0.1.2.tgz#c1b33f81eec7d7a39d58f12cd97742810eeebcbf"
-  integrity sha512-moxvYJjO/xn1fvbqCFiJmjyU3WEfPIU5iBv8Yoiv44sd3zexk6N2h35sQy/ukGqDwwrAxAq09oujMrOYiG0HWA==
+"@telegraph/menu@^0.1.7":
+  version "0.1.7"
+  resolved "https://registry.yarnpkg.com/@telegraph/menu/-/menu-0.1.7.tgz#7cba3c932c3f312a53eebe5de686b42d5d3f1572"
+  integrity sha512-0igCSJKKWsAVOmsYN+x1Rnou0T7mm34DdwnhgOF3ugFVBi6j/3hv4jda3BFiF2XBtygLU6MdBu5uP3wodOy1FA==
   dependencies:
-    "@radix-ui/react-menu" "^2.1.15"
+    "@radix-ui/react-menu" "^2.1.16"
     "@radix-ui/react-use-controllable-state" "^1.2.2"
-    "@telegraph/button" "^0.1.1"
+    "@telegraph/button" "^0.2.1"
     "@telegraph/helpers" "^0.0.13"
-    "@telegraph/icon" "^0.2.1"
+    "@telegraph/icon" "^0.2.4"
     "@telegraph/layout" "^0.2.1"
-    lucide-react "^0.525.0"
+    lucide-react "^0.542.0"
     motion "^12.23.12"
 
-"@telegraph/menu@^0.1.3":
-  version "0.1.3"
-  resolved "https://registry.yarnpkg.com/@telegraph/menu/-/menu-0.1.3.tgz#163707a81b5539247e08256a99a51a1d713e6cc3"
-  integrity sha512-hQQn71HHKjxiAaIuomCJCqtMoW8bg/yGEWWIF+Xy4T8zgYP/ztbc/hrqxq/3WpXf8s/9EcMKulhCvClmgnvRsg==
+"@telegraph/select@^0.0.62":
+  version "0.0.62"
+  resolved "https://registry.yarnpkg.com/@telegraph/select/-/select-0.0.62.tgz#2c90e4f6c070ba518e57e76e68cd84766db7f1b7"
+  integrity sha512-yY9ZLWv/VzZyjWeaHudCCBInULNKYWEXh3zkVNNBPVEB0dnSS680f1NCXNUAKldao8UYtHaZMHKo6ircxDXg2A==
   dependencies:
-    "@radix-ui/react-menu" "^2.1.15"
-    "@radix-ui/react-use-controllable-state" "^1.2.2"
-    "@telegraph/button" "^0.1.2"
-    "@telegraph/helpers" "^0.0.13"
-    "@telegraph/icon" "^0.2.2"
-    "@telegraph/layout" "^0.2.1"
-    lucide-react "^0.539.0"
-    motion "^12.23.12"
-
-"@telegraph/select@^0.0.56":
-  version "0.0.56"
-  resolved "https://registry.yarnpkg.com/@telegraph/select/-/select-0.0.56.tgz#ce44751bd37e968ef8938730adfb9d792c2f21a9"
-  integrity sha512-mDQwrHDQh0ImUF/9COeQWWf3AUvyhmsoIkXPtTbcA311HLh2mRCVZ5niElXTeaPLx7b+j0l8GoFlOJbg7wvXVw==
-  dependencies:
-    "@telegraph/combobox" "0.1.2"
+    "@telegraph/combobox" "0.1.8"
     "@telegraph/helpers" "0.0.13"
 
 "@telegraph/style-engine@^0.1.11", "@telegraph/style-engine@^0.1.15":
@@ -1032,36 +1026,20 @@
     "@telegraph/tokens" "^0.1.1"
     postcss "^8.5.3"
 
-"@telegraph/tag@^0.0.95":
-  version "0.0.95"
-  resolved "https://registry.yarnpkg.com/@telegraph/tag/-/tag-0.0.95.tgz#2555d668ec4c488c8fbf665e94f449c6914748fd"
-  integrity sha512-WYaNcQS14eglavGkqF473iPt0hkVXwUmNGs4aT7cqi44w3vrKo11+xIPOqNwK1MrTjJztIEru99+/KcUH9AF+g==
+"@telegraph/tag@^0.0.100":
+  version "0.0.100"
+  resolved "https://registry.yarnpkg.com/@telegraph/tag/-/tag-0.0.100.tgz#35218a1a36b05b0db56c2f5b9496179c8d2e31b0"
+  integrity sha512-pkd/SkOKK/+g6xauusuQoCA/lmdOJHzo3quPFI679UPEg55GF46MnTFVqUZorac8xuJkdQAlcd0BUsE8J3P6Nw==
   dependencies:
-    "@telegraph/button" "^0.1.1"
+    "@telegraph/button" "^0.2.1"
     "@telegraph/compose-refs" "^0.0.7"
     "@telegraph/helpers" "^0.0.13"
-    "@telegraph/icon" "^0.2.1"
+    "@telegraph/icon" "^0.2.4"
     "@telegraph/layout" "^0.2.1"
     "@telegraph/tooltip" "^0.0.55"
     "@telegraph/typography" "^0.1.23"
     clsx "^2.1.1"
-    lucide-react "^0.525.0"
-    motion "^12.23.12"
-
-"@telegraph/tag@^0.0.96":
-  version "0.0.96"
-  resolved "https://registry.yarnpkg.com/@telegraph/tag/-/tag-0.0.96.tgz#51b3128d92bd148b4143a0f1fc152cc259b7255d"
-  integrity sha512-DiJLJYrN98NboMORrx+jCiQDqvEIgXk1k/Aspb6S5Otqm9wKA5GKRV7ZgRYHMrc6M72b+Z7NvMe5+Ssg4iC9dA==
-  dependencies:
-    "@telegraph/button" "^0.1.2"
-    "@telegraph/compose-refs" "^0.0.7"
-    "@telegraph/helpers" "^0.0.13"
-    "@telegraph/icon" "^0.2.2"
-    "@telegraph/layout" "^0.2.1"
-    "@telegraph/tooltip" "^0.0.55"
-    "@telegraph/typography" "^0.1.23"
-    clsx "^2.1.1"
-    lucide-react "^0.539.0"
+    lucide-react "^0.542.0"
     motion "^12.23.12"
 
 "@telegraph/textarea@^0.1.1":
@@ -2865,11 +2843,6 @@ lowlight@^1.17.0:
     fault "^1.0.0"
     highlight.js "~10.7.0"
 
-lucide-react@^0.525.0:
-  version "0.525.0"
-  resolved "https://registry.yarnpkg.com/lucide-react/-/lucide-react-0.525.0.tgz#5f7bcecd65e4f9b2b5b6b5d295e3376df032d5e3"
-  integrity sha512-Tm1txJ2OkymCGkvwoHt33Y2JpN5xucVq1slHcgE6Lk0WjDfjgKWor5CdVER8U6DvcfMwh4M8XxmpTiyzfmfDYQ==
-
 lucide-react@^0.539.0:
   version "0.539.0"
   resolved "https://registry.yarnpkg.com/lucide-react/-/lucide-react-0.539.0.tgz#0d0fcd53ed7042c603d201035d9315171ed7654c"
@@ -2879,6 +2852,11 @@ lucide-react@^0.540.0:
   version "0.540.0"
   resolved "https://registry.yarnpkg.com/lucide-react/-/lucide-react-0.540.0.tgz#c681f67c245c619de67c26dbe83a88412b5e7ff8"
   integrity sha512-armkCAqQvO62EIX4Hq7hqX/q11WSZu0Jd23cnnqx0/49yIxGXyL/zyZfBxNN9YDx0ensPTb4L+DjTh3yQXUxtQ==
+
+lucide-react@^0.542.0:
+  version "0.542.0"
+  resolved "https://registry.yarnpkg.com/lucide-react/-/lucide-react-0.542.0.tgz#3f170afb0c5697e3e21230b6d69ad8a1be6b281a"
+  integrity sha512-w3hD8/SQB7+lzU2r4VdFyzzOzKnUjTZIF/MQJGSSvni7Llewni4vuViRppfRAa2guOsY5k4jZyxw/i9DQHv+dw==
 
 math-intrinsics@^1.1.0:
   version "1.1.0"
