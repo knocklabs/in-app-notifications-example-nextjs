@@ -12,7 +12,7 @@
     "@faker-js/faker": "^10.0.0",
     "@knocklabs/node": "^1.16.0",
     "@knocklabs/react": "^0.8.11",
-    "@tanstack/react-store": "^0.7.7",
+    "@tanstack/react-store": "^0.8.0",
     "@telegraph/button": "^0.2.3",
     "@telegraph/icon": "^0.2.1",
     "@telegraph/input": "^0.1.2",
