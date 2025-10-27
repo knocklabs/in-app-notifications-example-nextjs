@@ -444,10 +444,10 @@
     phoenix "1.7.21"
     urlpattern-polyfill "^10.0.0"
 
-"@knocklabs/node@^1.16.0":
-  version "1.16.0"
-  resolved "https://registry.yarnpkg.com/@knocklabs/node/-/node-1.16.0.tgz#0dd4270b90959fd8abe9f7039ee16113f43a5172"
-  integrity sha512-RqnpDgJiMuYRsR1f8mWG4k43G9xsYGxY4mqJzC2w2hy2VMhmNaz3m/Kb34Q/uRTbaDfXOILqHweaCJI5gDvD0Q==
+"@knocklabs/node@^1.21.0":
+  version "1.21.0"
+  resolved "https://registry.yarnpkg.com/@knocklabs/node/-/node-1.21.0.tgz#ee92d368151c84f1d1948d94aa65fa95bf8bbf25"
+  integrity sha512-osZDQt+Wq0KdcXPoPeRqtljpM+InnvjV4qdQZVwvuX350uMjVrrhbQJwwi/kbb+XC3eTwnkay6Ivm3BGj/m31A==
   dependencies:
     jose "^6.0.11"
 
