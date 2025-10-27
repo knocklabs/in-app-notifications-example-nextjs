@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@faker-js/faker": "^10.0.0",
-    "@knocklabs/node": "^1.16.0",
+    "@knocklabs/node": "^1.21.0",
     "@knocklabs/react": "^0.8.11",
     "@tanstack/react-store": "^0.8.0",
     "@telegraph/button": "^0.2.3",
