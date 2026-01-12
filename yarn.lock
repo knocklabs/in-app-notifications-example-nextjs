@@ -602,10 +602,10 @@
     phoenix "1.7.21"
     urlpattern-polyfill "^10.0.0"
 
-"@knocklabs/node@^1.21.0":
-  version "1.21.0"
-  resolved "https://registry.yarnpkg.com/@knocklabs/node/-/node-1.21.0.tgz#ee92d368151c84f1d1948d94aa65fa95bf8bbf25"
-  integrity sha512-osZDQt+Wq0KdcXPoPeRqtljpM+InnvjV4qdQZVwvuX350uMjVrrhbQJwwi/kbb+XC3eTwnkay6Ivm3BGj/m31A==
+"@knocklabs/node@^1.27.0":
+  version "1.27.0"
+  resolved "https://registry.yarnpkg.com/@knocklabs/node/-/node-1.27.0.tgz#be2b0dd4054bf64dbaafee8f2771c38b2cff32c9"
+  integrity sha512-HGRIpNmcv0ohUOju91duE/B1irDL2oBQhrWLCidm3nwaiEFyYIuHwsQ1kFevzbouAtfuMaEvIMLVe9Gkg46bkw==
   dependencies:
     jose "^6.0.11"
 
