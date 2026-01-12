@@ -9,7 +9,7 @@
     "format": "prettier --write ."
   },
   "dependencies": {
-    "@faker-js/faker": "^10.1.0",
+    "@faker-js/faker": "^10.2.0",
     "@knocklabs/node": "^1.21.0",
     "@knocklabs/react": "^0.9.4",
     "@tanstack/react-store": "^0.8.0",
