@@ -172,10 +172,15 @@
   dependencies:
     "@babel/types" "^7.28.5"
 
-"@babel/runtime@^7.18.3", "@babel/runtime@^7.27.1", "@babel/runtime@^7.28.4":
+"@babel/runtime@^7.18.3", "@babel/runtime@^7.28.4":
   version "7.28.4"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.28.4.tgz#a70226016fabe25c5783b2f22d3e1c9bc5ca3326"
   integrity sha512-Q/N6JNWvIvPnLDvjlE1OUBLPQHH6l3CltCEsHIujp45zQUSSh8K+gHnaEX45yAT1nyngnINhvWtzN+Nb9D8RAQ==
+
+"@babel/runtime@^7.28.6":
+  version "7.28.6"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.28.6.tgz#d267a43cb1836dc4d182cce93ae75ba954ef6d2b"
+  integrity sha512-05WQkdpL9COIMz4LjTxGpPNCdlpyimKppYNoJ5Di5EUObifl8t4tuLuUBBZEpoLYOmfvIWrsp9fCl0HoPRVTdA==
 
 "@babel/template@^7.24.7", "@babel/template@^7.27.2":
   version "7.27.2"
@@ -585,12 +590,12 @@
     "@jridgewell/resolve-uri" "^3.1.0"
     "@jridgewell/sourcemap-codec" "^1.4.14"
 
-"@knocklabs/client@^0.19.3":
-  version "0.19.3"
-  resolved "https://registry.yarnpkg.com/@knocklabs/client/-/client-0.19.3.tgz#43bc6b85b0caaac2b0a0f0913d1a5b01670c3cb7"
-  integrity sha512-mzPXZ9XXbq0PuI5RRxHHRVlcZsflKyikXK+cSAncEIAKl3CZSqaP+FSRSx0i4yJa5TvZynEO3j6cjN0LvZu+YA==
+"@knocklabs/client@^0.20.4":
+  version "0.20.4"
+  resolved "https://registry.yarnpkg.com/@knocklabs/client/-/client-0.20.4.tgz#8af7823f755e32795c14b24657cad5e5e814335c"
+  integrity sha512-AhPtdOySBps29igGprRlVRWXpcwGsNkCjWpAPQxnZcJxOvRFgHLEJs8LiRkw4/CcQIg/rVNkJx8pc7mW2AK5sw==
   dependencies:
-    "@babel/runtime" "^7.27.1"
+    "@babel/runtime" "^7.28.6"
     "@knocklabs/types" "^0.1.5"
     "@tanstack/store" "^0.7.2"
     "@types/phoenix" "^1.6.6"
@@ -617,24 +622,24 @@
     "@trivago/prettier-plugin-sort-imports" "^4.3.0"
     prettier "^3.1.0"
 
-"@knocklabs/react-core@^0.11.3":
-  version "0.11.3"
-  resolved "https://registry.yarnpkg.com/@knocklabs/react-core/-/react-core-0.11.3.tgz#904b9d1cd2c6f956be6e18d311637d026143141d"
-  integrity sha512-7qTdNNseerxVn+4dEaQGrCrV4+j9K68Ozv6dwRQF8Ochl7cxgpDYSWPeiJtxIkOGQuE1StAzWeGG6QsOmGBfkw==
+"@knocklabs/react-core@^0.12.5":
+  version "0.12.5"
+  resolved "https://registry.yarnpkg.com/@knocklabs/react-core/-/react-core-0.12.5.tgz#42797fb20ba94e969967e71aa57fc4d6f4551817"
+  integrity sha512-QSuAUsKLzzGyB6WQ4XplC9MfJqElS+d+rTfDExrCAAS7+gH0viWQiHk7ggbCPTOilZpfLPhyRXUgNnGb0EvHlQ==
   dependencies:
-    "@knocklabs/client" "^0.19.3"
+    "@knocklabs/client" "^0.20.4"
     "@tanstack/react-store" "^0.7.3"
     date-fns "^4.0.0"
     fast-deep-equal "^3.1.3"
     swr "^2.3.3"
 
-"@knocklabs/react@^0.9.4":
-  version "0.9.4"
-  resolved "https://registry.yarnpkg.com/@knocklabs/react/-/react-0.9.4.tgz#e693358e3bf7920273f336fabe2eb7298bd4cb97"
-  integrity sha512-NA9/sw9bf2rHvP97SGtaVStcC/mZE/PniV1UweS2BG+wNBgctxcN9BVLwWvwanL18p5sBvMtr4TSIIw6w/4wYw==
+"@knocklabs/react@^0.10.5":
+  version "0.10.5"
+  resolved "https://registry.yarnpkg.com/@knocklabs/react/-/react-0.10.5.tgz#2ca3a3438f8c53ed4a9922db56437d7909d99ca2"
+  integrity sha512-Lm9yHD7a92j7Kj70Hc4UZw304Ftuo6ZGu7MIkLTow/KMkgZhVxgzLSih/HCNOTGUhsJ3NFbN6mWdDmfoB2v1hQ==
   dependencies:
-    "@knocklabs/client" "^0.19.3"
-    "@knocklabs/react-core" "^0.11.3"
+    "@knocklabs/client" "^0.20.4"
+    "@knocklabs/react-core" "^0.12.5"
     "@popperjs/core" "^2.11.8"
     "@radix-ui/react-dialog" "^1.1.15"
     "@telegraph/combobox" "^0.1.16"
