@@ -1071,10 +1071,10 @@
     clsx "^2.1.1"
     lucide-react "^0.544.0"
 
-"@telegraph/combobox@0.1.26", "@telegraph/combobox@^0.1.16":
-  version "0.1.26"
-  resolved "https://registry.yarnpkg.com/@telegraph/combobox/-/combobox-0.1.26.tgz#53a17f1d2d9be16cca4ac8ae4a976453d2e77f42"
-  integrity sha512-uomoUY3Eem6mz93sCFuVtVu4q/oGB4bF2NZBgxZf8J8dGEcAKXGBcY6DChjUyvWVFqXgDcfrki+JVydcWWTf7g==
+"@telegraph/combobox@0.1.27", "@telegraph/combobox@^0.1.16":
+  version "0.1.27"
+  resolved "https://registry.yarnpkg.com/@telegraph/combobox/-/combobox-0.1.27.tgz#6a20824be95fd73a143e45c61cf6c6852f3c742b"
+  integrity sha512-nZogIQ2rQRUd27wUVTxVa1MUCUPP/tYWF+n1wsw3NDr2JifHe8CGREKNf5+g2nKfXKymEQzlT+8nauGyvay9WQ==
   dependencies:
     "@radix-ui/react-dismissable-layer" "^1.1.11"
     "@radix-ui/react-menu" "^2.1.16"
@@ -1181,12 +1181,12 @@
     lucide-react "^0.544.0"
     motion "^12.23.12"
 
-"@telegraph/select@^0.0.80":
-  version "0.0.80"
-  resolved "https://registry.yarnpkg.com/@telegraph/select/-/select-0.0.80.tgz#8bfddc65213ae2edda854e543cf779e49babc1dc"
-  integrity sha512-I09LC84jo/ahaFN4XM2PBVBNrl9jW414TUQg1HrjlNDa5UWMb+m2TO3CfDo3qz1M2KCcO44vDVyCulMJ/1mJ9A==
+"@telegraph/select@^0.0.81":
+  version "0.0.81"
+  resolved "https://registry.yarnpkg.com/@telegraph/select/-/select-0.0.81.tgz#b28b832a1d3586723c746b7e49fe337702fd699f"
+  integrity sha512-frqL1yYJoJk75VRJ/nLq+qkc/OeBCPDtmrnN4x4MeDLFexsrBgziqrrrsiCtjwaMHvogxTGvaxW05jJUb/ILvg==
   dependencies:
-    "@telegraph/combobox" "0.1.26"
+    "@telegraph/combobox" "0.1.27"
     "@telegraph/helpers" "0.0.15"
 
 "@telegraph/style-engine@^0.1.16":
