@@ -17,7 +17,7 @@
     "@telegraph/icon": "^0.3.2",
     "@telegraph/input": "^0.1.7",
     "@telegraph/layout": "^0.3.1",
-    "@telegraph/select": "^0.0.80",
+    "@telegraph/select": "^0.0.81",
     "@telegraph/style-engine": "^0.2.1",
     "@telegraph/textarea": "^0.1.7",
     "@telegraph/tokens": "^0.1.3",
