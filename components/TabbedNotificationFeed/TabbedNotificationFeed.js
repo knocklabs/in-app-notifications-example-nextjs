@@ -3,8 +3,8 @@ import {
   formatBadgeCount,
   useKnockClient,
   useNotifications,
+  useNotificationStore,
 } from "@knocklabs/react";
-import { useStore } from "@tanstack/react-store";
 import { Box, Stack } from "@telegraph/layout";
 import { useEffect, useRef, useState } from "react";
 
@@ -54,7 +54,7 @@ const TabbedNotificationFeed = ({ tenant }) => {
     }
   }, [currentPageType, regularFeed, archivedFeed, tenant]);
 
-  const { metadata } = useStore(regularFeed.store.store);
+  const { metadata } = useNotificationStore(regularFeed);
 
   return (
     <Stack display="flex" direction="column" style={{ width: "420px" }}>
