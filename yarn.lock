@@ -534,10 +534,10 @@
     "@jridgewell/resolve-uri" "^3.1.0"
     "@jridgewell/sourcemap-codec" "^1.4.14"
 
-"@knocklabs/client@^0.21.3":
-  version "0.21.3"
-  resolved "https://registry.yarnpkg.com/@knocklabs/client/-/client-0.21.3.tgz#eba34f1af06026d75c8a8522ab44af57c9bf2096"
-  integrity sha512-pcwugrWJHNBrGXw1flaOfKNny5oynMy+uPzb7mruZ4KO5sO+HpBnEfuo0ZD1JSf4Z1RM/TxeDAT3ZeU0X48dcg==
+"@knocklabs/client@^0.21.5":
+  version "0.21.5"
+  resolved "https://registry.yarnpkg.com/@knocklabs/client/-/client-0.21.5.tgz#48c68f483445c2f8279bfae078dd9418adb4be90"
+  integrity sha512-YU/iUZuqyJydzO2gfph3+/2PusdIeEwKdSc7J2VbufDjClroM/HMD1cu566c2JpE0/AalBJ9F6HF5w7ONG93kw==
   dependencies:
     "@babel/runtime" "^7.28.6"
     "@knocklabs/types" "^0.1.5"
@@ -566,37 +566,40 @@
     "@trivago/prettier-plugin-sort-imports" "^4.3.0"
     prettier "^3.1.0"
 
-"@knocklabs/react-core@^0.13.3":
-  version "0.13.3"
-  resolved "https://registry.yarnpkg.com/@knocklabs/react-core/-/react-core-0.13.3.tgz#2ffc422da818b4b0c4481a8f15d54027b2904fea"
-  integrity sha512-t808wEOsUZ4NCWIxY/pn+E5wLrayviB0RvwWlWnPhzljOsMNhU+lq9Uit+v4ULGoYi/i8LceO1D07j04TKkenQ==
+"@knocklabs/react-core@^0.13.5":
+  version "0.13.5"
+  resolved "https://registry.yarnpkg.com/@knocklabs/react-core/-/react-core-0.13.5.tgz#5f0ed4c023c48d98250b425b39f7d0a2a046b2c4"
+  integrity sha512-XO2zMNDEjb8/EUPAp1i1mvY5YLZVsJ/p3NuoZoCkY6dhSmjLGgcT7t0AJ0bKEgq3WexCiWNpU7TnguJeNokdHg==
   dependencies:
-    "@knocklabs/client" "^0.21.3"
+    "@knocklabs/client" "^0.21.5"
     "@tanstack/react-store" "^0.7.3"
     date-fns "^4.0.0"
     fast-deep-equal "^3.1.3"
     swr "^2.4.0"
 
-"@knocklabs/react@^0.11.5":
-  version "0.11.5"
-  resolved "https://registry.yarnpkg.com/@knocklabs/react/-/react-0.11.5.tgz#cb1b2ec5f9d9cd40a8e9a35b83037752586bc9e9"
-  integrity sha512-/+rRF498nx+SBXs9psjZZydhVklaPxSYfkTZy21DEYFUxQPdS3SCUZ+Z7NHrjktIN9rXYRpuVB26vdEsesP96A==
+"@knocklabs/react@^0.11.10":
+  version "0.11.10"
+  resolved "https://registry.yarnpkg.com/@knocklabs/react/-/react-0.11.10.tgz#e523871e779eccdd1940bed12c7cde58be3a78f3"
+  integrity sha512-pvb+oAyyCBG2T/EhhSjX4AkSLv8KbaLSTm1P7RYbkyNw3njOTMk6SGs7zurYdBmySEdkAYcKwo6VIWf0RsaWZQ==
   dependencies:
-    "@knocklabs/client" "^0.21.3"
-    "@knocklabs/react-core" "^0.13.3"
+    "@knocklabs/client" "^0.21.5"
+    "@knocklabs/react-core" "^0.13.5"
     "@popperjs/core" "^2.11.8"
     "@radix-ui/react-dialog" "^1.1.15"
     "@radix-ui/react-hover-card" "^1.1.15"
-    "@telegraph/button" "^0.4.0"
-    "@telegraph/combobox" "^0.2.1"
+    "@telegraph/button" "^0.5.0"
+    "@telegraph/combobox" "^0.2.3"
     "@telegraph/icon" "^0.4.0"
-    "@telegraph/layout" "^0.4.0"
-    "@telegraph/select" "^0.0.84"
-    "@telegraph/tokens" "^0.1.3"
-    "@telegraph/tooltip" "0.1.1"
-    "@telegraph/typography" "^0.2.0"
+    "@telegraph/layout" "^0.5.0"
+    "@telegraph/segmented-control" "^0.2.2"
+    "@telegraph/select" "^0.0.86"
+    "@telegraph/tag" "^0.1.4"
+    "@telegraph/tokens" "^0.1.4"
+    "@telegraph/tooltip" "0.1.3"
+    "@telegraph/typography" "^0.2.1"
     clsx "^2.1.1"
     lodash.debounce "^4.0.8"
+    lucide-react "^0.544.0"
 
 "@knocklabs/types@^0.1.5":
   version "0.1.5"
@@ -899,12 +902,34 @@
   dependencies:
     "@radix-ui/react-compose-refs" "1.1.2"
 
-"@radix-ui/react-slot@1.2.4", "@radix-ui/react-slot@^1.2.3", "@radix-ui/react-slot@^1.2.4":
+"@radix-ui/react-slot@1.2.4", "@radix-ui/react-slot@^1.2.4":
   version "1.2.4"
   resolved "https://registry.npmjs.org/@radix-ui/react-slot/-/react-slot-1.2.4.tgz"
   integrity sha512-Jl+bCv8HxKnlTLVrcDE8zTMJ09R9/ukw4qBs/oZClOfoQk/cOTbDn+NceXfV7j09YPVQUryJPHurafcSg6EVKA==
   dependencies:
     "@radix-ui/react-compose-refs" "1.1.2"
+
+"@radix-ui/react-toggle-group@^1.1.11":
+  version "1.1.11"
+  resolved "https://registry.yarnpkg.com/@radix-ui/react-toggle-group/-/react-toggle-group-1.1.11.tgz#e513d6ffdb07509b400ab5b26f2523747c0d51c1"
+  integrity sha512-5umnS0T8JQzQT6HbPyO7Hh9dgd82NmS36DQr+X/YJ9ctFNCiiQd6IJAYYZ33LUwm8M+taCz5t2ui29fHZc4Y6Q==
+  dependencies:
+    "@radix-ui/primitive" "1.1.3"
+    "@radix-ui/react-context" "1.1.2"
+    "@radix-ui/react-direction" "1.1.1"
+    "@radix-ui/react-primitive" "2.1.3"
+    "@radix-ui/react-roving-focus" "1.1.11"
+    "@radix-ui/react-toggle" "1.1.10"
+    "@radix-ui/react-use-controllable-state" "1.2.2"
+
+"@radix-ui/react-toggle@1.1.10":
+  version "1.1.10"
+  resolved "https://registry.yarnpkg.com/@radix-ui/react-toggle/-/react-toggle-1.1.10.tgz#b04ba0f9609599df666fce5b2f38109a197f08cf"
+  integrity sha512-lS1odchhFTeZv3xwHH31YPObmJn8gOg7Lq12inrr0+BH/l3Tsq32VfjqH1oh80ARM3mlkfMic15n0kg4sD1poQ==
+  dependencies:
+    "@radix-ui/primitive" "1.1.3"
+    "@radix-ui/react-primitive" "2.1.3"
+    "@radix-ui/react-use-controllable-state" "1.2.2"
 
 "@radix-ui/react-tooltip@^1.2.8":
   version "1.2.8"
@@ -1014,32 +1039,12 @@
   resolved "https://registry.npmjs.org/@tanstack/store/-/store-0.7.7.tgz"
   integrity sha512-xa6pTan1bcaqYDS9BDpSiS63qa6EoDkPN9RsRaxHuDdVDNntzq3xNwR5YKTU/V3SkSyC9T4YVOPh2zRQN0nhIQ==
 
-"@telegraph/appearance@^0.0.12":
-  version "0.0.12"
-  resolved "https://registry.npmjs.org/@telegraph/appearance/-/appearance-0.0.12.tgz"
-  integrity sha512-qPBpHa9pYFEvBMsNt8+4PzjJ/tcQFcuDoUDjgbd1dUtdggs4JWP8GmP976BY9aKm/6aFJDkXUpIlVhahpsukBQ==
-  dependencies:
-    "@radix-ui/react-slot" "^1.2.3"
-
 "@telegraph/appearance@^0.0.13":
   version "0.0.13"
   resolved "https://registry.yarnpkg.com/@telegraph/appearance/-/appearance-0.0.13.tgz#bb53904b8e979c41724ca3356c42a634e7bdf9fa"
   integrity sha512-EYfUePIDLVKnDIiCZO10D977l0YhDjnrjR7uhVMOokNGLTHEMnpu3xQFko+6zhFebhyJLGEF35wos1UmD+Okng==
   dependencies:
     "@radix-ui/react-slot" "^1.2.4"
-
-"@telegraph/button@^0.4.0":
-  version "0.4.1"
-  resolved "https://registry.yarnpkg.com/@telegraph/button/-/button-0.4.1.tgz#ae09791a66d7471a3543912931212962fba58730"
-  integrity sha512-5dCTiN72GhSOxwhhMRMXRAz4Bw/TOJrGcreYd1hmOYgQwdJRbNDJkBCd2Bzxs9vfSkVz/HXWLNyntBSOHk5PDw==
-  dependencies:
-    "@telegraph/helpers" "^0.0.15"
-    "@telegraph/icon" "^0.4.0"
-    "@telegraph/layout" "^0.4.0"
-    "@telegraph/style-engine" "^0.2.2"
-    "@telegraph/typography" "^0.2.0"
-    clsx "^2.1.1"
-    lucide-react "^0.544.0"
 
 "@telegraph/button@^0.5.0":
   version "0.5.0"
@@ -1054,31 +1059,7 @@
     clsx "^2.1.1"
     lucide-react "^0.544.0"
 
-"@telegraph/combobox@0.2.1":
-  version "0.2.1"
-  resolved "https://registry.npmjs.org/@telegraph/combobox/-/combobox-0.2.1.tgz"
-  integrity sha512-qveulFkCqj7N7stlUTfuTkkIErHEJKpd8mkjfTn5j3WGN9svBHLgxTjsX3hK8RmxgFwEaYPHCV8LYc64A3HdeA==
-  dependencies:
-    "@radix-ui/react-dismissable-layer" "^1.1.11"
-    "@radix-ui/react-menu" "^2.1.16"
-    "@radix-ui/react-portal" "^1.1.10"
-    "@radix-ui/react-use-controllable-state" "^1.2.2"
-    "@radix-ui/react-visually-hidden" "^1.2.4"
-    "@telegraph/button" "^0.4.0"
-    "@telegraph/compose-refs" "^0.0.8"
-    "@telegraph/helpers" "^0.0.15"
-    "@telegraph/icon" "^0.4.0"
-    "@telegraph/input" "^0.2.0"
-    "@telegraph/layout" "^0.4.0"
-    "@telegraph/menu" "^0.2.1"
-    "@telegraph/tag" "^0.1.1"
-    "@telegraph/tooltip" "^0.1.1"
-    "@telegraph/truncate" "^0.1.0"
-    "@telegraph/typography" "^0.2.0"
-    lucide-react "^0.544.0"
-    motion "^12.34.3"
-
-"@telegraph/combobox@0.2.3", "@telegraph/combobox@^0.2.1":
+"@telegraph/combobox@0.2.3", "@telegraph/combobox@^0.2.3":
   version "0.2.3"
   resolved "https://registry.yarnpkg.com/@telegraph/combobox/-/combobox-0.2.3.tgz#4869b8bcf052af81e8bf1aa7e3d0c696151e8b7d"
   integrity sha512-65IhhBQXGGLZMCntZUseDID/apn8mHZG2Up2ANgfXZEiHKWRl3snFkm3j65wjKapdxvg5nPOas5cIfREPLuFGw==
@@ -1122,18 +1103,6 @@
     clsx "^2.1.1"
     lucide-react "^0.544.0"
 
-"@telegraph/input@^0.2.0":
-  version "0.2.2"
-  resolved "https://registry.yarnpkg.com/@telegraph/input/-/input-0.2.2.tgz#45820a768e0c51180d3d2f7f13f56ec956a99980"
-  integrity sha512-yONPNMSWOGlda9DUNjtVRcJv1hBp1+0LI2yJGKvIHQhNkbKTEVqYfNOqOja4AilfjmzH6kT90Z5tGTB43PWDhA==
-  dependencies:
-    "@radix-ui/react-slot" "^1.2.4"
-    "@telegraph/compose-refs" "^0.0.8"
-    "@telegraph/helpers" "^0.0.15"
-    "@telegraph/layout" "^0.4.0"
-    "@telegraph/typography" "^0.2.0"
-    clsx "^2.1.1"
-
 "@telegraph/input@^0.3.0":
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/@telegraph/input/-/input-0.3.0.tgz#ca514368a3823d6b4c3bf0c3f2772234234f2265"
@@ -1146,16 +1115,6 @@
     "@telegraph/typography" "^0.2.1"
     clsx "^2.1.1"
 
-"@telegraph/layout@^0.4.0":
-  version "0.4.0"
-  resolved "https://registry.npmjs.org/@telegraph/layout/-/layout-0.4.0.tgz"
-  integrity sha512-DSieOyN1IEInotQarg658BcV9YJRstw60QpND4/pM3HY1o9yn9THxWePC8EthEPX6zGLgtCn/QJ/QfKk6elAmg==
-  dependencies:
-    "@telegraph/compose-refs" "^0.0.8"
-    "@telegraph/helpers" "^0.0.15"
-    "@telegraph/style-engine" "^0.2.2"
-    clsx "^2.1.1"
-
 "@telegraph/layout@^0.5.0":
   version "0.5.0"
   resolved "https://registry.yarnpkg.com/@telegraph/layout/-/layout-0.5.0.tgz#53020c5f03c88ded390d0dbb864edc8d223d296b"
@@ -1165,20 +1124,6 @@
     "@telegraph/helpers" "^0.0.15"
     "@telegraph/style-engine" "^0.3.0"
     clsx "^2.1.1"
-
-"@telegraph/menu@^0.2.1":
-  version "0.2.1"
-  resolved "https://registry.npmjs.org/@telegraph/menu/-/menu-0.2.1.tgz"
-  integrity sha512-Pyv8j0OBCJVQdDJRvmRf+6DlPtDr1Eib6TUQVHW0q11cKFvt9O7eHcOpHXdaL8Y3K680YoZL5B/hZBL1XS3XJw==
-  dependencies:
-    "@radix-ui/react-menu" "^2.1.16"
-    "@radix-ui/react-use-controllable-state" "^1.2.2"
-    "@telegraph/button" "^0.4.0"
-    "@telegraph/helpers" "^0.0.15"
-    "@telegraph/icon" "^0.4.0"
-    "@telegraph/layout" "^0.4.0"
-    lucide-react "^0.544.0"
-    motion "^12.34.3"
 
 "@telegraph/menu@^0.2.2":
   version "0.2.2"
@@ -1194,13 +1139,18 @@
     lucide-react "^0.544.0"
     motion "^12.34.3"
 
-"@telegraph/select@^0.0.84":
-  version "0.0.84"
-  resolved "https://registry.npmjs.org/@telegraph/select/-/select-0.0.84.tgz"
-  integrity sha512-v2hKtjZdc6Yq0Y4a31YpYcg20IvZnWocGvSRwFp9WCO1plixKhRHUlOOaZojFi4DM/Ggevne4qogJvA3YgJ9SQ==
+"@telegraph/segmented-control@^0.2.2":
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/@telegraph/segmented-control/-/segmented-control-0.2.2.tgz#1c3c3a0cc76810f8eab409ef5d20897652b7c395"
+  integrity sha512-glD7llPBUsB2OaipsGQLKe5L9ds6Q3z3mKuqbDQWwA8R9BcyHccnUi+4Ll8RgT0aU3QTzr61BdQVpxeFY+ypvQ==
   dependencies:
-    "@telegraph/combobox" "0.2.1"
-    "@telegraph/helpers" "0.0.15"
+    "@radix-ui/react-toggle-group" "^1.1.11"
+    "@telegraph/button" "^0.5.0"
+    "@telegraph/helpers" "^0.0.15"
+    "@telegraph/layout" "^0.5.0"
+    "@telegraph/truncate" "^0.1.0"
+    lucide-react "^0.544.0"
+    motion "^12.34.3"
 
 "@telegraph/select@^0.0.86":
   version "0.0.86"
@@ -1210,14 +1160,6 @@
     "@telegraph/combobox" "0.2.3"
     "@telegraph/helpers" "0.0.15"
 
-"@telegraph/style-engine@^0.2.2":
-  version "0.2.2"
-  resolved "https://registry.npmjs.org/@telegraph/style-engine/-/style-engine-0.2.2.tgz"
-  integrity sha512-kofss1xaPCK3yyeAMSu7gNCYbj6LgEwhoc8WnEe5ihQa1Sry39abN8sehYk7uvka60S6Tvx0/ob01ce3S4DC8A==
-  dependencies:
-    "@telegraph/tokens" "^0.1.3"
-    postcss "^8.5.6"
-
 "@telegraph/style-engine@^0.3.0":
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/@telegraph/style-engine/-/style-engine-0.3.0.tgz#ba03b52dd7bfadd6e2cf5a627983516da886a5b3"
@@ -1225,22 +1167,6 @@
   dependencies:
     "@telegraph/tokens" "^0.1.4"
     postcss "^8.5.6"
-
-"@telegraph/tag@^0.1.1":
-  version "0.1.1"
-  resolved "https://registry.npmjs.org/@telegraph/tag/-/tag-0.1.1.tgz"
-  integrity sha512-PDPhZ9eLG3SWdKKqGtG3uX+sR6OpCxzQ/79W9ezWN0ujlSldGdMqhdQxezc3Vcup1zAj5RlBJQzv2sAWy1NXkA==
-  dependencies:
-    "@telegraph/button" "^0.4.0"
-    "@telegraph/compose-refs" "^0.0.8"
-    "@telegraph/helpers" "^0.0.15"
-    "@telegraph/icon" "^0.4.0"
-    "@telegraph/layout" "^0.4.0"
-    "@telegraph/tooltip" "^0.1.1"
-    "@telegraph/typography" "^0.2.0"
-    clsx "^2.1.1"
-    lucide-react "^0.544.0"
-    motion "^12.34.3"
 
 "@telegraph/tag@^0.1.4":
   version "0.1.4"
@@ -1266,25 +1192,12 @@
     "@telegraph/helpers" "^0.0.15"
     "@telegraph/typography" "^0.2.1"
 
-"@telegraph/tokens@^0.1.3", "@telegraph/tokens@^0.1.4":
+"@telegraph/tokens@^0.1.4":
   version "0.1.4"
   resolved "https://registry.yarnpkg.com/@telegraph/tokens/-/tokens-0.1.4.tgz#cb26fc841d7768706cec38ba62864f8afb64982f"
   integrity sha512-RuWkp3vTijeq6pGonou3oMoOcPEe42TJSSbEEiX0OOLVy6Jh6oUeb7mv0AXiILZmV01JmuYuNbosQ8VFAj1KLw==
 
-"@telegraph/tooltip@0.1.1", "@telegraph/tooltip@^0.1.0", "@telegraph/tooltip@^0.1.1":
-  version "0.1.1"
-  resolved "https://registry.npmjs.org/@telegraph/tooltip/-/tooltip-0.1.1.tgz"
-  integrity sha512-BPuYAmvIi6QOgL2EP/2J6sk2kjzf5rbTY+U3x6Z3NSCb50JmjfvtMVtP4mHVs5cQqQJa61EAiadhurVXnXs11Q==
-  dependencies:
-    "@radix-ui/react-tooltip" "^1.2.8"
-    "@radix-ui/react-use-controllable-state" "^1.2.2"
-    "@telegraph/appearance" "^0.0.12"
-    "@telegraph/helpers" "^0.0.15"
-    "@telegraph/layout" "^0.4.0"
-    "@telegraph/typography" "^0.2.0"
-    motion "^12.34.3"
-
-"@telegraph/tooltip@^0.1.3":
+"@telegraph/tooltip@0.1.3", "@telegraph/tooltip@^0.1.0", "@telegraph/tooltip@^0.1.3":
   version "0.1.3"
   resolved "https://registry.yarnpkg.com/@telegraph/tooltip/-/tooltip-0.1.3.tgz#3b550d6bc3d0db15a6e2b7c701fb20774a0e3920"
   integrity sha512-0Iy+IxPQKxCGFDZAMwjo821FkjuphJ0xTG/CPrQ/dxAPQrQOzQcMGO+Pzjf2FdVpdZt1u7rAKAjmTjLjEsV2Ng==
