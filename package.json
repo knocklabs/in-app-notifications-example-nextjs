@@ -34,7 +34,7 @@
   "devDependencies": {
     "@knocklabs/prettier-config": "^0.0.1",
     "eslint": "^9.38.0",
-    "eslint-config-next": "16.1.6",
+    "eslint-config-next": "16.2.1",
     "postcss": "^8.5.8"
   },
   "prettier": "@knocklabs/prettier-config"
