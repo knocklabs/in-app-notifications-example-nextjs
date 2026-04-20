@@ -551,10 +551,10 @@
     phoenix "1.8.5"
     urlpattern-polyfill "^10.0.0"
 
-"@knocklabs/node@^1.27.0":
-  version "1.29.1"
-  resolved "https://registry.yarnpkg.com/@knocklabs/node/-/node-1.29.1.tgz#b43a1a96352c6e6a1851bfaa864b7cbda4e669cf"
-  integrity sha512-KpT905Qs97ZUPxR4gKrxt8Ko5xOHctSiaTaPxC3rXMtdqRwrD3fNsX0PLCK36qV4pi/fBFM8LH6WxfL6o1+0ZQ==
+"@knocklabs/node@^1.30.0":
+  version "1.30.0"
+  resolved "https://registry.yarnpkg.com/@knocklabs/node/-/node-1.30.0.tgz#d91f53bed5f6343c74fb7a6a444b957fc7f3bcac"
+  integrity sha512-qKxZcIEVYF/8fXpOB38HTTBXo6yUfotZpXWWyYPCFkjvyH171QrI287M3RuUf/M28UrPZ8tWkz1Z9g/5p/m/jg==
   dependencies:
     jose "^6.0.11"
 
