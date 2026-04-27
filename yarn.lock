@@ -534,16 +534,16 @@
     "@jridgewell/resolve-uri" "^3.1.0"
     "@jridgewell/sourcemap-codec" "^1.4.14"
 
-"@knocklabs/client@^0.21.9":
-  version "0.21.9"
-  resolved "https://registry.yarnpkg.com/@knocklabs/client/-/client-0.21.9.tgz#8f8e3c67cd3f8fda45d10cf91f0d104c37dce418"
-  integrity sha512-qjWzxAoXeOaYs9o/WrkWv/MY7E8aPb2E9eA5FAQP0+HrgkyGED554Xma/mPGwhaIGq1tqLYzo7x7tOtN4+Wy4Q==
+"@knocklabs/client@^0.21.12":
+  version "0.21.12"
+  resolved "https://registry.yarnpkg.com/@knocklabs/client/-/client-0.21.12.tgz#4f90672c5abe7218cc7758d82e658d1d9028c47d"
+  integrity sha512-bJntckTkyFGmDBUjyCYAX3DYJOsjLpuuZvyQTo3y0MtQAhEprTMAcBDe/b6v4xpbMJDNktVdZaf/5ntupQ8/rg==
   dependencies:
     "@babel/runtime" "^7.28.6"
     "@knocklabs/types" "^0.1.5"
     "@tanstack/store" "^0.7.2"
     "@types/phoenix" "^1.6.7"
-    axios "1.14.0"
+    axios "^1.15.1"
     axios-retry "^4.5.0"
     eventemitter2 "^6.4.5"
     jwt-decode "^4.0.0"
@@ -566,37 +566,37 @@
     "@trivago/prettier-plugin-sort-imports" "^4.3.0"
     prettier "^3.1.0"
 
-"@knocklabs/react-core@^0.13.10":
-  version "0.13.10"
-  resolved "https://registry.yarnpkg.com/@knocklabs/react-core/-/react-core-0.13.10.tgz#a0300ec4be3041429c2cd14f0eee5b7356c4b6f8"
-  integrity sha512-BaGU4e3xbuY7pZp9L2YY9nksIWcJY61LQUcZ++LnnD0T0U+C8sq4380DxCb/Em+RFRRrqXiMtdAB6A1T5Km/0w==
+"@knocklabs/react-core@^0.13.13":
+  version "0.13.13"
+  resolved "https://registry.yarnpkg.com/@knocklabs/react-core/-/react-core-0.13.13.tgz#c601dd09fcb1470d4d7c00d85912a983777bf10d"
+  integrity sha512-veS2wF3A5jAWUYWFjVpQqfeyygfxqqUdgCuca6/GBvPuCTlcYt2SbLqT6esXdFNgVj25zWqKIKd6Rf9P89p3Ew==
   dependencies:
-    "@knocklabs/client" "^0.21.9"
+    "@knocklabs/client" "^0.21.12"
     "@tanstack/react-store" "^0.7.3"
     date-fns "^4.0.0"
     fast-deep-equal "^3.1.3"
     swr "^2.4.0"
 
-"@knocklabs/react@^0.11.12":
-  version "0.11.16"
-  resolved "https://registry.yarnpkg.com/@knocklabs/react/-/react-0.11.16.tgz#34c3a1a118c2018f1771fbc0b486bafc5b15a78d"
-  integrity sha512-IXUWryYE+OHU08t1CKufrMFgAtgOO0wN2s8OOgXbMvje6VXI9+zG/FWjlCrQMEu4kLSAditIfMWNJFiy9nM1oA==
+"@knocklabs/react@^0.11.21":
+  version "0.11.21"
+  resolved "https://registry.yarnpkg.com/@knocklabs/react/-/react-0.11.21.tgz#c0ded3d29b36dcc30feefefbc0d6aae0e0392b36"
+  integrity sha512-mxUQbwp4aEptHnY72WHowHSgUNJq8Xpc2LFCarXAUg+92HAWUKaQ166Z/+jEDz5Jjkw3fpNqeuLKE3nWkkpTpg==
   dependencies:
-    "@knocklabs/client" "^0.21.9"
-    "@knocklabs/react-core" "^0.13.10"
+    "@knocklabs/client" "^0.21.12"
+    "@knocklabs/react-core" "^0.13.13"
     "@popperjs/core" "^2.11.8"
     "@radix-ui/react-dialog" "^1.1.15"
     "@radix-ui/react-hover-card" "^1.1.15"
     "@telegraph/button" ">=0.6.0"
-    "@telegraph/combobox" ">=0.2.5"
+    "@telegraph/combobox" ">=0.2.7"
     "@telegraph/icon" ">=0.5.0"
     "@telegraph/layout" ">=0.5.0"
-    "@telegraph/segmented-control" ">=0.2.3"
-    "@telegraph/select" ">=0.0.88"
-    "@telegraph/tag" ">=0.2.0"
+    "@telegraph/segmented-control" ">=0.2.4"
+    "@telegraph/select" ">=0.0.90"
+    "@telegraph/tag" ">=0.2.1"
     "@telegraph/toggle" ">=0.1.3"
     "@telegraph/tokens" ">=0.2.0"
-    "@telegraph/tooltip" ">=0.2.1"
+    "@telegraph/tooltip" ">=0.2.2"
     "@telegraph/typography" ">=0.4.0"
     clsx "^2.1.1"
     lodash.debounce "^4.0.8"
@@ -1060,7 +1060,7 @@
     clsx "^2.1.1"
     lucide-react "^0.544.0"
 
-"@telegraph/combobox@0.2.7", "@telegraph/combobox@>=0.2.5":
+"@telegraph/combobox@0.2.7", "@telegraph/combobox@>=0.2.7":
   version "0.2.7"
   resolved "https://registry.yarnpkg.com/@telegraph/combobox/-/combobox-0.2.7.tgz#91953c1ad8934cec8c469027fe96bae7c7efa8ab"
   integrity sha512-omjVZzUinAOKGyVWwfVMlTgT2fMaLYQYGPGYRba+0zmAZokae+yghUrokIXD7PpxfDsomYDoIaDOfkfZhIH46g==
@@ -1140,10 +1140,10 @@
     lucide-react "^0.544.0"
     motion "^12.38.0"
 
-"@telegraph/segmented-control@>=0.2.3":
-  version "0.2.3"
-  resolved "https://registry.yarnpkg.com/@telegraph/segmented-control/-/segmented-control-0.2.3.tgz#464dd6c4b449a4d419f1659ea765d837e19bad05"
-  integrity sha512-kEyTEzW3P97ed71KOS10NHjeAwzKJOhpuD1SbcehkSfdUgFoAyoRLSAgMyWdFJMIHEo/1NexkiTrVCp2W+JoIQ==
+"@telegraph/segmented-control@>=0.2.4":
+  version "0.2.4"
+  resolved "https://registry.yarnpkg.com/@telegraph/segmented-control/-/segmented-control-0.2.4.tgz#c051909cdd2119a70decd16f51ba7d735d5cf19b"
+  integrity sha512-GvDFaOhRK2KSPZ3LKJ6+/QsK6h29Vc2LuVuCf5/X9GN2DLguBFWes9uTDw9UAv7CmAPvazIhqMc2mVVTVqjcPA==
   dependencies:
     "@radix-ui/react-toggle-group" "^1.1.11"
     "@telegraph/button" "^0.6.0"
@@ -1151,9 +1151,9 @@
     "@telegraph/layout" "^0.5.0"
     "@telegraph/truncate" "^0.1.2"
     lucide-react "^0.544.0"
-    motion "^12.34.3"
+    motion "^12.38.0"
 
-"@telegraph/select@>=0.0.88", "@telegraph/select@^0.0.90":
+"@telegraph/select@>=0.0.90", "@telegraph/select@^0.0.90":
   version "0.0.90"
   resolved "https://registry.yarnpkg.com/@telegraph/select/-/select-0.0.90.tgz#a192b4f49fb81366e86bbcc0b2bed2d4a3f52bf0"
   integrity sha512-72xFbtFvwOrN+kShiIW4L8fqzjOdNXpmRCNSa83qc+0wlc0NknYcojnuJjlBSIivOqw47xaRCZraxXdCcScddA==
@@ -1169,23 +1169,7 @@
     "@telegraph/tokens" "^0.2.0"
     postcss "^8.5.6"
 
-"@telegraph/tag@>=0.2.0", "@telegraph/tag@^0.2.0":
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/@telegraph/tag/-/tag-0.2.0.tgz#0dd29f5dcbeb93563b80f755a8d574c813ae00a1"
-  integrity sha512-84Cu5xywejgHRLkd7b6XWwxQuvUsnZy2EE9eg3zXtsQH+ZF2MkXqCNkwWxxq0ExhFwncHXxgUk7Y4SC1la5dkg==
-  dependencies:
-    "@telegraph/button" "^0.6.0"
-    "@telegraph/compose-refs" "^0.0.8"
-    "@telegraph/helpers" "^0.0.15"
-    "@telegraph/icon" "^0.5.0"
-    "@telegraph/layout" "^0.5.0"
-    "@telegraph/tooltip" "^0.2.1"
-    "@telegraph/typography" "^0.4.0"
-    clsx "^2.1.1"
-    lucide-react "^0.544.0"
-    motion "^12.34.3"
-
-"@telegraph/tag@^0.2.1":
+"@telegraph/tag@>=0.2.1", "@telegraph/tag@^0.2.0", "@telegraph/tag@^0.2.1":
   version "0.2.1"
   resolved "https://registry.yarnpkg.com/@telegraph/tag/-/tag-0.2.1.tgz#804c7f20b6613fd95b217ed3f0b42815861bc4c3"
   integrity sha512-LqIf0Mk+JY2r9y9eIgsDgjRFzxwC45sqekAEBQwsrgTtgvW7L08dbmskpkoy51HQtv8vCpjoOE89XaLTnFV17Q==
@@ -1229,20 +1213,7 @@
   resolved "https://registry.yarnpkg.com/@telegraph/tokens/-/tokens-0.2.0.tgz#c621e7c2b097327f3f3f7f5eed876745aa2b2858"
   integrity sha512-2TsGX3Ir2/v2W5glrnF9cdvaPCPu/qo/w2p1DvVo/2zO3AtAL0qVNkmU1Fiqz2t42sNLyMiyhUrv/YPJ5P5F2Q==
 
-"@telegraph/tooltip@>=0.2.1", "@telegraph/tooltip@^0.2.1":
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/@telegraph/tooltip/-/tooltip-0.2.1.tgz#c52740e83590dfee1058f6bf36d4b646b1cc88fa"
-  integrity sha512-Qq9jf+5YydhCU4ltzRr2kk8lMW1cLFzrZwoUS2eY/2v2UqwlGUIiE4C2H3D7LL1RBcxI+lyZtMMhTRz4rw/+5Q==
-  dependencies:
-    "@radix-ui/react-tooltip" "^1.2.8"
-    "@radix-ui/react-use-controllable-state" "^1.2.2"
-    "@telegraph/appearance" "^0.0.13"
-    "@telegraph/helpers" "^0.0.15"
-    "@telegraph/layout" "^0.5.0"
-    "@telegraph/typography" "^0.4.0"
-    motion "^12.34.3"
-
-"@telegraph/tooltip@^0.2.2":
+"@telegraph/tooltip@>=0.2.2", "@telegraph/tooltip@^0.2.1", "@telegraph/tooltip@^0.2.2":
   version "0.2.2"
   resolved "https://registry.yarnpkg.com/@telegraph/tooltip/-/tooltip-0.2.2.tgz#110422dbf0780de527c2fa0c0daea4c76bbcd66d"
   integrity sha512-aOKVqReMj4eWPLSJh7WgthabEDayG6kemVhLojyMensahHTwPw+99XfOf0FSqJVoaLLzjhulZC7n2ATStZPMEg==
@@ -1697,10 +1668,10 @@ axios-retry@^4.5.0:
   dependencies:
     is-retry-allowed "^2.2.0"
 
-axios@1.14.0:
-  version "1.14.0"
-  resolved "https://registry.yarnpkg.com/axios/-/axios-1.14.0.tgz#7c29f4cf2ea91ef05018d5aa5399bf23ed3120eb"
-  integrity sha512-3Y8yrqLSwjuzpXuZ0oIYZ/XGgLwUIBU3uLvbcpb0pidD9ctpShJd43KSlEEkVQg6DS0G9NKyzOvBfUtDKEyHvQ==
+axios@^1.15.1:
+  version "1.15.2"
+  resolved "https://registry.yarnpkg.com/axios/-/axios-1.15.2.tgz#eb8fb6d30349abace6ade5b4cb4d9e8a0dc23e5b"
+  integrity sha512-wLrXxPtcrPTsNlJmKjkPnNPK2Ihe0hn0wGSaTEiHRPxwjvJwT3hKmXF4dpqxmPO9SoNb2FsYXj/xEo0gHN+D5A==
   dependencies:
     follow-redirects "^1.15.11"
     form-data "^4.0.5"
@@ -3166,7 +3137,7 @@ motion-utils@^12.36.0:
   resolved "https://registry.yarnpkg.com/motion-utils/-/motion-utils-12.36.0.tgz#cff2df2a28c3fe53a3de7e0103ba7f73ff7d77a7"
   integrity sha512-eHWisygbiwVvf6PZ1vhaHCLamvkSbPIeAYxWUuL3a2PD/TROgE7FvfHWTIH4vMl798QLfMw15nRqIaRDXTlYRg==
 
-motion@^12.34.3, motion@^12.38.0:
+motion@^12.38.0:
   version "12.38.0"
   resolved "https://registry.yarnpkg.com/motion/-/motion-12.38.0.tgz#851fb591f98ed98815e223c09a0de13614ea4155"
   integrity sha512-uYfXzeHlgThchzwz5Te47dlv5JOUC7OB4rjJ/7XTUgtBZD8CchMN8qEJ4ZVsUmTyYA44zjV0fBwsiktRuFnn+w==
