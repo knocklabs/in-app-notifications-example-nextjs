@@ -534,10 +534,10 @@
     "@jridgewell/resolve-uri" "^3.1.0"
     "@jridgewell/sourcemap-codec" "^1.4.14"
 
-"@knocklabs/client@^0.21.12":
-  version "0.21.12"
-  resolved "https://registry.yarnpkg.com/@knocklabs/client/-/client-0.21.12.tgz#4f90672c5abe7218cc7758d82e658d1d9028c47d"
-  integrity sha512-bJntckTkyFGmDBUjyCYAX3DYJOsjLpuuZvyQTo3y0MtQAhEprTMAcBDe/b6v4xpbMJDNktVdZaf/5ntupQ8/rg==
+"@knocklabs/client@^0.21.13":
+  version "0.21.13"
+  resolved "https://registry.yarnpkg.com/@knocklabs/client/-/client-0.21.13.tgz#ae5b2897c829118b0297e0329d5c3cd65e3d370c"
+  integrity sha512-gFWenN4Mbr9YnlX6tGqmElNpZloQAioWlSQF7caQFHEpDLRE4NwGJrcpiyZ1ndv+/tOTpkRcWNIKOaaAKQCTfg==
   dependencies:
     "@babel/runtime" "^7.28.6"
     "@knocklabs/types" "^0.1.5"
@@ -547,7 +547,7 @@
     axios-retry "^4.5.0"
     eventemitter2 "^6.4.5"
     jwt-decode "^4.0.0"
-    nanoid "^3.3.11"
+    nanoid "^3.3.12"
     phoenix "1.8.5"
     urlpattern-polyfill "^10.0.0"
 
@@ -566,24 +566,24 @@
     "@trivago/prettier-plugin-sort-imports" "^4.3.0"
     prettier "^3.1.0"
 
-"@knocklabs/react-core@^0.13.13":
-  version "0.13.13"
-  resolved "https://registry.yarnpkg.com/@knocklabs/react-core/-/react-core-0.13.13.tgz#c601dd09fcb1470d4d7c00d85912a983777bf10d"
-  integrity sha512-veS2wF3A5jAWUYWFjVpQqfeyygfxqqUdgCuca6/GBvPuCTlcYt2SbLqT6esXdFNgVj25zWqKIKd6Rf9P89p3Ew==
+"@knocklabs/react-core@^0.13.14":
+  version "0.13.14"
+  resolved "https://registry.yarnpkg.com/@knocklabs/react-core/-/react-core-0.13.14.tgz#218a7e3b10ef490282a16295c0a35c0c36818106"
+  integrity sha512-T73rSAzjsAnhDZRSNzZSqxG5wMEQ6mdTCNsincA1ToNmlGBKTz8Wl4TmEcnRcueOg7lGxr6VhrODsiAvqu8Rjg==
   dependencies:
-    "@knocklabs/client" "^0.21.12"
+    "@knocklabs/client" "^0.21.13"
     "@tanstack/react-store" "^0.7.3"
     date-fns "^4.0.0"
     fast-deep-equal "^3.1.3"
-    swr "^2.4.0"
+    swr "^2.4.1"
 
-"@knocklabs/react@^0.11.21":
-  version "0.11.21"
-  resolved "https://registry.yarnpkg.com/@knocklabs/react/-/react-0.11.21.tgz#c0ded3d29b36dcc30feefefbc0d6aae0e0392b36"
-  integrity sha512-mxUQbwp4aEptHnY72WHowHSgUNJq8Xpc2LFCarXAUg+92HAWUKaQ166Z/+jEDz5Jjkw3fpNqeuLKE3nWkkpTpg==
+"@knocklabs/react@^0.11.22":
+  version "0.11.22"
+  resolved "https://registry.yarnpkg.com/@knocklabs/react/-/react-0.11.22.tgz#6f6126f3fda59bcee56baf3dcc0f0a00a4f268d1"
+  integrity sha512-e/p7SI9is6E+b+vbZ2e+hLdFSHz2fBZccNCtJd1ASdVCFtDln3kw2mbymaZWqe6mIifGlwcodfDroIDeLOEQKw==
   dependencies:
-    "@knocklabs/client" "^0.21.12"
-    "@knocklabs/react-core" "^0.13.13"
+    "@knocklabs/client" "^0.21.13"
+    "@knocklabs/react-core" "^0.13.14"
     "@popperjs/core" "^2.11.8"
     "@radix-ui/react-dialog" "^1.1.15"
     "@radix-ui/react-hover-card" "^1.1.15"
@@ -1182,23 +1182,7 @@
     "@telegraph/tokens" "^0.2.0"
     postcss "^8.5.6"
 
-"@telegraph/tag@>=0.2.1", "@telegraph/tag@^0.2.0":
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/@telegraph/tag/-/tag-0.2.1.tgz#804c7f20b6613fd95b217ed3f0b42815861bc4c3"
-  integrity sha512-LqIf0Mk+JY2r9y9eIgsDgjRFzxwC45sqekAEBQwsrgTtgvW7L08dbmskpkoy51HQtv8vCpjoOE89XaLTnFV17Q==
-  dependencies:
-    "@telegraph/button" "^0.6.0"
-    "@telegraph/compose-refs" "^0.0.8"
-    "@telegraph/helpers" "^0.0.15"
-    "@telegraph/icon" "^0.5.0"
-    "@telegraph/layout" "^0.5.0"
-    "@telegraph/tooltip" "^0.2.2"
-    "@telegraph/typography" "^0.4.0"
-    clsx "^2.1.1"
-    lucide-react "^0.544.0"
-    motion "^12.38.0"
-
-"@telegraph/tag@^0.2.3":
+"@telegraph/tag@>=0.2.1", "@telegraph/tag@^0.2.0", "@telegraph/tag@^0.2.3":
   version "0.2.3"
   resolved "https://registry.yarnpkg.com/@telegraph/tag/-/tag-0.2.3.tgz#f2948beb6219b33dde4eac73c6adb8abf174b42e"
   integrity sha512-KgEQ+FVBICcCBJsyCyq7ZW77Xj+Vb2YGnz58VRklKTN6+KbO67pPhBeN+r/E36ioLN+P+DAKM1wPyN71U1kjcQ==
@@ -1242,10 +1226,10 @@
   resolved "https://registry.yarnpkg.com/@telegraph/tokens/-/tokens-0.2.0.tgz#c621e7c2b097327f3f3f7f5eed876745aa2b2858"
   integrity sha512-2TsGX3Ir2/v2W5glrnF9cdvaPCPu/qo/w2p1DvVo/2zO3AtAL0qVNkmU1Fiqz2t42sNLyMiyhUrv/YPJ5P5F2Q==
 
-"@telegraph/tooltip@>=0.2.2", "@telegraph/tooltip@^0.2.1", "@telegraph/tooltip@^0.2.2":
-  version "0.2.2"
-  resolved "https://registry.yarnpkg.com/@telegraph/tooltip/-/tooltip-0.2.2.tgz#110422dbf0780de527c2fa0c0daea4c76bbcd66d"
-  integrity sha512-aOKVqReMj4eWPLSJh7WgthabEDayG6kemVhLojyMensahHTwPw+99XfOf0FSqJVoaLLzjhulZC7n2ATStZPMEg==
+"@telegraph/tooltip@>=0.2.2", "@telegraph/tooltip@^0.3.0":
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/@telegraph/tooltip/-/tooltip-0.3.0.tgz#a0271560a21042b4dc60b82e75fc22f6df30cb43"
+  integrity sha512-d27VJFnk/rvPvax9rhFLTb5mjX+uiSnZ1dDUql5zNN78yeItqvmJjWjD5hYU4QnaMKgnS0ViVwHN0fgT5CRg1w==
   dependencies:
     "@radix-ui/react-tooltip" "^1.2.8"
     "@radix-ui/react-use-controllable-state" "^1.2.2"
@@ -1255,10 +1239,10 @@
     "@telegraph/typography" "^0.4.0"
     motion "^12.38.0"
 
-"@telegraph/tooltip@^0.3.0":
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/@telegraph/tooltip/-/tooltip-0.3.0.tgz#a0271560a21042b4dc60b82e75fc22f6df30cb43"
-  integrity sha512-d27VJFnk/rvPvax9rhFLTb5mjX+uiSnZ1dDUql5zNN78yeItqvmJjWjD5hYU4QnaMKgnS0ViVwHN0fgT5CRg1w==
+"@telegraph/tooltip@^0.2.1":
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/@telegraph/tooltip/-/tooltip-0.2.2.tgz#110422dbf0780de527c2fa0c0daea4c76bbcd66d"
+  integrity sha512-aOKVqReMj4eWPLSJh7WgthabEDayG6kemVhLojyMensahHTwPw+99XfOf0FSqJVoaLLzjhulZC7n2ATStZPMEg==
   dependencies:
     "@radix-ui/react-tooltip" "^1.2.8"
     "@radix-ui/react-use-controllable-state" "^1.2.2"
@@ -3206,6 +3190,11 @@ nanoid@^3.3.11, nanoid@^3.3.6:
   resolved "https://registry.yarnpkg.com/nanoid/-/nanoid-3.3.11.tgz#4f4f112cefbe303202f2199838128936266d185b"
   integrity sha512-N8SpfPUnUp1bK+PMYW8qSWdl9U+wwNWI4QKxOYDy9JAro3WMX7p2OeVRF9v+347pnakNevPmiHhNmZ2HbFA76w==
 
+nanoid@^3.3.12:
+  version "3.3.12"
+  resolved "https://registry.yarnpkg.com/nanoid/-/nanoid-3.3.12.tgz#ab3d912e217a6d0a514f00a72a16543a28982c05"
+  integrity sha512-ZB9RH/39qpq5Vu6Y+NmUaFhQR6pp+M2Xt76XBnEwDaGcVAqhlvxrl3B2bKS5D3NH3QR76v3aSrKaF/Kiy7lEtQ==
+
 napi-postinstall@^0.3.0:
   version "0.3.4"
   resolved "https://registry.yarnpkg.com/napi-postinstall/-/napi-postinstall-0.3.4.tgz#7af256d6588b5f8e952b9190965d6b019653bbb9"
@@ -3914,7 +3903,7 @@ supports-preserve-symlinks-flag@^1.0.0:
   resolved "https://registry.yarnpkg.com/supports-preserve-symlinks-flag/-/supports-preserve-symlinks-flag-1.0.0.tgz#6eda4bd344a3c94aea376d4cc31bc77311039e09"
   integrity sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==
 
-swr@^2.3.8, swr@^2.4.0:
+swr@^2.3.8, swr@^2.4.1:
   version "2.4.1"
   resolved "https://registry.yarnpkg.com/swr/-/swr-2.4.1.tgz#c9e48abff6bf4b04846342e2f1f6be108a078cf6"
   integrity sha512-2CC6CiKQtEwaEeNiqWTAw9PGykW8SR5zZX8MZk6TeAvEAnVS7Visz8WzphqgtQ8v2xz/4Q5K+j+SeMaKXeeQIA==
