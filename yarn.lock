@@ -1073,10 +1073,10 @@
     clsx "^2.1.1"
     lucide-react "^0.544.0"
 
-"@telegraph/combobox@0.3.1", "@telegraph/combobox@>=0.2.7":
-  version "0.3.1"
-  resolved "https://registry.yarnpkg.com/@telegraph/combobox/-/combobox-0.3.1.tgz#170ee2382474a17ebb1bbc9fb84370e347cfc729"
-  integrity sha512-JFeMIf+7vbI+XMqhRGArQswniskMXnXPkdy1skV6v2DdN6eFOgD6OsdhwHDMJJKjiyrbb66ODeQK+KQeTupZzw==
+"@telegraph/combobox@0.3.2", "@telegraph/combobox@>=0.2.7":
+  version "0.3.2"
+  resolved "https://registry.yarnpkg.com/@telegraph/combobox/-/combobox-0.3.2.tgz#f7736c2bed30214ba004f876002d180c773a7b02"
+  integrity sha512-SpDmC/EfCRYLcq+H8LFhtZO4OSHfTD+gGuB9R2ygJT5ehdhr4erfr+pDMGTqJ3ahhNWpEId7a9VjH41b4vUcVg==
   dependencies:
     "@radix-ui/react-dismissable-layer" "^1.1.11"
     "@radix-ui/react-menu" "^2.1.16"
@@ -1090,9 +1090,9 @@
     "@telegraph/input" "^0.4.0"
     "@telegraph/layout" "^0.5.0"
     "@telegraph/menu" "^0.3.4"
-    "@telegraph/tag" "^0.2.3"
-    "@telegraph/tooltip" "^0.3.0"
-    "@telegraph/truncate" "^0.1.3"
+    "@telegraph/tag" "^0.2.4"
+    "@telegraph/tooltip" "^0.4.0"
+    "@telegraph/truncate" "^0.1.4"
     "@telegraph/typography" "^0.4.0"
     lucide-react "^0.544.0"
     motion "^12.38.0"
@@ -1166,23 +1166,23 @@
     lucide-react "^0.544.0"
     motion "^12.38.0"
 
-"@telegraph/select@>=0.0.90", "@telegraph/select@^0.0.92":
-  version "0.0.92"
-  resolved "https://registry.yarnpkg.com/@telegraph/select/-/select-0.0.92.tgz#4d2e21f9922db5e05ff82cb3ea53a2f9b30ae8ea"
-  integrity sha512-w0fo266YMqUiv7w1DkYgyHaJIXtByH1YN3EIIgBAbwo0PMfCUTYdPE/YuCuHCDWBqZVWlNqnF2kWJLe1s7ZA4A==
+"@telegraph/select@>=0.0.90", "@telegraph/select@^0.0.93":
+  version "0.0.93"
+  resolved "https://registry.yarnpkg.com/@telegraph/select/-/select-0.0.93.tgz#9b311e31d806224335f6f75a36ee3685fa1e6fd9"
+  integrity sha512-EPaKVoMWlgdW6lElOeJJPzaNKigVmlKiuqMEJT1LpSc09+yVHLFI8RT0cPO69drRzLpDPsdiUCd6Lt7O9ACNJQ==
   dependencies:
-    "@telegraph/combobox" "0.3.1"
+    "@telegraph/combobox" "0.3.2"
     "@telegraph/helpers" "0.0.15"
 
-"@telegraph/style-engine@^0.3.0", "@telegraph/style-engine@^0.3.2":
-  version "0.3.2"
-  resolved "https://registry.yarnpkg.com/@telegraph/style-engine/-/style-engine-0.3.2.tgz#b2efcabe1014170f2c89b041610f24d3c59112d1"
-  integrity sha512-RIG+IyeI7Xy4k344hVXl6UEFEa27AIRXWrB8OKfN/XuU2q3m5EDJDyhoBWV6onWf/TU6eLPj0uEDp7HsCEFI8Q==
+"@telegraph/style-engine@^0.3.0", "@telegraph/style-engine@^0.3.2", "@telegraph/style-engine@^0.3.3":
+  version "0.3.3"
+  resolved "https://registry.yarnpkg.com/@telegraph/style-engine/-/style-engine-0.3.3.tgz#8d9593c6e3434c312fb5f442f8ab49c3282d8c8e"
+  integrity sha512-WsYX/Wwl2B6+WhcOvxcBKvBlo+jqVLCcNSvMk/zIdySCz/Gqxfxkgly+rB7i/cHK1QEOvLAWwN6fFnyP4WwLTw==
   dependencies:
     "@telegraph/tokens" "^0.2.0"
-    postcss "^8.5.6"
+    postcss "^8.5.13"
 
-"@telegraph/tag@>=0.2.1", "@telegraph/tag@^0.2.0", "@telegraph/tag@^0.2.3":
+"@telegraph/tag@>=0.2.1", "@telegraph/tag@^0.2.0":
   version "0.2.3"
   resolved "https://registry.yarnpkg.com/@telegraph/tag/-/tag-0.2.3.tgz#f2948beb6219b33dde4eac73c6adb8abf174b42e"
   integrity sha512-KgEQ+FVBICcCBJsyCyq7ZW77Xj+Vb2YGnz58VRklKTN6+KbO67pPhBeN+r/E36ioLN+P+DAKM1wPyN71U1kjcQ==
@@ -1193,6 +1193,22 @@
     "@telegraph/icon" "^0.5.0"
     "@telegraph/layout" "^0.5.0"
     "@telegraph/tooltip" "^0.3.0"
+    "@telegraph/typography" "^0.4.0"
+    clsx "^2.1.1"
+    lucide-react "^0.544.0"
+    motion "^12.38.0"
+
+"@telegraph/tag@^0.2.4":
+  version "0.2.4"
+  resolved "https://registry.yarnpkg.com/@telegraph/tag/-/tag-0.2.4.tgz#29b47d827b88b5342777e280010d3573920b6107"
+  integrity sha512-idHEQqed8KhPpaGL+sPyDdNzb+FOKPyiEjfB6oHlKmb9OHvvH+4x4tgDaYb36AjI6wc4X2nBmlY2YP6YwCAzTw==
+  dependencies:
+    "@telegraph/button" "^0.7.0"
+    "@telegraph/compose-refs" "^0.0.8"
+    "@telegraph/helpers" "^0.0.15"
+    "@telegraph/icon" "^0.5.0"
+    "@telegraph/layout" "^0.5.0"
+    "@telegraph/tooltip" "^0.4.0"
     "@telegraph/typography" "^0.4.0"
     clsx "^2.1.1"
     lucide-react "^0.544.0"
@@ -1252,6 +1268,19 @@
     "@telegraph/typography" "^0.4.0"
     motion "^12.38.0"
 
+"@telegraph/tooltip@^0.4.0":
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/@telegraph/tooltip/-/tooltip-0.4.0.tgz#5e4069138b98a5e9f0cf45881aa115170cc86326"
+  integrity sha512-MSrZBPb8U8vtke4AGST96180bnZQv4LPFM1rEj/qjFrBXKpjOeu4GCncXIipTeSRzDaRd48CKkfC5nTk/YZoFQ==
+  dependencies:
+    "@radix-ui/react-tooltip" "^1.2.8"
+    "@radix-ui/react-use-controllable-state" "^1.2.2"
+    "@telegraph/appearance" "^0.0.13"
+    "@telegraph/helpers" "^0.0.15"
+    "@telegraph/layout" "^0.5.0"
+    "@telegraph/typography" "^0.4.0"
+    motion "^12.38.0"
+
 "@telegraph/truncate@^0.1.2":
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/@telegraph/truncate/-/truncate-0.1.2.tgz#de53eef3f724192672e0dabb007866e1efb5eb43"
@@ -1261,13 +1290,13 @@
     "@telegraph/tooltip" "^0.2.1"
     "@telegraph/typography" "^0.4.0"
 
-"@telegraph/truncate@^0.1.3":
-  version "0.1.3"
-  resolved "https://registry.yarnpkg.com/@telegraph/truncate/-/truncate-0.1.3.tgz#5e6700fe20022defddcf0c5b376fde6a3ad29df1"
-  integrity sha512-TbvKxWdBiiYDdn13/QXzmQq2w3H1Jt8w7NmbEHgZF86nNsXyTRUtL8C+68VT64rmU/A4P2F7g/dE+3qiwn8Xhw==
+"@telegraph/truncate@^0.1.4":
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/@telegraph/truncate/-/truncate-0.1.4.tgz#4fb6e542f6cc35b31fcba2ecc25b6bedd1d2e5c9"
+  integrity sha512-gtPsFddxtxjh1kKlUjTrpokdmWjMl7/YF6LUm9hUs+9HDC6zUOV6josaXUFon5hVP+AZCokmNk7bP7R92FXhWQ==
   dependencies:
     "@telegraph/helpers" "^0.0.15"
-    "@telegraph/tooltip" "^0.3.0"
+    "@telegraph/tooltip" "^0.4.0"
     "@telegraph/typography" "^0.4.0"
 
 "@telegraph/typography@>=0.4.0", "@telegraph/typography@^0.4.0":
@@ -3407,7 +3436,7 @@ postcss@8.4.31:
     picocolors "^1.0.0"
     source-map-js "^1.0.2"
 
-postcss@^8.5.15, postcss@^8.5.6:
+postcss@^8.5.13, postcss@^8.5.15:
   version "8.5.15"
   resolved "https://registry.yarnpkg.com/postcss/-/postcss-8.5.15.tgz#d1eaf677a324e9ec02196da2d3fecf4a0b9a735c"
   integrity sha512-FfR8sjd4em2T6fb3I2MwAJU7HWVMr9zba+enmQeeWFfCbm+UOC/0X4DS8XtpUTMwWMGbjKYP7xjfNekzyGmB3A==
